@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Chez Cyril</title>
+    <link>https://cnovel.github.io/post/</link>
+    <description>Recent content in Posts on Chez Cyril</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <copyright>CC BY-SA 4.0</copyright>
+    <lastBuildDate>Sun, 18 Mar 2018 15:41:05 +0100</lastBuildDate>
+    
+	<atom:link href="https://cnovel.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Premier billet</title>
+      <link>https://cnovel.github.io/post/premierbillet/</link>
+      <pubDate>Sun, 18 Mar 2018 15:41:05 +0100</pubDate>
+      
+      <guid>https://cnovel.github.io/post/premierbillet/</guid>
+      <description>Hello world! Depuis que CozyCloud v2 n&amp;rsquo;est plus, j&amp;rsquo;ai perdu mon blog sous Ghost. Il n&amp;rsquo;a jamais vraiment été alimenté car l&amp;rsquo;interface de Ghosht était un peu confuse, couplé à ll&amp;rsquo;interface de Cozy il y avait de temps en temps des bugs. Bref tout cela fait que l&amp;rsquo;ancien blog n&amp;rsquo;existe plus.
+Habemus blogam Je me suis repenché sur la question d&amp;rsquo;un blog, et en premier lieu comment l&amp;rsquo;héberger. J&amp;rsquo;ai toujours mon espace Free, mais je n&amp;rsquo;ai pas envie de toucher au site principal qui est en ligne depuis avril 2005 (13 ans, cela ne nous rajeunit pas).</description>
+    </item>
+    
+  </channel>
+</rss>
