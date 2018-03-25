@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
     <copyright>CC BY-SA 4.0</copyright>
-    <lastBuildDate>Sun, 18 Mar 2018 15:41:05 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 25 Mar 2018 14:25:47 +0100</lastBuildDate>
     
 	<atom:link href="https://cnovel.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>L&#39;Open source facile</title>
+      <link>https://cnovel.github.io/post/opensourcefacile/</link>
+      <pubDate>Sun, 25 Mar 2018 14:25:47 +0100</pubDate>
+      
+      <guid>https://cnovel.github.io/post/opensourcefacile/</guid>
+      <description>L&amp;rsquo;open source, késako ? Wikipédia définit l&amp;rsquo;open source de la façon suivante :
+ La désignation open source, ou « code source ouvert », s&amp;rsquo;applique aux logiciels (et s&amp;rsquo;étend maintenant aux œuvres de l&amp;rsquo;esprit) dont la licence respecte des critères précisément établis par l&amp;rsquo;Open Source Initiative, c&amp;rsquo;est-à-dire les possibilités de libre redistribution, d&amp;rsquo;accès au code source et de création de travaux dérivés. Mis à la disposition du grand public, ce code source est généralement le résultat d&amp;rsquo;une collaboration entre programmeurs.</description>
+    </item>
     
     <item>
       <title>Premier billet</title>
