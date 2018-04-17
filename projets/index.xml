@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projets on Chez Cyril</title>
+    <link>https://cnovel.github.io/projets/</link>
+    <description>Recent content in Projets on Chez Cyril</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <copyright>CC BY-SA 4.0</copyright>
+    <lastBuildDate>Sat, 14 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://cnovel.github.io/projets/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Secret Hitler</title>
+      <link>https://cnovel.github.io/projets/secrethitler/</link>
+      <pubDate>Sat, 14 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://cnovel.github.io/projets/secrethitler/</guid>
+      <description>body { background-color: #f2654b; } .header { border-bottom: none; } h1 { color: #000; display: none; } h2 { color: #000; } a { color: #950000; } a:visited { color: #BB0000; } p { color: #000; } center { color: #000; } li { color: #000; }  
+Qu&amp;rsquo;est-ce que Secret Hitler ? Secret Hitler est un jeu créé par Mike Boxleiter, Tommy Maranges, Max Temkin et Mac Schubert.</description>
+    </item>
+    
+  </channel>
+</rss>

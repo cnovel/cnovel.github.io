@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://cnovel.github.io/post/tinify/</loc>
+    <lastmod>2018-04-17T20:25:22+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cnovel.github.io/projets/secrethitler/</loc>
+    <lastmod>2018-04-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cnovel.github.io/post/majusculesaccentu%C3%A9es/</loc>
     <lastmod>2018-04-02T22:52:52+02:00</lastmod>
   </url>
@@ -40,7 +50,7 @@
   
   <url>
     <loc>https://cnovel.github.io/</loc>
-    <lastmod>2018-04-02T22:52:52+02:00</lastmod>
+    <lastmod>2018-04-17T20:25:22+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -52,13 +62,19 @@
   
   <url>
     <loc>https://cnovel.github.io/tags/informatique/</loc>
-    <lastmod>2018-04-02T22:52:52+02:00</lastmod>
+    <lastmod>2018-04-17T20:25:22+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://cnovel.github.io/post/</loc>
-    <lastmod>2018-04-02T22:52:52+02:00</lastmod>
+    <lastmod>2018-04-17T20:25:22+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cnovel.github.io/projets/</loc>
+    <lastmod>2018-04-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
     <copyright>CC BY-SA 4.0</copyright>
-    <lastBuildDate>Mon, 02 Apr 2018 22:52:52 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 17 Apr 2018 20:25:22 +0200</lastBuildDate>
     
 	<atom:link href="https://cnovel.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Réduire le poids des images</title>
+      <link>https://cnovel.github.io/post/tinify/</link>
+      <pubDate>Tue, 17 Apr 2018 20:25:22 +0200</pubDate>
+      
+      <guid>https://cnovel.github.io/post/tinify/</guid>
+      <description>Même si on n&amp;rsquo;y fait plus très attention maintenant que l&amp;rsquo;on surfe avec la fibre et la 4G, la taille des pages web a son importance. En mode dégradé (Edge, 3G Free, etc.), c&amp;rsquo;est toujours agréable d&amp;rsquo;avoir une page qui se charge rapidement.
+TinyPNG, réduire ses images en ligne Une partie de la taille d&amp;rsquo;une page web est dûe aux différentes images présentes sur cette page. Différentes méthodes existent pour les alléger :</description>
+    </item>
     
     <item>
       <title>Les majuscules accentuées sous Windows</title>

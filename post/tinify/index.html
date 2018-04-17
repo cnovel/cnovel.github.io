@@ -4,10 +4,10 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Recette pour réaliser de délicieux biscuits aux pépites de chocolat et graines">
+  <meta name="description" content="Avec un petit script python qui va bien">
   <meta name="generator" content="Hugo 0.38.2" />
 
-  <title>Biscuits Cocottes &middot; Chez Cyril</title>
+  <title>Réduire le poids des images &middot; Chez Cyril</title>
 
   
   
@@ -222,8 +222,8 @@
 
 
 <div class="header">
-  <h1>Biscuits Cocottes</h1>
-  <h2>Recette pour réaliser de délicieux biscuits aux pépites de chocolat et graines</h2>
+  <h1>Réduire le poids des images</h1>
+  <h2>Avec un petit script python qui va bien</h2>
 </div>
 <div class="content">
 
@@ -231,7 +231,7 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>30 March 2018 @ 08:41</time>
+    <time>17 April 2018 @ 20:25</time>
   </div>
 
   
@@ -244,7 +244,7 @@
   <div>
     <i class="fa fa-tags fa-fw"></i>
     
-      <a class="post-taxonomy-tag" href="https://cnovel.github.io/tags/cuisine">Cuisine</a>
+      <a class="post-taxonomy-tag" href="https://cnovel.github.io/tags/informatique">Informatique</a>
     
   </div>
   
@@ -254,55 +254,42 @@
 
   
 
-<p>Les biscuits Cocottes, ce sont de délicieux biscuits avec des graines et des pépites de chocolat, fabriqués par la biscuiterie <em>Saint Michel</em>.</p>
+<p>Même si on n&rsquo;y fait plus très attention maintenant que l&rsquo;on surfe avec la fibre et la 4G, la taille des pages web a son importance. En mode dégradé (Edge, 3G Free, etc.), c&rsquo;est toujours agréable d&rsquo;avoir une page qui se charge rapidement.</p>
 
-<p><center><img src="https://cnovel.github.io/img/post/BiscuitsCocottes/CocottesStMichel.png" alt="Biscuits cocottes Saint Michel" /></center></p>
+<h2 id="tinypng-réduire-ses-images-en-ligne">TinyPNG, réduire ses images en ligne</h2>
 
-<p>Ces biscuits ne sont pas très compliqués à réaliser soi-même, en voici la recette.</p>
-
-<h1 id="ingrédients">Ingrédients</h1>
-
-<p>Pour une trentaine de biscuits :</p>
+<p>Une partie de la taille d&rsquo;une page web est dûe aux différentes images présentes sur cette page. Différentes méthodes existent pour les alléger :</p>
 
 <ul>
-<li>250g de farine</li>
-<li>150g de pépites de chocolat noir</li>
-<li>140g de sucre</li>
-<li>90g de beurre mou</li>
-<li>40g de graines (graines de tournesol par exemple)</li>
-<li>35cl d&rsquo;huile</li>
-<li>1 œuf</li>
-<li><sup>1</sup>&frasl;<sub>2</sub> sachet de levure</li>
-<li>Une pincée de sel</li>
+<li>Réduire leur taille</li>
+<li>Augmenter le niveau de compression</li>
+<li>Choisir le bon format (le BMP sera extrêmement lourd, alors que le PNG est parfait pour les dessins schématiques)</li>
 </ul>
 
-<h1 id="étapes">Étapes</h1>
+<p>Mais on peut encore aller plus loin. La fine équipe <a href="https://tinypng.com/">TinyPNG</a> a créé un script qui permet de compresser une image sans perte de qualité. En détail, un algorithme de quantisation des couleurs est utilisé pour gagner de la place.</p>
 
-<ol>
-<li>Préchauffer le four à 200°C.</li>
-<li>Battre l&rsquo;œuf avec le sucre, puis ajouter l&rsquo;huile et le sel.</li>
-<li>Progressivement, ajouter la farine et la levure.</li>
-<li>Incorporer le beurre mou en pétrissant la pâte avec les mains.</li>
-<li>Ajouter les pépites de chocolat et les graines et pétrir de nouveau.</li>
-<li>Disposer la pâte sur une plaque, soit en forme de buiscuits, soit en une seule plaque à découper ensuite.</li>
-<li>Faire cuire pendant une dizaine de minutes.</li>
-<li>Sortir, découper au besoin, puis laisser refroidir.</li>
-</ol>
+<p>Certaines images peuvent perdre plus de 70% de leur poids une fois passées à la moulinette TinyPNG, sans qu&rsquo;une différence ne soit visible.</p>
 
-<p><center><img src="https://cnovel.github.io/img/post/BiscuitsCocottes/biscuits.jpg" alt="Biscuits cocottes" /><br /><i>Régalez-vous !</i></center></p>
+<h2 id="tinify-in-folder-le-script-python-pour-traiter-en-batch">Tinify In Folder, le script python pour traiter en batch</h2>
+
+<p>J&rsquo;ai donc voulu appliqué ce script à toutes les images de ce site. Problème, les images sont dans pas mal de dossiers différents, et l&rsquo;interface web n&rsquo;est pas la plus pratique pour compresser beaucoup de fichiers. Que cela ne tienne, TinyPNG propose un package Python qui permet d&rsquo;interfacer avec leur service.</p>
+
+<p>J&rsquo;ai donc écrit un petit script, <a href="https://github.com/cnovel/TinifyInFolder">Tinify In Folder</a>, qui permet de compresser toutes les images trouvées dans un dossier. Le script est adapté à mon usage, donc une limite de 500 compressions par mois est hardcodée. Et j&rsquo;ai ajouté une petite option qui permet de ne compresser que les images qui ont été créées ou modifiées dans les n derniers jours, afin de ne pas dépasser ce quota trop rapidement.</p>
+
+<p>Une fois le script appliqué à l&rsquo;ensemble de ce site web, la taille totale des images est passée d&rsquo;environ 1.6Mo à 800ko, donc une baisse de 50% environ, ce qui n&rsquo;est pas négligeable !</p>
 
 
   
 <div class="prev-next-post pure-g">
   <div class="pure-u-1-24" style="text-align: left;">
     
-    <a href="https://cnovel.github.io/post/opensourcefacile/"><i class="fa fa-chevron-left"></i></a>
+    <a href="https://cnovel.github.io/post/majusculesaccentu%C3%A9es/"><i class="fa fa-chevron-left"></i></a>
     
   </div>
   <div class="pure-u-10-24">
     
     <nav class="prev">
-      <a href="https://cnovel.github.io/post/opensourcefacile/">L&#39;Open source facile</a>
+      <a href="https://cnovel.github.io/post/majusculesaccentu%C3%A9es/">Les majuscules accentuées sous Windows</a>
     </nav>
     
   </div>
@@ -311,14 +298,8 @@
   </div>
   <div class="pure-u-10-24">
     
-    <nav class="next">
-      <a href="https://cnovel.github.io/post/majusculesaccentu%C3%A9es/">Les majuscules accentuées sous Windows</a>
-    </nav>
-    
   </div>
   <div class="pure-u-1-24" style="text-align: right;">
-    
-    <a href="https://cnovel.github.io/post/majusculesaccentu%C3%A9es/"><i class="fa fa-chevron-right"></i></a>
     
   </div>
 </div>
