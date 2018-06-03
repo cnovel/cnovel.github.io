@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
     <copyright>CC BY-SA 4.0</copyright>
-    <lastBuildDate>Tue, 17 Apr 2018 20:25:22 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 03 Jun 2018 08:55:31 +0200</lastBuildDate>
     
 	<atom:link href="https://cnovel.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Vélib&#39;2 : Après 5 mois, premier bilan</title>
+      <link>https://cnovel.github.io/post/velib/</link>
+      <pubDate>Sun, 03 Jun 2018 08:55:31 +0200</pubDate>
+      
+      <guid>https://cnovel.github.io/post/velib/</guid>
+      <description>Vélib&amp;rsquo; est un service que j&amp;rsquo;utilisais au quotidien. Ayant la chance d&amp;rsquo;habiter non loin de mon lieu de travail, le vélo est le moyen de transport idéal pour m&amp;rsquo;y rendre. Et Vélib&amp;rsquo; proposait un maillage assez dense à Paris pour que je puisse avoir accès à plusieurs stations non loin de mon appartement (2) ou de mon travail (2 aussi). Chaque jour j&amp;rsquo;effectuais ainsi 2 trajets, presque sans aucun soucis. Le pire qui puisse arriver était une station non raccordée au réseau GSM qui empêchait la prise d&amp;rsquo;un vélo, ce qui arrivait rarement.</description>
+    </item>
     
     <item>
       <title>Réduire le poids des images</title>
