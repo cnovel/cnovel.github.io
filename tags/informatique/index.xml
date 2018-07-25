@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
     <copyright>CC BY-SA 4.0</copyright>
-    <lastBuildDate>Tue, 17 Apr 2018 20:25:22 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 25 Jul 2018 18:28:14 +0200</lastBuildDate>
     
 	<atom:link href="https://cnovel.github.io/tags/informatique/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Chocolatey</title>
+      <link>https://cnovel.github.io/post/chocolatey/</link>
+      <pubDate>Wed, 25 Jul 2018 18:28:14 +0200</pubDate>
+      
+      <guid>https://cnovel.github.io/post/chocolatey/</guid>
+      <description>Dans l&amp;rsquo;univers Linux, un aspect extrêmement pratique réside dans l&amp;rsquo;utilisation de gestionnaires de paquets (package manager en anglais). Un gestionnaire de paquet est un utilitaire qui va s&amp;rsquo;occuper de l&amp;rsquo;installation et de la mise à jour de vos programmes, sans que vous ayez à vous souciez des détails (où installer, quelles options, etc.). Par exemple, l&amp;rsquo;AppStore sous iOS ou le Play Store sous Android peuvent être considérés comme des gestionnaires de paquets.</description>
+    </item>
     
     <item>
       <title>Réduire le poids des images</title>

@@ -4,10 +4,10 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Premier billet pour ce tout nouveau blog">
+  <meta name="description" content="Un gestionnaire de paquets pour Windows qui facilite la vie">
   <meta name="generator" content="Hugo 0.45" />
 
-  <title>Premier billet &middot; Chez Cyril</title>
+  <title>Chocolatey &middot; Chez Cyril</title>
 
   
   
@@ -222,8 +222,8 @@
 
 
 <div class="header">
-  <h1>Premier billet</h1>
-  <h2>Premier billet pour ce tout nouveau blog</h2>
+  <h1>Chocolatey</h1>
+  <h2>Un gestionnaire de paquets pour Windows qui facilite la vie</h2>
 </div>
 <div class="content">
 
@@ -231,7 +231,7 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>18 March 2018 @ 15:41</time>
+    <time>25 July 2018 @ 18:28</time>
   </div>
 
   
@@ -244,7 +244,7 @@
   <div>
     <i class="fa fa-tags fa-fw"></i>
     
-      <a class="post-taxonomy-tag" href="https://cnovel.github.io/tags/blog">Blog</a>
+      <a class="post-taxonomy-tag" href="https://cnovel.github.io/tags/informatique">Informatique</a>
     
   </div>
   
@@ -254,33 +254,48 @@
 
   
 
-<h1 id="hello-world">Hello world!</h1>
+<p>Dans l&rsquo;univers Linux, un aspect extrêmement pratique réside dans l&rsquo;utilisation de gestionnaires de paquets (<em>package manager</em> en anglais). Un gestionnaire de paquet est un utilitaire qui va s&rsquo;occuper de l&rsquo;installation et de la mise à jour de vos programmes, sans que vous ayez à vous souciez des détails (où installer, quelles options, etc.). Par exemple, l&rsquo;AppStore sous iOS ou le Play Store sous Android peuvent être considérés comme des gestionnaires de paquets. Malheureusement sous Windows, ce système n&rsquo;existe pas. Pour installer des programmes, il faut encore lancer des .exe ou des .msi à la main.</p>
 
-<p>Depuis que CozyCloud v2 n&rsquo;est plus, j&rsquo;ai perdu mon blog sous Ghost. Il n&rsquo;a jamais vraiment été alimenté car l&rsquo;interface de Ghosht était un peu confuse, couplé à ll&rsquo;interface de Cozy il y avait de temps en temps des bugs. Bref tout cela fait que l&rsquo;ancien blog n&rsquo;existe plus.</p>
+<h2 id="chocolatey-votre-nouvel-ami">Chocolatey, votre nouvel ami</h2>
 
-<h1 id="habemus-blogam">Habemus blogam</h1>
+<p>C&rsquo;est là qu&rsquo;intervient <a href="https://chocolatey.org/">Chocolatey</a>. Ce dernier agit comme s&rsquo;il était un gestionnaire de paquets. En une ligne de commande, il va aller récupérer le .exe qui correspond au programme que vous souhaitez installer, et l&rsquo;installer de manière silencieuse sur votre machine. Par exemple, si je souhaite installer VLC, il suffit de rentrer la commande :</p>
 
-<p>Je me suis repenché sur la question d&rsquo;un blog, et en premier lieu comment l&rsquo;héberger. J&rsquo;ai toujours mon espace Free, mais je n&rsquo;ai pas envie de toucher au site principal qui est en ligne depuis avril 2005 (13 ans, cela ne nous rajeunit pas). Je me suis donc tourner vers le service <a href="https://pages.github.com/">Pages de GitHub</a>, qui permet un hébergement simple pour des sites statiques avec peu de traffic. Parfait, c&rsquo;est exactement ce que je veux faire.</p>
+<pre><code>choco install vlc
+</code></pre>
 
-<p>Pour propulser le blog, j&rsquo;ai opté pour <a href="https://www.gohugo.io">Hugo</a>, qui est un générateur de sites statiques. La mise en place est peut-être un peu compliqué pour installer les thèmes, mais une fois qu&rsquo;on a compris le fonctionnement, tout devient plutôt simple. Les billets sont écrits en <em>Markdown</em>, ce qui de mon point de vue est assez sympa.</p>
+<p>Et VLC va s&rsquo;installer tout seul. Actuellement, Chocolatey gère plus de 5500 paquets. Les logiciels les plus communs sont pris en charge.</p>
 
-<p>Le thème choisi est <em>Blackburn</em>, légèrement modifié pour mes besoins. J&rsquo;ai françisé deux ou trois chaînes de caractères et il faut encore que je modifie les liens sociaux sur les côtés pour qu&rsquo;ils ne prennent pas une ligne entière.</p>
+<p>L&rsquo;énorme avantage de Chocolatey est la mise à jour automatique des paquets installés. On oublie souvent de mettre à jour certains logiciels (comme Git, 7Zip) ou on ne souhaite pas le faire lorsque le programme nous le demande (Filezilla par exemple). Avec la simple commande</p>
 
-<h1 id="mais-de-quoi-va-t-on-parler">Mais de quoi va-t-on parler ?</h1>
+<pre><code>choco upgrade all
+</code></pre>
 
-<p>Et bien de pas mal de choses, que ce soit des découvertes musicales, de l&rsquo;informatique, de sport, etc. Je vais essayer d&rsquo;obtenir un rythme d&rsquo;au moins un billet par mois, mais on verra à l&rsquo;usage.</p>
+<p>Chocolatey va mettre à jour tous les paquets installés sur votre ordinateur.</p>
 
-<h1 id="no-comment">No comment</h1>
+<h2 id="comment-installer-chocolatey">Comment installer Chocolatey</h2>
 
-<p>Vous l&rsquo;aurez remarqué, il n&rsquo;y a pas de système de commentaires sur le site. J&rsquo;aurai pu brancher Disqus, mais c&rsquo;est assez lourd et pas forcément bien respectueux de la vie privée (c&rsquo;est livré avec une bonne floppée de trackers et de pubs dans sa version gratuite). Pour réagir, vous pouvez passer par <a href="https://twitter.com/CrlNvl">Twitter</a> ou <a href="https://mastodon.social/@Xerto">Mastodon</a>, j&rsquo;y posterai régulièrement des liens vers les billets de ce blog. Si vraiment le besoin s&rsquo;en fait sentir, je verrais pour activer Disqus.</p>
+<p><a href="https://chocolatey.org/install">C&rsquo;est très simple</a>, il suffit de lancer un terminal sous Windows et de rentrer la ligne suivante :</p>
+
+<pre><code>@&quot;%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe&quot; -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command &quot;iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))&quot; &amp;&amp; SET &quot;PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin&quot;
+</code></pre>
+
+<h2 id="et-si-je-suis-allergique-à-la-ligne-de-commande">Et si je suis allergique à la ligne de commande ?</h2>
+
+<p>Certains ont pensé à vous ! Il vous suffit d&rsquo;installer le paquet <a href="https://chocolatey.org/packages/ChocolateyGUI">Chocolatey GUI</a> pour installer et mettre à jour via une interface vos logiciels.</p>
 
 
   
 <div class="prev-next-post pure-g">
   <div class="pure-u-1-24" style="text-align: left;">
     
+    <a href="https://cnovel.github.io/post/velib/"><i class="fa fa-chevron-left"></i></a>
+    
   </div>
   <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://cnovel.github.io/post/velib/">Vélib&#39;2 : Après 5 mois, premier bilan</a>
+    </nav>
     
   </div>
   <div class="pure-u-2-24">
@@ -288,14 +303,8 @@
   </div>
   <div class="pure-u-10-24">
     
-    <nav class="next">
-      <a href="https://cnovel.github.io/post/opensourcefacile/">L&#39;Open source facile</a>
-    </nav>
-    
   </div>
   <div class="pure-u-1-24" style="text-align: right;">
-    
-    <a href="https://cnovel.github.io/post/opensourcefacile/"><i class="fa fa-chevron-right"></i></a>
     
   </div>
 </div>
