@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
     <copyright>CC BY-SA 4.0</copyright>
-    <lastBuildDate>Wed, 25 Jul 2018 18:28:14 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 31 Jul 2018 18:33:45 +0200</lastBuildDate>
     
 	<atom:link href="https://cnovel.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Adieu vélib&#39;, bonjour vélo !</title>
+      <link>https://cnovel.github.io/post/abicyclette/</link>
+      <pubDate>Tue, 31 Jul 2018 18:33:45 +0200</pubDate>
+      
+      <guid>https://cnovel.github.io/post/abicyclette/</guid>
+      <description>J&amp;rsquo;en parlais dans un prédécent billet, le service Vélib&amp;rsquo; était catastrophique à Paris. Mon abonnement s&amp;rsquo;est terminé fin juin, et j&amp;rsquo;ai décidé de ne pas le renouveler. Impossibilité de retirer des vélos, stations désertes, problèmes de facturations, tarifs en hausse et surtout service client incapable de faire quoi que ce soit, je n&amp;rsquo;avais clairement pas envie de continuer ce calvaire.
+J&amp;rsquo;ai pris un vélo rouge, ça va plus vite Pour autant, je n&amp;rsquo;avais pas envie d&amp;rsquo;abandonner le vélo.</description>
+    </item>
     
     <item>
       <title>Chocolatey</title>
