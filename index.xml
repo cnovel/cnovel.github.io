@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
     <copyright>CC BY-SA 4.0</copyright>
-    <lastBuildDate>Tue, 31 Jul 2018 18:33:45 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 05 Sep 2018 08:20:30 +0200</lastBuildDate>
     
 	<atom:link href="https://cnovel.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Fastmail, 7 mois plus tard</title>
+      <link>https://cnovel.github.io/post/fastmail/</link>
+      <pubDate>Wed, 05 Sep 2018 08:20:30 +0200</pubDate>
+      
+      <guid>https://cnovel.github.io/post/fastmail/</guid>
+      <description>Au début de l&amp;rsquo;année, j&amp;rsquo;ai décidé de quitter le giron de Google et de reprendre le contrôle de mes e-mails. Le but était de trouver un service pour remplacer GMail, Google Calendar et l&amp;rsquo;application Contacts de Google. Pour moi, ces trois services sont liés : les mails ont besoin d&amp;rsquo;un gestionnaire de contacts, et il faut pouvoir importer les événements reçus par e-mail facilement dans un calendrier. Et tant qu&amp;rsquo;à changer d&amp;rsquo;adresse e-mail, autant en prendre une avec un nom de domaine perso.</description>
+    </item>
     
     <item>
       <title>Adieu vélib&#39;, bonjour vélo !</title>
