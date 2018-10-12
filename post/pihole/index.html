@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Marche sur tous types d&#39;appareils !">
+  <meta name="generator" content="Hugo 0.49" />
+
+  <title>Pi-hole, le bloqueur de pubs via DNS &middot; Chez Cyril</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cnovel.github.io/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cnovel.github.io/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="https://cnovel.github.io/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+ 
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="https://cnovel.github.io/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="https://cnovel.github.io/"><img src="https://cnovel.github.io/img/avatar.jpg" alt="Avatar" class="pure-menu-avatar" /></a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://cnovel.github.io/"><i class='fa fa-home fa-fw'></i>Accueil</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://cnovel.github.io/post/"><i class='fa fa-list fa-fw'></i>Billets</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://cnovel.github.io/projets/"><i class='fa fa-cogs fa-fw'></i>Projets</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://cnovel.github.io/about/"><i class='fa fa-user fa-fw'></i>À propos</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/CrlNvl" target="_blank" title="Twitter"><i class="fa fa-twitter fa-fw"></i></a>
+    </li>
+    
+	
+	
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://mastodon.social/@Xerto" target="_blank" title="Mastodon"><img src="https://cnovel.github.io/img/masto.png" style="max-width: 15px;" /></a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/cyrilnovel" target="_blank" title="LinkedIn"><i class="fa fa-linkedin fa-fw"></i></a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/cnovel" target="_blank" title="GitHub"><i class="fa fa-github fa-fw"></i></a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+	
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://fr.wikipedia.org/wiki/Utilisateur:CrlNvl" target="_blank" title="Wikipédia"><i class="fa fa-wikipedia-w fa-fw"></i></a>
+    </li>
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>CC BY-SA 4.0</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Pi-hole, le bloqueur de pubs via DNS</h1>
+  <h2>Marche sur tous types d&#39;appareils !</h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>12 October 2018 @ 08:23</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://cnovel.github.io/tags/informatique">Informatique</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  
+
+<h2 id="la-publicité-sur-internet">La publicité sur Internet</h2>
+
+<p>Je ne vais pas en écrire des pavés, mais il y a plein de raisons pour bloquer la publicité sur Internet. D&rsquo;une part parce que les sites n&rsquo;ont aucune idée de ce qui s&rsquo;affiche sur leurs pages et on dénombre <a href="https://motherboard.vice.com/en_us/article/gv5xxx/malvertising-hits-the-daily-mail-one-of-the-biggest-news-sites-on-the-web">pas</a> <a href="https://motherboard.vice.com/en_us/article/bmv8gw/an-anti-adblock-service-was-hacked-and-infected-some-users-with-malware">mal</a> de <a href="https://en.wikipedia.org/wiki/Malvertising#History">cas</a> de <a href="https://www.avg.com/en/signal/what-is-malvertising">malvertising</a>. D&rsquo;autre part, les publicités sont extrêmement lourdes et grignotent votre bande passante et votre forfait. Enfin, tout ce beau monde vous traque avec cookies et autres, alors qu&rsquo;on a rien demandé. Comment faire pour éviter tout ça ?</p>
+
+<h2 id="pi-hole-bloqueur-de-domaines">Pi-hole, bloqueur de domaines</h2>
+
+<p><center><img src="https://cnovel.github.io/img/post/Pihole/Logo_Pihole.png" alt="Logo Pihole" /></center></p>
+
+<p>C&rsquo;est là qu&rsquo;intervient Pi-hole. Pi-hole est un résolveur DNS qui va bloquer certains domaines. De manière général, un résolveur DNS fonctionne de la manière suivante : quand on demande à accéder à <a href="www.duckduckgo.com">www.duckduckgo.com</a>, le résolveur va faire correspondre cette entrée texte à une adresse IP (176.34.155.23 en l’occurrence). Pi-hole va faire la même chose, sauf qu&rsquo;il va bloquer tous les domaines publicitaires. Ainsi, lorsque l&rsquo;on cherche à accéder à api.vungle.com (service de publicités vidéos), et bien Pi-hole répond que le site web est introuvable.</p>
+
+<p>De nombreuses extensions existent pour bloquer la pub sur votre navigateur (<a href="https://addons.mozilla.org/en-US/firefox/addon/adguard-adblocker/">AdGuard</a> par exemple). Cependant cela ne bloque la pub que sur le navigateur, et le bloqueur peut être détecté. D&rsquo;autre part, l&rsquo;add-on doit avoir accès à l&rsquo;intégralité de la page, ce qui n&rsquo;est jamais totalement rassurant. Pi-hole a l&rsquo;avantage de pouvoir bloquer la publicité sur toutes les applications et sur le réseau complet, et d&rsquo;être open-source.</p>
+
+<h2 id="installation">Installation</h2>
+
+<p>Pour utiliser Pi-hole chez vous, il vous faut un petit ordinateur - de préférence un Raspberry Pi, avec une carte SD d&rsquo;au moins 8Go - pour faire tourner le service Pi-hole. J&rsquo;ai utilisé mon Raspberry Pi B de première génération, qui prenait un peu la poussière. Ci-après, une installation pas-à-pas est décrite avec un Raspberry Pi et une Freebox.</p>
+
+<h3 id="étape-1-installation-de-raspbian">Étape 1 : Installation de Raspbian</h3>
+
+<p>Commencez par télécharger le système d&rsquo;exploitation <a href="https://www.raspberrypi.org/downloads/raspbian/">Raspbian Strech</a>, ainsi que l&rsquo;utilitaire <a href="https://etcher.io/">Etcher</a>. Une fois téléchargés, insérez votre carte SD dans votre ordinateur et flashez votre carte SD à l&rsquo;aide d&rsquo;Etcher en choisissant comme fichier source le .zip de Raspbian.</p>
+
+<p>Une fois cette étape terminée, insérez la carte SD dans le Raspberry Pi et branchez ce dernier. Suivez simplement les dernières étapes d&rsquo;installation qui s&rsquo;affichent. Prévoyez un peu de temps pour que le système se mette à jour.</p>
+
+<h3 id="étape-2-installation-de-pi-hole">Étape 2 : Installation de Pi-hole</h3>
+
+<p>Une fois Raspbian prêt, il est temps d&rsquo;installer Pi-hole. Ouvrez un terminal, puis tapez la commande <code>curl -sSL https://install.pi-hole.net | bash</code>. L&rsquo;installation de Pi-hole va se lancer.</p>
+
+<p>Normalement, la seule partie où vous avez besoin de changer quelque chose est la partie <em>Choix DNS</em> :</p>
+
+<p><center><img src="https://cnovel.github.io/img/post/Pihole/choix_dns.png" alt="Écran de choix des DNS" /><br /><i>Écran de choix du DNS</i></center></p>
+
+<p>Personnellement j&rsquo;utilise Quad9 qui fonctionne bien.</p>
+
+<p>À la fin de l&rsquo;installation, n&rsquo;oubliez pas de noter l&rsquo;adresse IP de votre Raspberry Pi, ainsi que le mot de passe pour l&rsquo;interface web.</p>
+
+<p><center><img src="https://cnovel.github.io/img/post/Pihole/fin_install.png" alt="Écran de fin" /><br /><i>Écran de fin de l&rsquo;installation</i></center></p>
+
+<h3 id="étape-3-mise-à-jour-de-la-freebox">Étape 3 : Mise à jour de la Freebox</h3>
+
+<p>Désormais, il faut mettre à jour quelques options sur la Freebox. La première étape est de spécifier que le Raspberry Pi doit toujours avoir la même adresse IP. Si jamais votre Freebox redémarre, il faut être sûr que l&rsquo;adresse du Pi ne change pas. Pour cela, allez dans votre espace Freebox OS, puis Paramètres de la Freebox &gt; DHCP. Dans l&rsquo;onglet Baux actifs, trouvez votre Pi puis clic-droit &gt; Ajouter un bail statique. Désormais, votre Pi aura toujours la même adresse IP.</p>
+
+<p>Enfin, toujours dans cette fenêtre, dans l&rsquo;onglet Serveur DHCP, rentrez comme adresse Serveur DNS 1 l&rsquo;adresse IP de votre Pi, et ne mettez rien dans les autres (important, sinon Pi-hole ne fonctionne pas !).</p>
+
+<h3 id="étape-4-reboot-général">Étape 4 : Reboot général</h3>
+
+<p>Pour être sur que les changements s&rsquo;appliquent, redémarrez la box, le Raspberry Pi et vos appareils.</p>
+
+<h4 id="bonus-vérifier-sous-windows-que-le-dns-est-celui-de-pi-hole">Bonus : Vérifier sous Windows que le DNS est celui de Pi-hole</h4>
+
+<p>Si vous utilisez Windows, vous pouvez vérifier que le DNS utilisé est bien celui de Pi-hole en entrant la commande suivante : <code>ipconfig /all</code> et en vérifiant l&rsquo;adresse du DNS :</p>
+
+<p><center><img src="https://cnovel.github.io/img/post/Pihole/dns_check.png" alt="Vérification DNS" /><br /><i>Vérification DNS</i></center></p>
+
+<h3 id="étape-5-naviguez-sans-publicité">Étape 5 : Naviguez sans publicité</h3>
+
+<p>Si tout s&rsquo;est bien passé, vous pouvez désormais naviguez sans publicité dès que vous êtes connecté à votre réseau local.</p>
+
+<h2 id="bilan-après-quelques-semaines-d-utilisation">Bilan après quelques semaines d&rsquo;utilisation</h2>
+
+<p>Après deux semaines d&rsquo;utilisations, je suis plutôt content de Pi-hole. Aucun soucis à remonter au niveau du Raspberry Pi, pas de soucis au niveau des DNS, etc. Ça ne remplace cependant pas complètement un AdBlock&#x202F;: certaines publicités peuvent encore passer (notamment sur YouTube), si jamais ces publicités sont hébergés par un domaine valide (par exemple les publicités YT sont hébergées directement sur YT). Un des gros avantages de Pi-hole est qu&rsquo;il est indétectable par les sites que vous visitez. Ainsi, quand on me demande de désactiver mon AdBlock, je peux le faire sans soucis sachant que Pi-hole continue à tout bloquer. Enfin, ça fonctionne aussi pour mon téléphone lorsqu&rsquo;il est sur le WiFi de ma box. La prochaine étape est d&rsquo;avoir la fibre pour pouvoir router tout mon trafic à travers mon Pi-hole, où que je sois !</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://cnovel.github.io/post/fastmail/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://cnovel.github.io/post/fastmail/">Fastmail, 7 mois plus tard</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
+</div>
+
+
+
+  
+
+</div>
+
+</div>
+</div>
+<script src="https://cnovel.github.io/js/ui.js"></script>
+
+
+
+
+
+
+</body>
+</html>
+

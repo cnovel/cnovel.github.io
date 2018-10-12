@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
     <copyright>CC BY-SA 4.0</copyright>
-    <lastBuildDate>Wed, 05 Sep 2018 08:20:30 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 12 Oct 2018 08:23:32 +0200</lastBuildDate>
     
 	<atom:link href="https://cnovel.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Pi-hole, le bloqueur de pubs via DNS</title>
+      <link>https://cnovel.github.io/post/pihole/</link>
+      <pubDate>Fri, 12 Oct 2018 08:23:32 +0200</pubDate>
+      
+      <guid>https://cnovel.github.io/post/pihole/</guid>
+      <description>La publicité sur Internet Je ne vais pas en écrire des pavés, mais il y a plein de raisons pour bloquer la publicité sur Internet. D&amp;rsquo;une part parce que les sites n&amp;rsquo;ont aucune idée de ce qui s&amp;rsquo;affiche sur leurs pages et on dénombre pas mal de cas de malvertising. D&amp;rsquo;autre part, les publicités sont extrêmement lourdes et grignotent votre bande passante et votre forfait. Enfin, tout ce beau monde vous traque avec cookies et autres, alors qu&amp;rsquo;on a rien demandé.</description>
+    </item>
     
     <item>
       <title>Fastmail, 7 mois plus tard</title>
