@@ -9,7 +9,7 @@
     <copyright>CC BY-SA 4.0</copyright>
     <lastBuildDate>Tue, 16 Oct 2018 08:27:28 +0200</lastBuildDate>
     
-	<atom:link href="https://cnovel.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://cnovel.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,8 +18,12 @@
       <pubDate>Tue, 16 Oct 2018 08:27:28 +0200</pubDate>
       
       <guid>https://cnovel.github.io/post/pasdetiers/</guid>
-      <description>J&amp;rsquo;ai fini par modifier le thème que j&amp;rsquo;utilise (Blackburn) pour que ce dernier n&amp;rsquo;utilise plus de domaines tiers. Jusqu&amp;rsquo;à présent, des requêtes étaient lancées pour obtenir une police chez Google, du CSS chez Cloudflare, et différents scripts sur des CDN.
-Désormais, je suis passé à une police système (Helvetica ou Arial), et j&amp;rsquo;ai rapatrié dans le thème tout ce qui était scripts et css. Le temps de chargement n&amp;rsquo;en souffre pas et ça a l&amp;rsquo;avantage de ne déposer aucun cookie pour les visiteurs.</description>
+      <description>&lt;p&gt;J&amp;rsquo;ai fini par modifier le thème que j&amp;rsquo;utilise (&lt;a href=&#34;https://github.com/yoshiharuyamashita/blackburn&#34;&gt;Blackburn&lt;/a&gt;) pour que ce dernier n&amp;rsquo;utilise plus de domaines tiers. Jusqu&amp;rsquo;à présent, des requêtes étaient lancées pour obtenir une police chez Google, du CSS chez Cloudflare, et différents scripts sur des CDN.&lt;/p&gt;
+
+&lt;p&gt;Désormais, je suis passé à une police système (Helvetica ou Arial), et j&amp;rsquo;ai rapatrié dans le thème tout ce qui était scripts et css. Le temps de chargement n&amp;rsquo;en souffre pas et ça a l&amp;rsquo;avantage de ne déposer aucun cookie pour les visiteurs.&lt;/p&gt;
+
+&lt;p&gt;Il reste encore quelques modifications à apporter au thème, mais on s&amp;rsquo;approche doucement de ce que je voulais&amp;#x202F;!&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -28,7 +32,68 @@ Désormais, je suis passé à une police système (Helvetica ou Arial), et j&amp
       <pubDate>Fri, 12 Oct 2018 08:23:32 +0200</pubDate>
       
       <guid>https://cnovel.github.io/post/pihole/</guid>
-      <description>La publicité sur Internet Je ne vais pas en écrire des pavés, mais il y a plein de raisons pour bloquer la publicité sur Internet. D&amp;rsquo;une part parce que les sites n&amp;rsquo;ont aucune idée de ce qui s&amp;rsquo;affiche sur leurs pages et on dénombre pas mal de cas de malvertising. D&amp;rsquo;autre part, les publicités sont extrêmement lourdes et grignotent votre bande passante et votre forfait. Enfin, tout ce beau monde vous traque avec cookies et autres, alors qu&amp;rsquo;on a rien demandé.</description>
+      <description>
+
+&lt;h2 id=&#34;la-publicité-sur-internet&#34;&gt;La publicité sur Internet&lt;/h2&gt;
+
+&lt;p&gt;Je ne vais pas en écrire des pavés, mais il y a plein de raisons pour bloquer la publicité sur Internet. D&amp;rsquo;une part parce que les sites n&amp;rsquo;ont aucune idée de ce qui s&amp;rsquo;affiche sur leurs pages et on dénombre &lt;a href=&#34;https://motherboard.vice.com/en_us/article/gv5xxx/malvertising-hits-the-daily-mail-one-of-the-biggest-news-sites-on-the-web&#34;&gt;pas&lt;/a&gt; &lt;a href=&#34;https://motherboard.vice.com/en_us/article/bmv8gw/an-anti-adblock-service-was-hacked-and-infected-some-users-with-malware&#34;&gt;mal&lt;/a&gt; de &lt;a href=&#34;https://en.wikipedia.org/wiki/Malvertising#History&#34;&gt;cas&lt;/a&gt; de &lt;a href=&#34;https://www.avg.com/en/signal/what-is-malvertising&#34;&gt;malvertising&lt;/a&gt;. D&amp;rsquo;autre part, les publicités sont extrêmement lourdes et grignotent votre bande passante et votre forfait. Enfin, tout ce beau monde vous traque avec cookies et autres, alors qu&amp;rsquo;on a rien demandé. Comment faire pour éviter tout ça ?&lt;/p&gt;
+
+&lt;h2 id=&#34;pi-hole-bloqueur-de-domaines&#34;&gt;Pi-hole, bloqueur de domaines&lt;/h2&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img src=&#34;https://cnovel.github.io/img/post/Pihole/Logo_Pihole.png&#34; alt=&#34;Logo Pihole&#34; /&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;C&amp;rsquo;est là qu&amp;rsquo;intervient Pi-hole. Pi-hole est un résolveur DNS qui va bloquer certains domaines. De manière général, un résolveur DNS fonctionne de la manière suivante : quand on demande à accéder à &lt;a href=&#34;www.duckduckgo.com&#34;&gt;www.duckduckgo.com&lt;/a&gt;, le résolveur va faire correspondre cette entrée texte à une adresse IP (176.34.155.23 en l’occurrence). Pi-hole va faire la même chose, sauf qu&amp;rsquo;il va bloquer tous les domaines publicitaires. Ainsi, lorsque l&amp;rsquo;on cherche à accéder à api.vungle.com (service de publicités vidéos), et bien Pi-hole répond que le site web est introuvable.&lt;/p&gt;
+
+&lt;p&gt;De nombreuses extensions existent pour bloquer la pub sur votre navigateur (&lt;a href=&#34;https://addons.mozilla.org/en-US/firefox/addon/adguard-adblocker/&#34;&gt;AdGuard&lt;/a&gt; par exemple). Cependant cela ne bloque la pub que sur le navigateur, et le bloqueur peut être détecté. D&amp;rsquo;autre part, l&amp;rsquo;add-on doit avoir accès à l&amp;rsquo;intégralité de la page, ce qui n&amp;rsquo;est jamais totalement rassurant. Pi-hole a l&amp;rsquo;avantage de pouvoir bloquer la publicité sur toutes les applications et sur le réseau complet, et d&amp;rsquo;être open-source.&lt;/p&gt;
+
+&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
+
+&lt;p&gt;Pour utiliser Pi-hole chez vous, il vous faut un petit ordinateur - de préférence un Raspberry Pi, avec une carte SD d&amp;rsquo;au moins 8Go - pour faire tourner le service Pi-hole. J&amp;rsquo;ai utilisé mon Raspberry Pi B de première génération, qui prenait un peu la poussière. Ci-après, une installation pas-à-pas est décrite avec un Raspberry Pi et une Freebox.&lt;/p&gt;
+
+&lt;h3 id=&#34;étape-1-installation-de-raspbian&#34;&gt;Étape 1 : Installation de Raspbian&lt;/h3&gt;
+
+&lt;p&gt;Commencez par télécharger le système d&amp;rsquo;exploitation &lt;a href=&#34;https://www.raspberrypi.org/downloads/raspbian/&#34;&gt;Raspbian Strech&lt;/a&gt;, ainsi que l&amp;rsquo;utilitaire &lt;a href=&#34;https://etcher.io/&#34;&gt;Etcher&lt;/a&gt;. Une fois téléchargés, insérez votre carte SD dans votre ordinateur et flashez votre carte SD à l&amp;rsquo;aide d&amp;rsquo;Etcher en choisissant comme fichier source le .zip de Raspbian.&lt;/p&gt;
+
+&lt;p&gt;Une fois cette étape terminée, insérez la carte SD dans le Raspberry Pi et branchez ce dernier. Suivez simplement les dernières étapes d&amp;rsquo;installation qui s&amp;rsquo;affichent. Prévoyez un peu de temps pour que le système se mette à jour.&lt;/p&gt;
+
+&lt;h3 id=&#34;étape-2-installation-de-pi-hole&#34;&gt;Étape 2 : Installation de Pi-hole&lt;/h3&gt;
+
+&lt;p&gt;Une fois Raspbian prêt, il est temps d&amp;rsquo;installer Pi-hole. Ouvrez un terminal, puis tapez la commande &lt;code&gt;curl -sSL https://install.pi-hole.net | bash&lt;/code&gt;. L&amp;rsquo;installation de Pi-hole va se lancer.&lt;/p&gt;
+
+&lt;p&gt;Normalement, la seule partie où vous avez besoin de changer quelque chose est la partie &lt;em&gt;Choix DNS&lt;/em&gt; :&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img src=&#34;https://cnovel.github.io/img/post/Pihole/choix_dns.png&#34; alt=&#34;Écran de choix des DNS&#34; /&gt;&lt;br /&gt;&lt;i&gt;Écran de choix du DNS&lt;/i&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;Personnellement j&amp;rsquo;utilise Quad9 qui fonctionne bien.&lt;/p&gt;
+
+&lt;p&gt;À la fin de l&amp;rsquo;installation, n&amp;rsquo;oubliez pas de noter l&amp;rsquo;adresse IP de votre Raspberry Pi, ainsi que le mot de passe pour l&amp;rsquo;interface web.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img src=&#34;https://cnovel.github.io/img/post/Pihole/fin_install.png&#34; alt=&#34;Écran de fin&#34; /&gt;&lt;br /&gt;&lt;i&gt;Écran de fin de l&amp;rsquo;installation&lt;/i&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;étape-3-mise-à-jour-de-la-freebox&#34;&gt;Étape 3 : Mise à jour de la Freebox&lt;/h3&gt;
+
+&lt;p&gt;Désormais, il faut mettre à jour quelques options sur la Freebox. La première étape est de spécifier que le Raspberry Pi doit toujours avoir la même adresse IP. Si jamais votre Freebox redémarre, il faut être sûr que l&amp;rsquo;adresse du Pi ne change pas. Pour cela, allez dans votre espace Freebox OS, puis Paramètres de la Freebox &amp;gt; DHCP. Dans l&amp;rsquo;onglet Baux actifs, trouvez votre Pi puis clic-droit &amp;gt; Ajouter un bail statique. Désormais, votre Pi aura toujours la même adresse IP.&lt;/p&gt;
+
+&lt;p&gt;Enfin, toujours dans cette fenêtre, dans l&amp;rsquo;onglet Serveur DHCP, rentrez comme adresse Serveur DNS 1 l&amp;rsquo;adresse IP de votre Pi, et ne mettez rien dans les autres (important, sinon Pi-hole ne fonctionne pas !).&lt;/p&gt;
+
+&lt;h3 id=&#34;étape-4-reboot-général&#34;&gt;Étape 4 : Reboot général&lt;/h3&gt;
+
+&lt;p&gt;Pour être sur que les changements s&amp;rsquo;appliquent, redémarrez la box, le Raspberry Pi et vos appareils.&lt;/p&gt;
+
+&lt;h4 id=&#34;bonus-vérifier-sous-windows-que-le-dns-est-celui-de-pi-hole&#34;&gt;Bonus : Vérifier sous Windows que le DNS est celui de Pi-hole&lt;/h4&gt;
+
+&lt;p&gt;Si vous utilisez Windows, vous pouvez vérifier que le DNS utilisé est bien celui de Pi-hole en entrant la commande suivante : &lt;code&gt;ipconfig /all&lt;/code&gt; et en vérifiant l&amp;rsquo;adresse du DNS :&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img src=&#34;https://cnovel.github.io/img/post/Pihole/dns_check.png&#34; alt=&#34;Vérification DNS&#34; /&gt;&lt;br /&gt;&lt;i&gt;Vérification DNS&lt;/i&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;étape-5-naviguez-sans-publicité&#34;&gt;Étape 5 : Naviguez sans publicité&lt;/h3&gt;
+
+&lt;p&gt;Si tout s&amp;rsquo;est bien passé, vous pouvez désormais naviguez sans publicité dès que vous êtes connecté à votre réseau local.&lt;/p&gt;
+
+&lt;h2 id=&#34;bilan-après-quelques-semaines-d-utilisation&#34;&gt;Bilan après quelques semaines d&amp;rsquo;utilisation&lt;/h2&gt;
+
+&lt;p&gt;Après deux semaines d&amp;rsquo;utilisations, je suis plutôt content de Pi-hole. Aucun soucis à remonter au niveau du Raspberry Pi, pas de soucis au niveau des DNS, etc. Ça ne remplace cependant pas complètement un AdBlock&amp;#x202F;: certaines publicités peuvent encore passer (notamment sur YouTube), si jamais ces publicités sont hébergés par un domaine valide (par exemple les publicités YT sont hébergées directement sur YT). Un des gros avantages de Pi-hole est qu&amp;rsquo;il est indétectable par les sites que vous visitez. Ainsi, quand on me demande de désactiver mon AdBlock, je peux le faire sans soucis sachant que Pi-hole continue à tout bloquer. Enfin, ça fonctionne aussi pour mon téléphone lorsqu&amp;rsquo;il est sur le WiFi de ma box. La prochaine étape est d&amp;rsquo;avoir la fibre pour pouvoir router tout mon trafic à travers mon Pi-hole, où que je sois !&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -37,7 +102,36 @@ Désormais, je suis passé à une police système (Helvetica ou Arial), et j&amp
       <pubDate>Wed, 05 Sep 2018 08:20:30 +0200</pubDate>
       
       <guid>https://cnovel.github.io/post/fastmail/</guid>
-      <description>Au début de l&amp;rsquo;année, j&amp;rsquo;ai décidé de quitter le giron de Google et de reprendre le contrôle de mes e-mails. Le but était de trouver un service pour remplacer GMail, Google Calendar et l&amp;rsquo;application Contacts de Google. Pour moi, ces trois services sont liés : les mails ont besoin d&amp;rsquo;un gestionnaire de contacts, et il faut pouvoir importer les événements reçus par e-mail facilement dans un calendrier. Et tant qu&amp;rsquo;à changer d&amp;rsquo;adresse e-mail, autant en prendre une avec un nom de domaine perso.</description>
+      <description>
+
+&lt;p&gt;Au début de l&amp;rsquo;année, j&amp;rsquo;ai décidé de quitter le giron de Google et de reprendre le contrôle de mes e-mails. Le but était de trouver un service pour remplacer GMail, Google Calendar et l&amp;rsquo;application Contacts de Google. Pour moi, ces trois services sont liés : les mails ont besoin d&amp;rsquo;un gestionnaire de contacts, et il faut pouvoir importer les événements reçus par e-mail facilement dans un calendrier. Et tant qu&amp;rsquo;à changer d&amp;rsquo;adresse e-mail, autant en prendre une avec un nom de domaine perso.&lt;/p&gt;
+
+&lt;p&gt;Après un tour des services possibles (&lt;a href=&#34;https://mailfence.com/fr/&#34;&gt;Mailfence&lt;/a&gt;, &lt;a href=&#34;https://www.gandi.net/fr/domain/email?currency=USD&#34;&gt;Gandi Email&lt;/a&gt;), je me suis tourné vers &lt;a href=&#34;https://www.fastmail.com/&#34;&gt;Fastmail&lt;/a&gt;. D&amp;rsquo;une part parce qu&amp;rsquo;il remplit les critères nécessaires (Mail, Contact, Calendrier, et possibilité d&amp;rsquo;utiliser son nom de domaine). D&amp;rsquo;autre part parce que Cafeine en chante les louanges, et qu&amp;rsquo;il y a donc de grandes chances que le service soit de qualité.&lt;/p&gt;
+
+&lt;h2 id=&#34;mise-en-place&#34;&gt;Mise en place&lt;/h2&gt;
+
+&lt;p&gt;J&amp;rsquo;ai opté pour l&amp;rsquo;offre à 50$ par an (~45€) qui donne droit à 25Go d&amp;rsquo;espace et la possibilité d&amp;rsquo;utiliser son propre nom de domaine.&lt;/p&gt;
+
+&lt;p&gt;Sachant que je ne comptais pas fermer mon compte Google (il reste utile pour quelques services, plus j&amp;rsquo;utilise encore Google Drive), je n&amp;rsquo;ai pas transférer mes mails de mon ancienne adresse. Le nom de domaine a été acheté avec Gandi, et la mise en place sur Fastmail a été simple et rapide grâce à leur documentation claire.&lt;/p&gt;
+
+&lt;p&gt;J&amp;rsquo;ai par contre transféré Contacts et Calendriers vers mon compte Fastmail. Pour cela, j&amp;rsquo;ai téléchargé les données via le service Google Takeout, puis je les ai réimportées via Fastmail. Attention, si vous avez un calendrier qui remonte à loin, l&amp;rsquo;import peut prendre pas mal de temps. À savoir aussi, Fastmail synchronise bien les photos de vos contacts mais ne les montre pas sur son interface web.&lt;/p&gt;
+
+&lt;p&gt;Enfin, il fallait aussi pouvoir accéder à tout ce beau monde sur mon téléphone Android. L&amp;rsquo;application Fastmail est en fait un wrapper web de leur site. Si ça suffit amplement pour lire ou écrire des mails, c&amp;rsquo;est un peu moins sympa pour accéder aux contacts ou au calendrier, et la synchronisation ne se fait pas avec le téléphone. Pas d&amp;rsquo;inquiétude cependant, Fastmail permet une synchronisation CardDav et CalDav facilement. Il suffit de générer un accès via l&amp;rsquo;onglet &amp;ldquo;Mot de passe et sécurité&amp;rdquo; dans les réglages. Pour synchroniser sur le téléphone, j&amp;rsquo;ai choisi l&amp;rsquo;application &lt;a href=&#34;https://f-droid.org/packages/at.bitfire.davdroid/&#34;&gt;DAVdroid&lt;/a&gt; qui est open-source et fonctionne très bien.&lt;/p&gt;
+
+&lt;h2 id=&#34;utilisation-depuis-7-mois&#34;&gt;Utilisation depuis 7 mois&lt;/h2&gt;
+
+&lt;p&gt;Depuis 7 mois, mon adresse gérée par Fastmail est mon adresse principale. L&amp;rsquo;avantage d&amp;rsquo;utiliser son propre nom de domaine est qu&amp;rsquo;il est possible d&amp;rsquo;avoir une multitude d&amp;rsquo;alias, ce que j&amp;rsquo;utilise allègrement à chaque fois que je m&amp;rsquo;inscris sur un service web. Quelques newsletters arrivent encore sur mon ancienne adrresse GMail, mais je ne la regarde qu&amp;rsquo;occasionnellement.&lt;/p&gt;
+
+&lt;p&gt;L&amp;rsquo;ergonomie de la partie e-mail est assez classique. J&amp;rsquo;apprécie l&amp;rsquo;affichage assez compact et sans fioriture de la page d&amp;rsquo;accueil. J&amp;rsquo;ai même l&amp;rsquo;impression que la navigation est plus rapide que sur GMail. La partie calendrier est très chouette, et m&amp;rsquo;a réconciliée avec l&amp;rsquo;affiche en vue Mois. Cela grâce à la bonne idée de mettre en accès rapide en bas de la page tous les mois de l&amp;rsquo;année en cours.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img src=&#34;https://cnovel.github.io/img/post/fastmail/bottomCalendar.png&#34; alt=&#34;Accès rapide pour l&#39;année en cours&#34; /&gt;&lt;br /&gt;&lt;i&gt;Accès rapide pour l&amp;rsquo;année en cours&lt;/i&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;La partie Contacts fonctionne bien, je suis un peu déçu que les photos des contacts ne soient pas affichées mais ce n&amp;rsquo;est pas dramatique.&lt;/p&gt;
+
+&lt;p&gt;À noter aussi que Fastmail propose un espace de notes et un espace de stockage des fichiers. Toutefois leurs fonctionnalités sont limitées (pas de synchro possible à ma connaissance), et me servent donc juste d&amp;rsquo;appoint.&lt;/p&gt;
+
+&lt;p&gt;Dans l&amp;rsquo;ensemble je suis ravi de Fastmail, et je pense bien continuer à l&amp;rsquo;utiliser autant que possible. Si jamais vous voulez tenter l&amp;rsquo;aventure et changer d&amp;rsquo;e-mail pour Fastmail, vous pouvez avoir 10% de réduction sur votre première facture en &lt;a href=&#34;https://www.fastmail.com/?STKI=18728360&#34;&gt;suivant ce lien&lt;/a&gt;.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -46,8 +140,26 @@ Désormais, je suis passé à une police système (Helvetica ou Arial), et j&amp
       <pubDate>Tue, 31 Jul 2018 18:33:45 +0200</pubDate>
       
       <guid>https://cnovel.github.io/post/abicyclette/</guid>
-      <description>J&amp;rsquo;en parlais dans un prédécent billet, le service Vélib&amp;rsquo; était catastrophique à Paris. Mon abonnement s&amp;rsquo;est terminé fin juin, et j&amp;rsquo;ai décidé de ne pas le renouveler. Impossibilité de retirer des vélos, stations désertes, problèmes de facturations, tarifs en hausse et surtout service client incapable de faire quoi que ce soit, je n&amp;rsquo;avais clairement pas envie de continuer ce calvaire.
-J&amp;rsquo;ai pris un vélo rouge, ça va plus vite Pour autant, je n&amp;rsquo;avais pas envie d&amp;rsquo;abandonner le vélo.</description>
+      <description>
+
+&lt;p&gt;J&amp;rsquo;en parlais &lt;a href=&#34;https://cnovel.github.io/post/velib&#34;&gt;dans un prédécent billet&lt;/a&gt;, le service Vélib&amp;rsquo; était catastrophique à Paris. Mon abonnement s&amp;rsquo;est terminé fin juin, et j&amp;rsquo;ai décidé de ne pas le renouveler. Impossibilité de retirer des vélos, stations désertes, problèmes de facturations, tarifs en hausse et surtout service client incapable de faire quoi que ce soit, je n&amp;rsquo;avais clairement pas envie de continuer ce calvaire.&lt;/p&gt;
+
+&lt;h2 id=&#34;j-ai-pris-un-vélo-rouge-ça-va-plus-vite&#34;&gt;J&amp;rsquo;ai pris un vélo rouge, ça va plus vite&lt;/h2&gt;
+
+&lt;p&gt;Pour autant, je n&amp;rsquo;avais pas envie d&amp;rsquo;abandonner le vélo. Mon trajet maison/travail est plus agréable à vélo qu&amp;rsquo;à métro (la ligne 5  est  souvent bondée), et ça permet de faire un peu de sport (6 km par jour).&lt;/p&gt;
+
+&lt;p&gt;Si mon travail dispose bien d&amp;rsquo;un local à vélo, ce n&amp;rsquo;est pas le cas de mon immeuble. Je me suis donc tourné vers un modèle pliant, pour pouvoir le ranger chez moi. Et ne sachant pas vraiment quoi prendre, je suis aller au plus simple et j&amp;rsquo;ai pris une référence chez Décathlon.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img src=&#34;https://cnovel.github.io/img/post/ABicyclette/tilt120.jpg&#34; alt=&#34;Tilt 120 rouge&#34; /&gt;&lt;br /&gt;&lt;i&gt;Tilt 120 rouge&lt;/i&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;Le Tilt 120 est abordable (le modèle rouge est encore en &lt;a href=&#34;https://www.decathlon.fr/velo-pliant-tilt-120-rouge-id_8378488.html&#34;&gt;promo à 200€&lt;/a&gt;) et possède un plateau de vitesse. J&amp;rsquo;ai pris en accessoire un casque de vélo et &lt;a href=&#34;https://www.decathlon.fr/antivol-pliant-bordo-abus-id_8130253.html&#34;&gt;un antivol type pliable&lt;/a&gt; qui a l&amp;rsquo;avantage de pouvoir se ranger sur le vélo facilement lorsqu&amp;rsquo;on roule.&lt;/p&gt;
+
+&lt;p&gt;Après un mois à vélo, je suis satisfait. Je n&amp;rsquo;ai plus à vérifier si des Vélibs sont disponibles en bas de chez moi, du coup mon trajet est plus court et plus serein. J&amp;rsquo;ai de la chance de bénéficier d&amp;rsquo;une piste cyclable protégée sur la majorité de mon parcours. Le seul bémol est de devoir remonter chaque soir mon vélo, mais on va dire que ça fait les bras en plus des jambes. Niveau pliage, pas de soucis après un mois, si ce n&amp;rsquo;est que la peinture rouge s&amp;rsquo;abîme à certains endroits très localisés. Et les autocollants ont souffert un peu aussi, mais là encore c&amp;rsquo;est un détail. Il faut voir sur la longueur, il y aura sûrement des frais d&amp;rsquo;entretien au cours de l&amp;rsquo;année.&lt;/p&gt;
+
+&lt;h2 id=&#34;pensez-à-l-ikv&#34;&gt;Pensez à l&amp;rsquo;IKV !&lt;/h2&gt;
+
+&lt;p&gt;L&amp;rsquo;IKV, ou &lt;a href=&#34;https://www.service-public.fr/professionnels-entreprises/vosdroits/F33808&#34;&gt;Indemnité Kilométrique Vélo&lt;/a&gt;, est une indemnité que vous pouvez toucher si vous vous rendez avec votre vélo personnel sur votre lieu de travail. Le montant s&amp;rsquo;élève à 0,25€ du kilomètre, et cette indemnité est exonérée de cotisations sociales jusqu&amp;rsquo;à 200€, autant pour l&amp;rsquo;employeur que pour l&amp;rsquo;employé. Il est donc relativement facile de la mettre en place dans une entreprise. À savoir que l&amp;rsquo;IKV peut être cumulée avec un abonnement de transport en commun si vous faites à vélo un trajet de rabattement vers des transports en commun (train, métro, bus).&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -56,7 +168,37 @@ J&amp;rsquo;ai pris un vélo rouge, ça va plus vite Pour autant, je n&amp;rsquo
       <pubDate>Wed, 25 Jul 2018 18:28:14 +0200</pubDate>
       
       <guid>https://cnovel.github.io/post/chocolatey/</guid>
-      <description>Dans l&amp;rsquo;univers Linux, un aspect extrêmement pratique réside dans l&amp;rsquo;utilisation de gestionnaires de paquets (package manager en anglais). Un gestionnaire de paquet est un utilitaire qui va s&amp;rsquo;occuper de l&amp;rsquo;installation et de la mise à jour de vos programmes, sans que vous ayez à vous souciez des détails (où installer, quelles options, etc.). Par exemple, l&amp;rsquo;AppStore sous iOS ou le Play Store sous Android peuvent être considérés comme des gestionnaires de paquets.</description>
+      <description>
+
+&lt;p&gt;Dans l&amp;rsquo;univers Linux, un aspect extrêmement pratique réside dans l&amp;rsquo;utilisation de gestionnaires de paquets (&lt;em&gt;package manager&lt;/em&gt; en anglais). Un gestionnaire de paquet est un utilitaire qui va s&amp;rsquo;occuper de l&amp;rsquo;installation et de la mise à jour de vos programmes, sans que vous ayez à vous souciez des détails (où installer, quelles options, etc.). Par exemple, l&amp;rsquo;AppStore sous iOS ou le Play Store sous Android peuvent être considérés comme des gestionnaires de paquets. Malheureusement sous Windows, ce système n&amp;rsquo;existe pas. Pour installer des programmes, il faut encore lancer des .exe ou des .msi à la main.&lt;/p&gt;
+
+&lt;h2 id=&#34;chocolatey-votre-nouvel-ami&#34;&gt;Chocolatey, votre nouvel ami&lt;/h2&gt;
+
+&lt;p&gt;C&amp;rsquo;est là qu&amp;rsquo;intervient &lt;a href=&#34;https://chocolatey.org/&#34;&gt;Chocolatey&lt;/a&gt;. Ce dernier agit comme s&amp;rsquo;il était un gestionnaire de paquets. En une ligne de commande, il va aller récupérer le .exe qui correspond au programme que vous souhaitez installer, et l&amp;rsquo;installer de manière silencieuse sur votre machine. Par exemple, si je souhaite installer VLC, il suffit de rentrer la commande :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;choco install vlc
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Et VLC va s&amp;rsquo;installer tout seul. Actuellement, Chocolatey gère plus de 5500 paquets. Les logiciels les plus communs sont pris en charge.&lt;/p&gt;
+
+&lt;p&gt;L&amp;rsquo;énorme avantage de Chocolatey est la mise à jour automatique des paquets installés. On oublie souvent de mettre à jour certains logiciels (comme Git, 7Zip) ou on ne souhaite pas le faire lorsque le programme nous le demande (Filezilla par exemple). Avec la simple commande&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;choco upgrade all
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Chocolatey va mettre à jour tous les paquets installés sur votre ordinateur.&lt;/p&gt;
+
+&lt;h2 id=&#34;comment-installer-chocolatey&#34;&gt;Comment installer Chocolatey&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://chocolatey.org/install&#34;&gt;C&amp;rsquo;est très simple&lt;/a&gt;, il suffit de lancer un terminal sous Windows et de rentrer la ligne suivante :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;@&amp;quot;%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe&amp;quot; -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command &amp;quot;iex ((New-Object System.Net.WebClient).DownloadString(&#39;https://chocolatey.org/install.ps1&#39;))&amp;quot; &amp;amp;&amp;amp; SET &amp;quot;PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;et-si-je-suis-allergique-à-la-ligne-de-commande&#34;&gt;Et si je suis allergique à la ligne de commande ?&lt;/h2&gt;
+
+&lt;p&gt;Certains ont pensé à vous ! Il vous suffit d&amp;rsquo;installer le paquet &lt;a href=&#34;https://chocolatey.org/packages/ChocolateyGUI&#34;&gt;Chocolatey GUI&lt;/a&gt; pour installer et mettre à jour via une interface vos logiciels.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -65,7 +207,26 @@ J&amp;rsquo;ai pris un vélo rouge, ça va plus vite Pour autant, je n&amp;rsquo
       <pubDate>Sun, 03 Jun 2018 08:55:31 +0200</pubDate>
       
       <guid>https://cnovel.github.io/post/velib/</guid>
-      <description>Vélib&amp;rsquo; est un service que j&amp;rsquo;utilisais au quotidien. Ayant la chance d&amp;rsquo;habiter non loin de mon lieu de travail, le vélo est le moyen de transport idéal pour m&amp;rsquo;y rendre. Et Vélib&amp;rsquo; proposait un maillage assez dense à Paris pour que je puisse avoir accès à plusieurs stations non loin de mon appartement (2) ou de mon travail (2 aussi). Chaque jour j&amp;rsquo;effectuais ainsi 2 trajets, presque sans aucun soucis. Le pire qui puisse arriver était une station non raccordée au réseau GSM qui empêchait la prise d&amp;rsquo;un vélo, ce qui arrivait rarement.</description>
+      <description>&lt;p&gt;Vélib&amp;rsquo; est un service que j&amp;rsquo;utilisais au quotidien. Ayant la chance d&amp;rsquo;habiter non loin de mon lieu de travail, le vélo est le moyen de transport idéal pour m&amp;rsquo;y rendre. Et Vélib&amp;rsquo; proposait un maillage assez dense à Paris pour que je puisse avoir accès à plusieurs stations non loin de mon appartement (2) ou de mon travail (2 aussi). Chaque jour j&amp;rsquo;effectuais ainsi 2 trajets, presque sans aucun soucis. Le pire qui puisse arriver était une station non raccordée au réseau GSM qui empêchait la prise d&amp;rsquo;un vélo, ce qui arrivait rarement.&lt;/p&gt;
+
+&lt;p&gt;En avril 2017, la ville de Paris a décidé d&amp;rsquo;accorder le marché Vélib&amp;rsquo; à &lt;em&gt;Smovengo&lt;/em&gt;, un opérateur franco-espagnol, le retirant de fait à &lt;em&gt;JC Decaux&lt;/em&gt; qui gérer le marché depuis 2007. La transition est à l&amp;rsquo;origine prévue sur 6 mois, d&amp;rsquo;octobre 2017 à mars 2018, avec comme but 1400 stations Vélib&amp;rsquo; opérationnelles fin mars 2018.&lt;/p&gt;
+
+&lt;p&gt;La transition s&amp;rsquo;est extrêmement mal passée, puisqu&amp;rsquo;à l&amp;rsquo;heure actuelle on ne compte que &lt;a href=&#34;http://www.ousontlesvelib.ovh/&#34;&gt;725 stations ouvertes&lt;/a&gt;, dont seulement 333 raccordées au réseau, les autres fonctionnant sur batterie. On est donc à peine à la moitié de l&amp;rsquo;objectif fixé pour fin mars, c&amp;rsquo;est à dire il y a deux mois. On rappellera l&amp;rsquo;ouverture catastrophique du nouveau Vélib&amp;rsquo; au 1er janvier 2018, où seulement &lt;a href=&#34;https://www.lemonde.fr/planete/article/2018/01/11/faux-depart-pour-le-nouveau-velib-en-ile-de-france_5240132_3244.html&#34;&gt;64 stations étaient ouvertes&lt;/a&gt; (sur les 600, plus tard ramenées à 300, stations prévues).&lt;/p&gt;
+
+&lt;p&gt;Au bout de 5 mois de nouveau Vélib&amp;rsquo;, je fais un bilan personnel très sombre du service. Je compte &lt;strong&gt;seulement&lt;/strong&gt; &lt;strong&gt;10 trajets&lt;/strong&gt; réussis sur la période 1er janvier - 31 mai. Je compte au moins &lt;strong&gt;6 prises&lt;/strong&gt; de vélos inconclusives, c&amp;rsquo;est à dire que le vélo n&amp;rsquo;a pas réussi à se décrocher. C&amp;rsquo;est sans compter les multiples fois où il est impossible de prendre un vélo pour de multiples raisons (VBox déchargée, station sans accès réseau, etc.). Sur mon premier trajet, j&amp;rsquo;ai tenté l&amp;rsquo;aventure &lt;em&gt;Park+&lt;/em&gt;. Pour rappel, &lt;em&gt;Park+&lt;/em&gt; est un système permettant de rendre son Vélib&amp;rsquo; en l&amp;rsquo;accrochant à un autre Vélib&amp;rsquo; si une station est pleine. Grand mal m&amp;rsquo;en a pris puisque le système fonctionne très mal (Smoovengo insiste sur le fait que c&amp;rsquo;est un manque de pédagogie, mais j&amp;rsquo;ai strictement suivi ce que m&amp;rsquo;indiquait leur vidéo et leur opératrice) et en a résulté un hors forfait de 23€ (heureusement non facturé) et le retrait de toutes mes minutes bonus. Minute bonus qui n&amp;rsquo;ont toujours pas été recréditées, malgré mes relances au service client, si bien que je m&amp;rsquo;en suis remis au médiateur CNPA pour régler cette question.&lt;/p&gt;
+
+&lt;p&gt;Et c&amp;rsquo;est l&amp;rsquo;un des autres problèmes de Smoovengo : le service client est déplorable. Là où JC Decaux était particulièrement efficace (divers contacts via téléphone, mail ou Twitter, tous bien gérés), le service Smoovengo est une farce : aucune réponse aux usagers sur Twitter pendant une longue période (et même aujourd&amp;rsquo;hui ce n&amp;rsquo;est pas glorieux), pas de réponses aux mails envoyés au service client, etc.&lt;/p&gt;
+
+&lt;p&gt;L&amp;rsquo;installation des stations est longue, bien plus longue que prévue et Smoovengo n&amp;rsquo;est pas capable de tenir le rythme annoncé, à savoir &lt;a href=&#34;https://www.bfmtv.com/societe/compteur-velib-suivez-l-evolution-de-l-ouverture-des-stations-1347880.html&#34;&gt;80 stations par semaine&lt;/a&gt;. Ce rythme n&amp;rsquo;a jamais été atteint, le record étant de 65 stations en une semaine, mais il est à parier qu&amp;rsquo;une bonne partie était sur batterie à ce moment là. Le rythme depuis le début de l&amp;rsquo;année est plutôt de l&amp;rsquo;ordre de 33 stations par semaine.&lt;/p&gt;
+
+&lt;p&gt;L&amp;rsquo;expérience utilisateur du nouveau Vélib&amp;rsquo; est aussi une catastrophe. Le système précédent était efficacement simple : la borne d&amp;rsquo;un Vélib&amp;rsquo; est verte si on peut y décrocher ou accrocher un vélo, rouge sinon. Ça permettait au premier coup d&amp;rsquo;œil de trier les vélos. Pour décrocher un vélo, il suffit de passer sa carte sur la borne, et c&amp;rsquo;est tout. Pour rendre un vélo, il suffit que le glisser dans la borne, la lumière passe à l&amp;rsquo;orange puis au vert si tout s&amp;rsquo;est bien passé. Avec à chaque fois un bruit signalement que l&amp;rsquo;action s&amp;rsquo;est bien déroulée. Le nouveau système est bien moins intuitif. Exit les loupiotes qui permettent de savoir si on peut retirer un vélo. Désormais, il faut valider sur la VBox pour &amp;ldquo;réveiller&amp;rdquo; le Vélib&amp;rsquo;, puis passer son badge sur la VBox. Il faut deux actions pour retirer son Vélib&amp;rsquo; au lieu d&amp;rsquo;une auparavant, je ne comprends pas comment ça a pu être validé. Évidemment, impossible de savoir si un Vélib&amp;rsquo; est en état de marche avant de l&amp;rsquo;avoir réveiller. On se retrouve donc à réveiller plusieurs Vélib&amp;rsquo; jusqu&amp;rsquo;à en trouver un qui fonctionne. Le système d&amp;rsquo;attache est, contrairement à ce que Smoovengo déclarait, bien moins efficace que celui de la génération précédente. Je rencontre régulièrement des soucis pour rattacher mon vélo, et ce n&amp;rsquo;est pas rare de ne pas réussir à détacher un vélo. Je doute sincèrement que des touristes utilisent un jour le nouveau Vélib&amp;rsquo; tellement il est compliqué de l&amp;rsquo;utiliser. Les solutions &lt;em&gt;free-floating&lt;/em&gt; comme Mobike vont facilement récupérer ce marché.&lt;/p&gt;
+
+&lt;p&gt;Il a été annoncé récemment que les &lt;a href=&#34;https://twitter.com/B_Lambert75/status/1002495042223837186&#34;&gt;abonnés seront remboursés de janvier à mai&lt;/a&gt;. C&amp;rsquo;est la moindre des choses quand on constate la qualité du service sur ces cinq derniers mois. C&amp;rsquo;est par contre scandaleux que les usagers doivent faire une démarche volontaire pour se faire rembourser. Smoovengo connaît les coordonnées bancaires de ses usagers, une demande n&amp;rsquo;a donc pas de sens.&lt;/p&gt;
+
+&lt;p&gt;Enfin, il est incroyable qu&amp;rsquo;aucun élu ou responsable de Smoovengo n&amp;rsquo;ait quitté son poste. On est face à un fiasco complet (délai non tenu, service ne fonctionnant pas, etc.) et personne ne semble en prendre la responsabilité. Smoovengo préfère jeter la pierre à JC Decaux, et &lt;a href=&#34;https://parisenselle.fr/2018/05/29/reunion-velib-associations-compte-rendu/&#34;&gt;n&amp;rsquo;admet qu&amp;rsquo;à demi-mot n&amp;rsquo;avoir pas testé sa solution avant de la déployer à Paris&lt;/a&gt;. La mairie de Paris essaye de se donner un beau rôle en mettant une pression sur Smoovengo pour que le service retrouve son niveau précédent, mais quand on se plante à ce point dans son appel d&amp;rsquo;offres, on pourrait aussi se remettre en question.&lt;/p&gt;
+
+&lt;p&gt;Mon abonnement arrive à expiration à la fin du mois de juin, et son renouvellement n&amp;rsquo;est pas une évidence. D&amp;rsquo;une part parce que les tarifs ont augmenté (drastiquement, puisque pour avoir l&amp;rsquo;équivalent de mon abonnement Vélib+, je vais devoir débourser 100€ au lieu de 29€), et d&amp;rsquo;autre part parce que la qualité du service est encore médiocre.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -74,8 +235,32 @@ J&amp;rsquo;ai pris un vélo rouge, ça va plus vite Pour autant, je n&amp;rsquo
       <pubDate>Tue, 17 Apr 2018 20:25:22 +0200</pubDate>
       
       <guid>https://cnovel.github.io/post/tinify/</guid>
-      <description>Même si on n&amp;rsquo;y fait plus très attention maintenant que l&amp;rsquo;on surfe avec la fibre et la 4G, la taille des pages web a son importance. En mode dégradé (Edge, 3G Free, etc.), c&amp;rsquo;est toujours agréable d&amp;rsquo;avoir une page qui se charge rapidement.
-TinyPNG, réduire ses images en ligne Une partie de la taille d&amp;rsquo;une page web est dûe aux différentes images présentes sur cette page. Différentes méthodes existent pour les alléger :</description>
+      <description>
+
+&lt;p&gt;Même si on n&amp;rsquo;y fait plus très attention maintenant que l&amp;rsquo;on surfe avec la fibre et la 4G, la taille des pages web a son importance. En mode dégradé (Edge, 3G Free, etc.), c&amp;rsquo;est toujours agréable d&amp;rsquo;avoir une page qui se charge rapidement.&lt;/p&gt;
+
+&lt;h2 id=&#34;tinypng-réduire-ses-images-en-ligne&#34;&gt;TinyPNG, réduire ses images en ligne&lt;/h2&gt;
+
+&lt;p&gt;Une partie de la taille d&amp;rsquo;une page web est dûe aux différentes images présentes sur cette page. Différentes méthodes existent pour les alléger :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Réduire leur taille&lt;/li&gt;
+&lt;li&gt;Augmenter le niveau de compression&lt;/li&gt;
+&lt;li&gt;Choisir le bon format (le BMP sera extrêmement lourd, alors que le PNG est parfait pour les dessins schématiques)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Mais on peut encore aller plus loin. La fine équipe &lt;a href=&#34;https://tinypng.com/&#34;&gt;TinyPNG&lt;/a&gt; a créé un script qui permet de compresser une image sans perte de qualité. En détail, un algorithme de quantisation des couleurs est utilisé pour gagner de la place.&lt;/p&gt;
+
+&lt;p&gt;Certaines images peuvent perdre plus de 70% de leur poids une fois passées à la moulinette TinyPNG, sans qu&amp;rsquo;une différence ne soit visible.&lt;/p&gt;
+
+&lt;h2 id=&#34;tinify-in-folder-le-script-python-pour-traiter-en-batch&#34;&gt;Tinify In Folder, le script python pour traiter en batch&lt;/h2&gt;
+
+&lt;p&gt;J&amp;rsquo;ai donc voulu appliquer ce script à toutes les images de ce site. Problème, les images sont dans pas mal de dossiers différents, et l&amp;rsquo;interface web n&amp;rsquo;est pas la plus pratique pour compresser beaucoup de fichiers. Que cela ne tienne, TinyPNG propose un package Python qui permet d&amp;rsquo;interfacer avec leur service.&lt;/p&gt;
+
+&lt;p&gt;J&amp;rsquo;ai donc écrit un petit script, &lt;a href=&#34;https://github.com/cnovel/TinifyInFolder&#34;&gt;Tinify In Folder&lt;/a&gt;, qui permet de compresser toutes les images trouvées dans un dossier. Le script est adapté à mon usage, donc une limite de 500 compressions par mois est hardcodée. Et j&amp;rsquo;ai ajouté une petite option qui permet de ne compresser que les images qui ont été créées ou modifiées dans les n derniers jours, afin de ne pas dépasser ce quota trop rapidement.&lt;/p&gt;
+
+&lt;p&gt;Une fois le script appliqué à l&amp;rsquo;ensemble de ce site web, la taille totale des images est passée d&amp;rsquo;environ 1.6Mo à 800ko, donc une baisse de 50% environ, ce qui n&amp;rsquo;est pas négligeable !&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -84,9 +269,40 @@ TinyPNG, réduire ses images en ligne Une partie de la taille d&amp;rsquo;une pa
       <pubDate>Mon, 02 Apr 2018 22:52:52 +0200</pubDate>
       
       <guid>https://cnovel.github.io/post/majusculesaccentu%C3%A9es/</guid>
-      <description>L&amp;rsquo;accentuation des majuscules est une pratique très peu répandue, mais pourtant fortement recommandée par l&amp;rsquo;Académie française.
-Les États-Unis en perdent leur accent sur LeMonde.fr !
-Une des raisons de ce manquement est la difficulté d&amp;rsquo;écrire ces majuscules avec nos claviers AZERTY classique. Si le à, le ù et d&amp;rsquo;autres sont facilement accessibles, ce n&amp;rsquo;est pas le cas pour les majuscules. La méthode à appliquer sous Windows est fastidieuse : il faut rentrer un code couplé à la touche Alt pour faire apparaître la majuscule accentuée.</description>
+      <description>&lt;p&gt;L&amp;rsquo;accentuation des majuscules est une pratique très peu répandue, mais pourtant fortement recommandée par l&amp;rsquo;&lt;a href=&#34;http://academie-francaise.fr/questions-de-langue#5_strong-em-accentuation-des-majuscules-em-strong&#34;&gt;Académie française&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img src=&#34;https://cnovel.github.io/img/post/Majuscules/TitreLeMonde.png&#34; alt=&#34;Titre sur LeMonde.fr&#34; /&gt;&lt;br /&gt;&lt;i&gt;Les États-Unis en perdent leur accent sur LeMonde.fr !&lt;/i&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;Une des raisons de ce manquement est la difficulté d&amp;rsquo;écrire ces majuscules avec nos claviers AZERTY classique. Si le &lt;em&gt;à&lt;/em&gt;, le &lt;em&gt;ù&lt;/em&gt; et d&amp;rsquo;autres sont facilement accessibles, ce n&amp;rsquo;est pas le cas pour les majuscules. La méthode à appliquer sous Windows est fastidieuse : il faut rentrer un code couplé à la touche &lt;code&gt;Alt&lt;/code&gt; pour faire apparaître la majuscule accentuée. Par exemple, &lt;code&gt;Alt + 144&lt;/code&gt; donne le caractère &lt;code&gt;É&lt;/code&gt;. Retenir ces codes pour chaque majuscule est évidemment fastidieux et peu pratique.&lt;/p&gt;
+
+&lt;p&gt;Il est possible d&amp;rsquo;installer un logiciel pour résoudre ce problème. &lt;a href=&#34;https://www.geekzone.fr/2016/10/14/wincompose-retrouver-acces-facile-aux-caracteres-speciaux-windows/&#34;&gt;GeekZone.fr&lt;/a&gt; propose &lt;a href=&#34;https://github.com/samhocevar/wincompose&#34;&gt;WinCompose&lt;/a&gt;, qui est très puissant et permet de configurer énormément de raccourcis clavier pour de nombreux caractères, ou même des séquences de caractères. Cependant, je trouve la solution trop lourde dans mon cas d&amp;rsquo;utilisation. Je souhaite simplement pouvoir écrire des majuscules accentuées !&lt;/p&gt;
+
+&lt;p&gt;La solution que je voulais adapter, c&amp;rsquo;est celle disponible sous Linux. Effectuer une majuscule accentuée est bien plus simple, puisqu&amp;rsquo;il suffit d&amp;rsquo;enclencher &lt;code&gt;Caps Lock&lt;/code&gt;  puis d&amp;rsquo;appuyer sur la touche &lt;code&gt;è&lt;/code&gt; par exemple, pour obtenir &lt;code&gt;È&lt;/code&gt;. Pas de raccourci compliqué, pas de gymnastique mentale. Pour obtenir ce résultat sous Windows, il faut passer par le &lt;a href=&#34;https://www.microsoft.com/en-us/download/details.aspx?id=22339&#34;&gt;Microsoft Keyboard Layout Creator&lt;/a&gt;. C&amp;rsquo;est un outil qui permet de créer sa propre disposition pour son clavier. Je donne la marche à suivre complète, mais vous pouvez directement sauter à &lt;a href=&#34;#installation&#34;&gt;la partie installation&lt;/a&gt; si vous ne souhaitez pas personnaliser la disposition que j&amp;rsquo;ai créée.&lt;/p&gt;
+
+&lt;p&gt;Une fois installé, lancez l&amp;rsquo;outil et chargez une disposition de clavier pré-existante via &lt;code&gt;File &amp;gt; Load Existing Keyboard...&lt;/code&gt;. J&amp;rsquo;ai choisi la disposition française classique pour ma part.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img src=&#34;https://cnovel.github.io/img/post/Majuscules/Layout1.png&#34; alt=&#34;Écran une fois le clavier chargé&#34; /&gt;&lt;br /&gt;&lt;i&gt;Clavier français chargé&lt;/i&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;Double-cliquez sur la lettre que vous souhaitez modifier, puis dans la fenêtre qui vient d&amp;rsquo;apparaître, cliquez sur &lt;code&gt;All...&lt;/code&gt;. Une nouvelle fenêtre s&amp;rsquo;ouvre, cochez en haut à gauche &lt;code&gt;Advanced View&lt;/code&gt;. Puis dans le champ &lt;code&gt;SGCAP+&amp;lt;Key&amp;gt;&lt;/code&gt;, rentrez la lettre majuscule accentuée.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img src=&#34;https://cnovel.github.io/img/post/Majuscules/Modify.png&#34; alt=&#34;Écran une fois le clavier chargé&#34; /&gt;&lt;br /&gt;&lt;i&gt;Écran de modification de la lettre, une fois complètement rempli&lt;/i&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;Validez en appuyant pour OK, puis faîtes de même pour chaque lettre. Si vous ne voulez pas vous embêter, vous pouvez directement récupérer &lt;a href=&#34;https://cnovel.github.io/various/LayoutCapsAccent.klc&#34;&gt;ici&lt;/a&gt; la disposition modifiée.&lt;/p&gt;
+
+&lt;p&gt;Une fois votre disposition finalisée, testez-la via &lt;code&gt;Project &amp;gt; Test Keyboard Layout...&lt;/code&gt; puis sauvez-la via &lt;code&gt;File &amp;gt; Save Source File As...&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Enfin dernière étape, il faut créer l&amp;rsquo;installeur de votre disposition. Pour cela, allez dans &lt;code&gt;Project &amp;gt; Build DLL and Setup Package&lt;/code&gt;. Il vous est demandé de rentrer quelques précisions comme le nom de la disposition. Puis un installeur est créé dans &lt;code&gt;Documents&lt;/code&gt;. &lt;a id=&#34;installation&#34;&gt;&lt;/a&gt;Vous pouvez trouver l&amp;rsquo;installeur zippé &lt;a href=&#34;https://cnovel.github.io/various/InstallerLayoutCapsAccent.zip&#34;&gt;ici&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Exécutez &lt;code&gt;setup.exe&lt;/code&gt;, puis allez dans les paramètres Windows,  section Heure et langue. Sur le panneau de gauche, choisissez Région et langue.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img src=&#34;https://cnovel.github.io/img/post/Majuscules/Params1.png&#34; alt=&#34;Écran des paramètres&#34; /&gt;&lt;br /&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;Ensuite, cliquez sur Français, et descendez à la section Clavier. Si votre disposition n&amp;rsquo;apparaît pas encore, ajoutez-là via le bouton idoine.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img src=&#34;https://cnovel.github.io/img/post/Majuscules/Params2.png&#34; alt=&#34;Écran des paramètres&#34; /&gt;&lt;br /&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;C&amp;rsquo;est tout bon, à un redémarrage près du système. À vous les ÀÉÈÙÇ faciles !&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -95,11 +311,45 @@ Une des raisons de ce manquement est la difficulté d&amp;rsquo;écrire ces maju
       <pubDate>Fri, 30 Mar 2018 08:41:31 +0200</pubDate>
       
       <guid>https://cnovel.github.io/post/biscuitscocottes/</guid>
-      <description>Les biscuits Cocottes, ce sont de délicieux biscuits avec des graines et des pépites de chocolat, fabriqués par la biscuiterie Saint Michel.
+      <description>
 
-Ces biscuits ne sont pas très compliqués à réaliser soi-même, en voici la recette.
-Ingrédients Pour une trentaine de biscuits :
- 250g de farine 150g de pépites de chocolat noir 140g de sucre 90g de beurre mou 40g de graines (graines de tournesol par exemple) 35cl d&amp;rsquo;huile 1 œuf 1&amp;frasl;2 sachet de levure Une pincée de sel  Étapes  Préchauffer le four à 200°C.</description>
+&lt;p&gt;Les biscuits Cocottes, ce sont de délicieux biscuits avec des graines et des pépites de chocolat, fabriqués par la biscuiterie &lt;em&gt;Saint Michel&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img src=&#34;https://cnovel.github.io/img/post/BiscuitsCocottes/CocottesStMichel.png&#34; alt=&#34;Biscuits cocottes Saint Michel&#34; /&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;Ces biscuits ne sont pas très compliqués à réaliser soi-même, en voici la recette.&lt;/p&gt;
+
+&lt;h1 id=&#34;ingrédients&#34;&gt;Ingrédients&lt;/h1&gt;
+
+&lt;p&gt;Pour une trentaine de biscuits :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;250g de farine&lt;/li&gt;
+&lt;li&gt;150g de pépites de chocolat noir&lt;/li&gt;
+&lt;li&gt;140g de sucre&lt;/li&gt;
+&lt;li&gt;90g de beurre mou&lt;/li&gt;
+&lt;li&gt;40g de graines (graines de tournesol par exemple)&lt;/li&gt;
+&lt;li&gt;35cl d&amp;rsquo;huile&lt;/li&gt;
+&lt;li&gt;1 œuf&lt;/li&gt;
+&lt;li&gt;&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt; sachet de levure&lt;/li&gt;
+&lt;li&gt;Une pincée de sel&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;étapes&#34;&gt;Étapes&lt;/h1&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Préchauffer le four à 200°C.&lt;/li&gt;
+&lt;li&gt;Battre l&amp;rsquo;œuf avec le sucre, puis ajouter l&amp;rsquo;huile et le sel.&lt;/li&gt;
+&lt;li&gt;Progressivement, ajouter la farine et la levure.&lt;/li&gt;
+&lt;li&gt;Incorporer le beurre mou en pétrissant la pâte avec les mains.&lt;/li&gt;
+&lt;li&gt;Ajouter les pépites de chocolat et les graines et pétrir de nouveau.&lt;/li&gt;
+&lt;li&gt;Disposer la pâte sur une plaque, soit en forme de buiscuits, soit en une seule plaque à découper ensuite.&lt;/li&gt;
+&lt;li&gt;Faire cuire pendant une dizaine de minutes.&lt;/li&gt;
+&lt;li&gt;Sortir, découper au besoin, puis laisser refroidir.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img src=&#34;https://cnovel.github.io/img/post/BiscuitsCocottes/biscuits.jpg&#34; alt=&#34;Biscuits cocottes&#34; /&gt;&lt;br /&gt;&lt;i&gt;Régalez-vous !&lt;/i&gt;&lt;/center&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -108,8 +358,48 @@ Ingrédients Pour une trentaine de biscuits :
       <pubDate>Sun, 25 Mar 2018 14:25:47 +0100</pubDate>
       
       <guid>https://cnovel.github.io/post/opensourcefacile/</guid>
-      <description>L&amp;rsquo;open source, késako ? Wikipédia définit l&amp;rsquo;open source de la façon suivante :
- La désignation open source, ou « code source ouvert », s&amp;rsquo;applique aux logiciels (et s&amp;rsquo;étend maintenant aux œuvres de l&amp;rsquo;esprit) dont la licence respecte des critères précisément établis par l&amp;rsquo;Open Source Initiative, c&amp;rsquo;est-à-dire les possibilités de libre redistribution, d&amp;rsquo;accès au code source et de création de travaux dérivés. Mis à la disposition du grand public, ce code source est généralement le résultat d&amp;rsquo;une collaboration entre programmeurs.</description>
+      <description>
+
+&lt;h1 id=&#34;l-open-source-késako&#34;&gt;L&amp;rsquo;open source, késako ?&lt;/h1&gt;
+
+&lt;p&gt;Wikipédia définit l&amp;rsquo;&lt;a href=&#34;https://fr.wikipedia.org/wiki/Open_source&#34;&gt;open source&lt;/a&gt; de la façon suivante :&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;La désignation &lt;strong&gt;open source&lt;/strong&gt;, ou « &lt;strong&gt;code source ouvert&lt;/strong&gt; », s&amp;rsquo;applique aux &lt;a href=&#34;https://fr.wikipedia.org/wiki/Logiciel&#34;&gt;logiciels&lt;/a&gt; (et s&amp;rsquo;étend maintenant aux &lt;a href=&#34;https://fr.wikipedia.org/wiki/%C5%92uvres_de_l%27esprit&#34;&gt;œuvres de l&amp;rsquo;esprit&lt;/a&gt;) dont la &lt;a href=&#34;https://fr.wikipedia.org/wiki/Licence_de_logiciel&#34;&gt;licence&lt;/a&gt; respecte des critères précisément établis par l&amp;rsquo;&lt;em&gt;Open Source Initiative&lt;/em&gt;, c&amp;rsquo;est-à-dire les possibilités de libre redistribution, d&amp;rsquo;accès au &lt;a href=&#34;https://fr.wikipedia.org/wiki/Code_source&#34;&gt;code source&lt;/a&gt; et de création de travaux dérivés. Mis à la disposition du grand public, ce code source est généralement le résultat d&amp;rsquo;une collaboration  entre programmeurs.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;La force de l&amp;rsquo;open source est que chacun peut participer au développement du projet, puisque tout est en accès libre. À l&amp;rsquo;origine, c&amp;rsquo;est le code source des logiciels qui est considéré comme ouvert, librement consultable et modifiable par tout un chacun. Par exemple, le code source du navigateur Mozilla Firefox est disponible à &lt;a href=&#34;https://developer.mozilla.org/fr/docs/Mozilla/Developer_guide/Source_Code/T%C3%A9l%C3%A9chargement_du_code_source_de_Mozilla&#34;&gt;cette adresse&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;La plupart du temps, les projets disposent d&amp;rsquo;un dépôt Git (sur &lt;a href=&#34;https://github.com/&#34;&gt;GitHub par exemple&lt;/a&gt;) qu&amp;rsquo;il est possible de récupérer, de modifier et le cas échéant, de soumettre les modifications effectuées à la communauté pour validation.&lt;/p&gt;
+
+&lt;h1 id=&#34;je-ne-sais-pas-coder-que-faire&#34;&gt;Je ne sais pas coder, que faire ?&lt;/h1&gt;
+
+&lt;p&gt;Pas besoin de savoir coder pour participer à un projet open source ! Voici une petite liste de projets où tout le monde peut participer facilement.&lt;/p&gt;
+
+&lt;h2 id=&#34;wikipédia-et-commons&#34;&gt;Wikipédia et Commons&lt;/h2&gt;
+
+&lt;p&gt;On ne présente plus &lt;a href=&#34;https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal&#34;&gt;Wikipédia&lt;/a&gt;, projet d&amp;rsquo;encyclopédie universelle créé en 2001. La version française compte à ce jour &lt;a href=&#34;https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Statistiques&#34;&gt;1 966 687&lt;/a&gt; articles. Chacun peut y contribuer, de manière anonyme ou en créant un compte.&lt;/p&gt;
+
+&lt;p&gt;Vous pouvez la mettre à jour avec vos connaissances, mais aussi traduire des articles provenant d&amp;rsquo;autres versions de Wikipédia. Il est aussi possible de faire de la relecture d&amp;rsquo;articles et de corriger les fautes d&amp;rsquo;orthographe et de syntaxe qui se glissent dans les pages du site. Enfin, beaucoup d&amp;rsquo;articles manquent d&amp;rsquo;illustrations, de photos. À une époque où tout le monde à un appareil photo à portée de main, c&amp;rsquo;est quand même dommage de voir tant de villes et villages sans illustrations.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://commons.wikimedia.org/wiki/Accueil&#34;&gt;Commons&lt;/a&gt; est un site du projet Wikimedia, qui centralise toutes les images, vidéos, sons, mises à disposition gratuitement et sous licence Creative Commons pour la plupart. C&amp;rsquo;est là qu&amp;rsquo;il faut téléverser toutes les images, vidéos que vous avez capturées. L&amp;rsquo;assistant d&amp;rsquo;importation est bien fait et vous accompagne dans le processus. Pensez-bien à catégoriser vos images et si possible à les géolocaliser.&lt;/p&gt;
+
+&lt;h2 id=&#34;openstreetmap&#34;&gt;OpenStreetMap&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.openstreetmap.org/&#34;&gt;OpenStreetMap&lt;/a&gt; est la version open source de Google Maps. Le service a débuté en 2004, et près de 5 millions d&amp;rsquo;utilisateurs ont effectué des modifications sur la carte.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img src=&#34;https://cnovel.github.io/img/post/OpenSourceFacile/OSM-Paris.jpg&#34; alt=&#34;Carte de Paris avec OSM&#34; /&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;Vous pouvez contribuer directement depuis le site web, avec une interface assez simple. OSM propose un tutoriel rapide lors de votre première contribution. En France, la base est assez complète pour les grandes villes, mais il faut la garder à jour ! En zone rurale, il manque parfois des chemins, des cours d&amp;rsquo;eau, etc. Enfin, beaucoup d&amp;rsquo;informations secondaires manquent (limite de vitesse, type de voie, revêtement).&lt;/p&gt;
+
+&lt;p&gt;L&amp;rsquo;application &lt;a href=&#34;https://play.google.com/store/apps/details?id=de.westnordost.streetcomplete&#34;&gt;StreetComplete&lt;/a&gt; (disponible sous Android) vous permet de contribuer facilement à OSM, en vous posant des questions sur vos alentours. Est-ce que cette rue est éclairée la nuit ? Est-ce que ce passage piéton est protégé par un feu ? Il est aussi possible de récupérer l&amp;rsquo;application via &lt;a href=&#34;https://f-droid.org/packages/de.westnordost.streetcomplete/&#34;&gt;F-Droid&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;traduction-rapports-de-bugs&#34;&gt;Traduction, rapports de bugs&lt;/h2&gt;
+
+&lt;p&gt;De nombreux projets sont au début uniquement disponible en anglais. Avec l&amp;rsquo;aide des utilisateurs, il est possible de les traduire en d&amp;rsquo;autres langues. C&amp;rsquo;est par exemple le cas de &lt;a href=&#34;https://github.com/TwidereProject/Twidere-Android&#34;&gt;Twidere&lt;/a&gt;, un client Twitter pour Android, où n&amp;rsquo;importe qui peut aider à la traduction sur &lt;a href=&#34;https://crowdin.com/project/twidere&#34;&gt;Crowdin&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Si vous utilisez des logiciels open source, vous pouvez aussi signaler les bugs que vous rencontrez à l&amp;rsquo;équipe de développement, ainsi que suggérer des améliorations selon votre utilisation.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -118,8 +408,28 @@ Ingrédients Pour une trentaine de biscuits :
       <pubDate>Sun, 18 Mar 2018 15:41:05 +0100</pubDate>
       
       <guid>https://cnovel.github.io/post/premierbillet/</guid>
-      <description>Hello world! Depuis que CozyCloud v2 n&amp;rsquo;est plus, j&amp;rsquo;ai perdu mon blog sous Ghost. Il n&amp;rsquo;a jamais vraiment été alimenté car l&amp;rsquo;interface de Ghosht était un peu confuse, couplé à ll&amp;rsquo;interface de Cozy il y avait de temps en temps des bugs. Bref tout cela fait que l&amp;rsquo;ancien blog n&amp;rsquo;existe plus.
-Habemus blogam Je me suis repenché sur la question d&amp;rsquo;un blog, et en premier lieu comment l&amp;rsquo;héberger. J&amp;rsquo;ai toujours mon espace Free, mais je n&amp;rsquo;ai pas envie de toucher au site principal qui est en ligne depuis avril 2005 (13 ans, cela ne nous rajeunit pas).</description>
+      <description>
+
+&lt;h1 id=&#34;hello-world&#34;&gt;Hello world!&lt;/h1&gt;
+
+&lt;p&gt;Depuis que CozyCloud v2 n&amp;rsquo;est plus, j&amp;rsquo;ai perdu mon blog sous Ghost. Il n&amp;rsquo;a jamais vraiment été alimenté car l&amp;rsquo;interface de Ghosht était un peu confuse, couplé à ll&amp;rsquo;interface de Cozy il y avait de temps en temps des bugs. Bref tout cela fait que l&amp;rsquo;ancien blog n&amp;rsquo;existe plus.&lt;/p&gt;
+
+&lt;h1 id=&#34;habemus-blogam&#34;&gt;Habemus blogam&lt;/h1&gt;
+
+&lt;p&gt;Je me suis repenché sur la question d&amp;rsquo;un blog, et en premier lieu comment l&amp;rsquo;héberger. J&amp;rsquo;ai toujours mon espace Free, mais je n&amp;rsquo;ai pas envie de toucher au site principal qui est en ligne depuis avril 2005 (13 ans, cela ne nous rajeunit pas). Je me suis donc tourner vers le service &lt;a href=&#34;https://pages.github.com/&#34;&gt;Pages de GitHub&lt;/a&gt;, qui permet un hébergement simple pour des sites statiques avec peu de traffic. Parfait, c&amp;rsquo;est exactement ce que je veux faire.&lt;/p&gt;
+
+&lt;p&gt;Pour propulser le blog, j&amp;rsquo;ai opté pour &lt;a href=&#34;https://www.gohugo.io&#34;&gt;Hugo&lt;/a&gt;, qui est un générateur de sites statiques. La mise en place est peut-être un peu compliqué pour installer les thèmes, mais une fois qu&amp;rsquo;on a compris le fonctionnement, tout devient plutôt simple. Les billets sont écrits en &lt;em&gt;Markdown&lt;/em&gt;, ce qui de mon point de vue est assez sympa.&lt;/p&gt;
+
+&lt;p&gt;Le thème choisi est &lt;em&gt;Blackburn&lt;/em&gt;, légèrement modifié pour mes besoins. J&amp;rsquo;ai françisé deux ou trois chaînes de caractères et il faut encore que je modifie les liens sociaux sur les côtés pour qu&amp;rsquo;ils ne prennent pas une ligne entière.&lt;/p&gt;
+
+&lt;h1 id=&#34;mais-de-quoi-va-t-on-parler&#34;&gt;Mais de quoi va-t-on parler ?&lt;/h1&gt;
+
+&lt;p&gt;Et bien de pas mal de choses, que ce soit des découvertes musicales, de l&amp;rsquo;informatique, de sport, etc. Je vais essayer d&amp;rsquo;obtenir un rythme d&amp;rsquo;au moins un billet par mois, mais on verra à l&amp;rsquo;usage.&lt;/p&gt;
+
+&lt;h1 id=&#34;no-comment&#34;&gt;No comment&lt;/h1&gt;
+
+&lt;p&gt;Vous l&amp;rsquo;aurez remarqué, il n&amp;rsquo;y a pas de système de commentaires sur le site. J&amp;rsquo;aurai pu brancher Disqus, mais c&amp;rsquo;est assez lourd et pas forcément bien respectueux de la vie privée (c&amp;rsquo;est livré avec une bonne floppée de trackers et de pubs dans sa version gratuite). Pour réagir, vous pouvez passer par &lt;a href=&#34;https://twitter.com/CrlNvl&#34;&gt;Twitter&lt;/a&gt; ou &lt;a href=&#34;https://mastodon.social/@Xerto&#34;&gt;Mastodon&lt;/a&gt;, j&amp;rsquo;y posterai régulièrement des liens vers les billets de ce blog. Si vraiment le besoin s&amp;rsquo;en fait sentir, je verrais pour activer Disqus.&lt;/p&gt;
+</description>
     </item>
     
   </channel>
