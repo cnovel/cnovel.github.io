@@ -7,10 +7,29 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
     <copyright>CC BY-SA 4.0</copyright>
-    <lastBuildDate>Tue, 16 Oct 2018 08:27:28 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 08 Dec 2018 17:32:52 +0100</lastBuildDate>
     
         <atom:link href="https://cnovel.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Incredibuild installers</title>
+      <link>https://cnovel.github.io/post/incredibuild/</link>
+      <pubDate>Sat, 08 Dec 2018 17:32:52 +0100</pubDate>
+      
+      <guid>https://cnovel.github.io/post/incredibuild/</guid>
+      <description>&lt;p&gt;Updating Incredibuild can be a pain since you need to enter every time your email to obtain a link to the latest version. This is a list with direct links to Incredibuild installers:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.incredibuild.com/downloads/incredibuild9_35.exe&#34;&gt;Incredibuild 9.35&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.incredibuild.com/downloads/incredibuild9_33.exe&#34;&gt;Incredibuild 9.33&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://incredibuild.com/downloads/incredibuild9_22.exe&#34;&gt;Incredibuild 9.22&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.incredibuild.com/downloads/incredibuild9.exe&#34;&gt;Indredibuild 9&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If the version you need is not listed, the installer name follows roughly this naming convention: incredibuild.com/downloads/incredibuild&lt;strong&gt;X&lt;/strong&gt;_&lt;strong&gt;xx&lt;/strong&gt;.exe, with X being the version major and xx the version minor.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Plus de domaines tiers</title>
