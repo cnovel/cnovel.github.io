@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Informatique on Chez Cyril</title>
@@ -19,14 +18,12 @@
       
       <guid>https://cnovel.github.io/post/incredibuild/</guid>
       <description>&lt;p&gt;Updating Incredibuild can be a pain since you need to enter every time your email to obtain a link to the latest version. This is a list with direct links to Incredibuild installers:&lt;/p&gt;
-
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.incredibuild.com/downloads/incredibuild9_35.exe&#34;&gt;Incredibuild 9.35&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.incredibuild.com/downloads/incredibuild9_33.exe&#34;&gt;Incredibuild 9.33&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://incredibuild.com/downloads/incredibuild9_22.exe&#34;&gt;Incredibuild 9.22&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.incredibuild.com/downloads/incredibuild9.exe&#34;&gt;Indredibuild 9&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;p&gt;If the version you need is not listed, the installer name follows roughly this naming convention: incredibuild.com/downloads/incredibuild&lt;strong&gt;X&lt;/strong&gt;_&lt;strong&gt;xx&lt;/strong&gt;.exe, with X being the version major and xx the version minor.&lt;/p&gt;
 </description>
     </item>
@@ -37,11 +34,9 @@
       <pubDate>Tue, 16 Oct 2018 08:27:28 +0200</pubDate>
       
       <guid>https://cnovel.github.io/post/pasdetiers/</guid>
-      <description>&lt;p&gt;J&amp;rsquo;ai fini par modifier le thème que j&amp;rsquo;utilise (&lt;a href=&#34;https://github.com/yoshiharuyamashita/blackburn&#34;&gt;Blackburn&lt;/a&gt;) pour que ce dernier n&amp;rsquo;utilise plus de domaines tiers. Jusqu&amp;rsquo;à présent, des requêtes étaient lancées pour obtenir une police chez Google, du CSS chez Cloudflare, et différents scripts sur des CDN.&lt;/p&gt;
-
-&lt;p&gt;Désormais, je suis passé à une police système (Helvetica ou Arial), et j&amp;rsquo;ai rapatrié dans le thème tout ce qui était scripts et css. Le temps de chargement n&amp;rsquo;en souffre pas et ça a l&amp;rsquo;avantage de ne déposer aucun cookie pour les visiteurs.&lt;/p&gt;
-
-&lt;p&gt;Il reste encore quelques modifications à apporter au thème, mais on s&amp;rsquo;approche doucement de ce que je voulais&amp;#x202F;!&lt;/p&gt;
+      <description>&lt;p&gt;J&#39;ai fini par modifier le thème que j&#39;utilise (&lt;a href=&#34;https://github.com/yoshiharuyamashita/blackburn&#34;&gt;Blackburn&lt;/a&gt;) pour que ce dernier n&#39;utilise plus de domaines tiers. Jusqu&#39;à présent, des requêtes étaient lancées pour obtenir une police chez Google, du CSS chez Cloudflare, et différents scripts sur des CDN.&lt;/p&gt;
+&lt;p&gt;Désormais, je suis passé à une police système (Helvetica ou Arial), et j&#39;ai rapatrié dans le thème tout ce qui était scripts et css. Le temps de chargement n&#39;en souffre pas et ça a l&#39;avantage de ne déposer aucun cookie pour les visiteurs.&lt;/p&gt;
+&lt;p&gt;Il reste encore quelques modifications à apporter au thème, mais on s&#39;approche doucement de ce que je voulais !&lt;/p&gt;
 </description>
     </item>
     
@@ -51,67 +46,36 @@
       <pubDate>Fri, 12 Oct 2018 08:23:32 +0200</pubDate>
       
       <guid>https://cnovel.github.io/post/pihole/</guid>
-      <description>
-
-&lt;h2 id=&#34;la-publicité-sur-internet&#34;&gt;La publicité sur Internet&lt;/h2&gt;
-
-&lt;p&gt;Je ne vais pas en écrire des pavés, mais il y a plein de raisons pour bloquer la publicité sur Internet. D&amp;rsquo;une part parce que les sites n&amp;rsquo;ont aucune idée de ce qui s&amp;rsquo;affiche sur leurs pages et on dénombre &lt;a href=&#34;https://motherboard.vice.com/en_us/article/gv5xxx/malvertising-hits-the-daily-mail-one-of-the-biggest-news-sites-on-the-web&#34;&gt;pas&lt;/a&gt; &lt;a href=&#34;https://motherboard.vice.com/en_us/article/bmv8gw/an-anti-adblock-service-was-hacked-and-infected-some-users-with-malware&#34;&gt;mal&lt;/a&gt; de &lt;a href=&#34;https://en.wikipedia.org/wiki/Malvertising#History&#34;&gt;cas&lt;/a&gt; de &lt;a href=&#34;https://www.avg.com/en/signal/what-is-malvertising&#34;&gt;malvertising&lt;/a&gt;. D&amp;rsquo;autre part, les publicités sont extrêmement lourdes et grignotent votre bande passante et votre forfait. Enfin, tout ce beau monde vous traque avec cookies et autres, alors qu&amp;rsquo;on a rien demandé. Comment faire pour éviter tout ça ?&lt;/p&gt;
-
-&lt;h2 id=&#34;pi-hole-bloqueur-de-domaines&#34;&gt;Pi-hole, bloqueur de domaines&lt;/h2&gt;
-
-&lt;p&gt;&lt;center&gt;&lt;img src=&#34;https://cnovel.github.io/img/post/Pihole/Logo_Pihole.png&#34; alt=&#34;Logo Pihole&#34; /&gt;&lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;C&amp;rsquo;est là qu&amp;rsquo;intervient Pi-hole. Pi-hole est un résolveur DNS qui va bloquer certains domaines. De manière général, un résolveur DNS fonctionne de la manière suivante : quand on demande à accéder à &lt;a href=&#34;www.duckduckgo.com&#34;&gt;www.duckduckgo.com&lt;/a&gt;, le résolveur va faire correspondre cette entrée texte à une adresse IP (176.34.155.23 en l’occurrence). Pi-hole va faire la même chose, sauf qu&amp;rsquo;il va bloquer tous les domaines publicitaires. Ainsi, lorsque l&amp;rsquo;on cherche à accéder à api.vungle.com (service de publicités vidéos), et bien Pi-hole répond que le site web est introuvable.&lt;/p&gt;
-
-&lt;p&gt;De nombreuses extensions existent pour bloquer la pub sur votre navigateur (&lt;a href=&#34;https://addons.mozilla.org/en-US/firefox/addon/adguard-adblocker/&#34;&gt;AdGuard&lt;/a&gt; par exemple). Cependant cela ne bloque la pub que sur le navigateur, et le bloqueur peut être détecté. D&amp;rsquo;autre part, l&amp;rsquo;add-on doit avoir accès à l&amp;rsquo;intégralité de la page, ce qui n&amp;rsquo;est jamais totalement rassurant. Pi-hole a l&amp;rsquo;avantage de pouvoir bloquer la publicité sur toutes les applications et sur le réseau complet, et d&amp;rsquo;être open-source.&lt;/p&gt;
-
+      <description>&lt;h2 id=&#34;la-publicit-sur-internet&#34;&gt;La publicité sur Internet&lt;/h2&gt;
+&lt;p&gt;Je ne vais pas en écrire des pavés, mais il y a plein de raisons pour bloquer la publicité sur Internet. D&#39;une part parce que les sites n&#39;ont aucune idée de ce qui s&#39;affiche sur leurs pages et on dénombre &lt;a href=&#34;https://motherboard.vice.com/en_us/article/gv5xxx/malvertising-hits-the-daily-mail-one-of-the-biggest-news-sites-on-the-web&#34;&gt;pas&lt;/a&gt; &lt;a href=&#34;https://motherboard.vice.com/en_us/article/bmv8gw/an-anti-adblock-service-was-hacked-and-infected-some-users-with-malware&#34;&gt;mal&lt;/a&gt; de &lt;a href=&#34;https://en.wikipedia.org/wiki/Malvertising#History&#34;&gt;cas&lt;/a&gt; de &lt;a href=&#34;https://www.avg.com/en/signal/what-is-malvertising&#34;&gt;malvertising&lt;/a&gt;. D&#39;autre part, les publicités sont extrêmement lourdes et grignotent votre bande passante et votre forfait. Enfin, tout ce beau monde vous traque avec cookies et autres, alors qu&#39;on a rien demandé. Comment faire pour éviter tout ça ?&lt;/p&gt;
+&lt;h2 id=&#34;pihole-bloqueur-de-domaines&#34;&gt;Pi-hole, bloqueur de domaines&lt;/h2&gt;
+&lt;center&gt;![Logo Pihole](/img/post/Pihole/Logo_Pihole.png)&lt;/center&gt;
+&lt;p&gt;C&#39;est là qu&#39;intervient Pi-hole. Pi-hole est un résolveur DNS qui va bloquer certains domaines. De manière général, un résolveur DNS fonctionne de la manière suivante : quand on demande à accéder à &lt;a href=&#34;www.duckduckgo.com&#34;&gt;&lt;a href=&#34;http://www.duckduckgo.com&#34;&gt;www.duckduckgo.com&lt;/a&gt;&lt;/a&gt;, le résolveur va faire correspondre cette entrée texte à une adresse IP (176.34.155.23 en l’occurrence). Pi-hole va faire la même chose, sauf qu&#39;il va bloquer tous les domaines publicitaires. Ainsi, lorsque l&#39;on cherche à accéder à api.vungle.com (service de publicités vidéos), et bien Pi-hole répond que le site web est introuvable.&lt;/p&gt;
+&lt;p&gt;De nombreuses extensions existent pour bloquer la pub sur votre navigateur (&lt;a href=&#34;https://addons.mozilla.org/en-US/firefox/addon/adguard-adblocker/&#34;&gt;AdGuard&lt;/a&gt; par exemple). Cependant cela ne bloque la pub que sur le navigateur, et le bloqueur peut être détecté. D&#39;autre part, l&#39;add-on doit avoir accès à l&#39;intégralité de la page, ce qui n&#39;est jamais totalement rassurant. Pi-hole a l&#39;avantage de pouvoir bloquer la publicité sur toutes les applications et sur le réseau complet, et d&#39;être open-source.&lt;/p&gt;
 &lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
-
-&lt;p&gt;Pour utiliser Pi-hole chez vous, il vous faut un petit ordinateur - de préférence un Raspberry Pi, avec une carte SD d&amp;rsquo;au moins 8Go - pour faire tourner le service Pi-hole. J&amp;rsquo;ai utilisé mon Raspberry Pi B de première génération, qui prenait un peu la poussière. Ci-après, une installation pas-à-pas est décrite avec un Raspberry Pi et une Freebox.&lt;/p&gt;
-
-&lt;h3 id=&#34;étape-1-installation-de-raspbian&#34;&gt;Étape 1 : Installation de Raspbian&lt;/h3&gt;
-
-&lt;p&gt;Commencez par télécharger le système d&amp;rsquo;exploitation &lt;a href=&#34;https://www.raspberrypi.org/downloads/raspbian/&#34;&gt;Raspbian Strech&lt;/a&gt;, ainsi que l&amp;rsquo;utilitaire &lt;a href=&#34;https://etcher.io/&#34;&gt;Etcher&lt;/a&gt;. Une fois téléchargés, insérez votre carte SD dans votre ordinateur et flashez votre carte SD à l&amp;rsquo;aide d&amp;rsquo;Etcher en choisissant comme fichier source le .zip de Raspbian.&lt;/p&gt;
-
-&lt;p&gt;Une fois cette étape terminée, insérez la carte SD dans le Raspberry Pi et branchez ce dernier. Suivez simplement les dernières étapes d&amp;rsquo;installation qui s&amp;rsquo;affichent. Prévoyez un peu de temps pour que le système se mette à jour.&lt;/p&gt;
-
-&lt;h3 id=&#34;étape-2-installation-de-pi-hole&#34;&gt;Étape 2 : Installation de Pi-hole&lt;/h3&gt;
-
-&lt;p&gt;Une fois Raspbian prêt, il est temps d&amp;rsquo;installer Pi-hole. Ouvrez un terminal, puis tapez la commande &lt;code&gt;curl -sSL https://install.pi-hole.net | bash&lt;/code&gt;. L&amp;rsquo;installation de Pi-hole va se lancer.&lt;/p&gt;
-
+&lt;p&gt;Pour utiliser Pi-hole chez vous, il vous faut un petit ordinateur - de préférence un Raspberry Pi, avec une carte SD d&#39;au moins 8Go - pour faire tourner le service Pi-hole. J&#39;ai utilisé mon Raspberry Pi B de première génération, qui prenait un peu la poussière. Ci-après, une installation pas-à-pas est décrite avec un Raspberry Pi et une Freebox.&lt;/p&gt;
+&lt;h3 id=&#34;tape-1--installation-de-raspbian&#34;&gt;Étape 1 : Installation de Raspbian&lt;/h3&gt;
+&lt;p&gt;Commencez par télécharger le système d&#39;exploitation &lt;a href=&#34;https://www.raspberrypi.org/downloads/raspbian/&#34;&gt;Raspbian Strech&lt;/a&gt;, ainsi que l&#39;utilitaire &lt;a href=&#34;https://etcher.io/&#34;&gt;Etcher&lt;/a&gt;. Une fois téléchargés, insérez votre carte SD dans votre ordinateur et flashez votre carte SD à l&#39;aide d&#39;Etcher en choisissant comme fichier source le .zip de Raspbian.&lt;/p&gt;
+&lt;p&gt;Une fois cette étape terminée, insérez la carte SD dans le Raspberry Pi et branchez ce dernier. Suivez simplement les dernières étapes d&#39;installation qui s&#39;affichent. Prévoyez un peu de temps pour que le système se mette à jour.&lt;/p&gt;
+&lt;h3 id=&#34;tape-2--installation-de-pihole&#34;&gt;Étape 2 : Installation de Pi-hole&lt;/h3&gt;
+&lt;p&gt;Une fois Raspbian prêt, il est temps d&#39;installer Pi-hole. Ouvrez un terminal, puis tapez la commande &lt;code&gt;curl -sSL https://install.pi-hole.net | bash&lt;/code&gt;. L&#39;installation de Pi-hole va se lancer.&lt;/p&gt;
 &lt;p&gt;Normalement, la seule partie où vous avez besoin de changer quelque chose est la partie &lt;em&gt;Choix DNS&lt;/em&gt; :&lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;&lt;img src=&#34;https://cnovel.github.io/img/post/Pihole/choix_dns.png&#34; alt=&#34;Écran de choix des DNS&#34; /&gt;&lt;br /&gt;&lt;i&gt;Écran de choix du DNS&lt;/i&gt;&lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;Personnellement j&amp;rsquo;utilise Quad9 qui fonctionne bien.&lt;/p&gt;
-
-&lt;p&gt;À la fin de l&amp;rsquo;installation, n&amp;rsquo;oubliez pas de noter l&amp;rsquo;adresse IP de votre Raspberry Pi, ainsi que le mot de passe pour l&amp;rsquo;interface web.&lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;&lt;img src=&#34;https://cnovel.github.io/img/post/Pihole/fin_install.png&#34; alt=&#34;Écran de fin&#34; /&gt;&lt;br /&gt;&lt;i&gt;Écran de fin de l&amp;rsquo;installation&lt;/i&gt;&lt;/center&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;étape-3-mise-à-jour-de-la-freebox&#34;&gt;Étape 3 : Mise à jour de la Freebox&lt;/h3&gt;
-
-&lt;p&gt;Désormais, il faut mettre à jour quelques options sur la Freebox. La première étape est de spécifier que le Raspberry Pi doit toujours avoir la même adresse IP. Si jamais votre Freebox redémarre, il faut être sûr que l&amp;rsquo;adresse du Pi ne change pas. Pour cela, allez dans votre espace Freebox OS, puis Paramètres de la Freebox &amp;gt; DHCP. Dans l&amp;rsquo;onglet Baux actifs, trouvez votre Pi puis clic-droit &amp;gt; Ajouter un bail statique. Désormais, votre Pi aura toujours la même adresse IP.&lt;/p&gt;
-
-&lt;p&gt;Enfin, toujours dans cette fenêtre, dans l&amp;rsquo;onglet Serveur DHCP, rentrez comme adresse Serveur DNS 1 l&amp;rsquo;adresse IP de votre Pi, et ne mettez rien dans les autres (important, sinon Pi-hole ne fonctionne pas !).&lt;/p&gt;
-
-&lt;h3 id=&#34;étape-4-reboot-général&#34;&gt;Étape 4 : Reboot général&lt;/h3&gt;
-
-&lt;p&gt;Pour être sur que les changements s&amp;rsquo;appliquent, redémarrez la box, le Raspberry Pi et vos appareils.&lt;/p&gt;
-
-&lt;h4 id=&#34;bonus-vérifier-sous-windows-que-le-dns-est-celui-de-pi-hole&#34;&gt;Bonus : Vérifier sous Windows que le DNS est celui de Pi-hole&lt;/h4&gt;
-
-&lt;p&gt;Si vous utilisez Windows, vous pouvez vérifier que le DNS utilisé est bien celui de Pi-hole en entrant la commande suivante : &lt;code&gt;ipconfig /all&lt;/code&gt; et en vérifiant l&amp;rsquo;adresse du DNS :&lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;&lt;img src=&#34;https://cnovel.github.io/img/post/Pihole/dns_check.png&#34; alt=&#34;Vérification DNS&#34; /&gt;&lt;br /&gt;&lt;i&gt;Vérification DNS&lt;/i&gt;&lt;/center&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;étape-5-naviguez-sans-publicité&#34;&gt;Étape 5 : Naviguez sans publicité&lt;/h3&gt;
-
-&lt;p&gt;Si tout s&amp;rsquo;est bien passé, vous pouvez désormais naviguez sans publicité dès que vous êtes connecté à votre réseau local.&lt;/p&gt;
-
-&lt;h2 id=&#34;bilan-après-quelques-semaines-d-utilisation&#34;&gt;Bilan après quelques semaines d&amp;rsquo;utilisation&lt;/h2&gt;
-
-&lt;p&gt;Après deux semaines d&amp;rsquo;utilisations, je suis plutôt content de Pi-hole. Aucun soucis à remonter au niveau du Raspberry Pi, pas de soucis au niveau des DNS, etc. Ça ne remplace cependant pas complètement un AdBlock&amp;#x202F;: certaines publicités peuvent encore passer (notamment sur YouTube), si jamais ces publicités sont hébergés par un domaine valide (par exemple les publicités YT sont hébergées directement sur YT). Un des gros avantages de Pi-hole est qu&amp;rsquo;il est indétectable par les sites que vous visitez. Ainsi, quand on me demande de désactiver mon AdBlock, je peux le faire sans soucis sachant que Pi-hole continue à tout bloquer. Enfin, ça fonctionne aussi pour mon téléphone lorsqu&amp;rsquo;il est sur le WiFi de ma box. La prochaine étape est d&amp;rsquo;avoir la fibre pour pouvoir router tout mon trafic à travers mon Pi-hole, où que je sois !&lt;/p&gt;
+&lt;center&gt;![Écran de choix des DNS](/img/post/Pihole/choix_dns.png)&lt;br /&gt;&lt;i&gt;Écran de choix du DNS&lt;/i&gt;&lt;/center&gt;
+&lt;p&gt;Personnellement j&#39;utilise Quad9 qui fonctionne bien.&lt;/p&gt;
+&lt;p&gt;À la fin de l&#39;installation, n&#39;oubliez pas de noter l&#39;adresse IP de votre Raspberry Pi, ainsi que le mot de passe pour l&#39;interface web.&lt;/p&gt;
+&lt;center&gt;![Écran de fin](/img/post/Pihole/fin_install.png)&lt;br /&gt;&lt;i&gt;Écran de fin de l&#39;installation&lt;/i&gt;&lt;/center&gt;
+&lt;h3 id=&#34;tape-3--mise--jour-de-la-freebox&#34;&gt;Étape 3 : Mise à jour de la Freebox&lt;/h3&gt;
+&lt;p&gt;Désormais, il faut mettre à jour quelques options sur la Freebox. La première étape est de spécifier que le Raspberry Pi doit toujours avoir la même adresse IP. Si jamais votre Freebox redémarre, il faut être sûr que l&#39;adresse du Pi ne change pas. Pour cela, allez dans votre espace Freebox OS, puis Paramètres de la Freebox &amp;gt; DHCP. Dans l&#39;onglet Baux actifs, trouvez votre Pi puis clic-droit &amp;gt; Ajouter un bail statique. Désormais, votre Pi aura toujours la même adresse IP.&lt;/p&gt;
+&lt;p&gt;Enfin, toujours dans cette fenêtre, dans l&#39;onglet Serveur DHCP, rentrez comme adresse Serveur DNS 1 l&#39;adresse IP de votre Pi, et ne mettez rien dans les autres (important, sinon Pi-hole ne fonctionne pas !).&lt;/p&gt;
+&lt;h3 id=&#34;tape-4--reboot-gnral&#34;&gt;Étape 4 : Reboot général&lt;/h3&gt;
+&lt;p&gt;Pour être sur que les changements s&#39;appliquent, redémarrez la box, le Raspberry Pi et vos appareils.&lt;/p&gt;
+&lt;h4 id=&#34;bonus--vrifier-sous-windows-que-le-dns-est-celui-de-pihole&#34;&gt;Bonus : Vérifier sous Windows que le DNS est celui de Pi-hole&lt;/h4&gt;
+&lt;p&gt;Si vous utilisez Windows, vous pouvez vérifier que le DNS utilisé est bien celui de Pi-hole en entrant la commande suivante : &lt;code&gt;ipconfig /all&lt;/code&gt; et en vérifiant l&#39;adresse du DNS :&lt;/p&gt;
+&lt;center&gt;![Vérification DNS](/img/post/Pihole/dns_check.png)&lt;br /&gt;&lt;i&gt;Vérification DNS&lt;/i&gt;&lt;/center&gt;
+&lt;h3 id=&#34;tape-5--naviguez-sans-publicit&#34;&gt;Étape 5 : Naviguez sans publicité&lt;/h3&gt;
+&lt;p&gt;Si tout s&#39;est bien passé, vous pouvez désormais naviguez sans publicité dès que vous êtes connecté à votre réseau local.&lt;/p&gt;
+&lt;h2 id=&#34;bilan-aprs-quelques-semaines-dutilisation&#34;&gt;Bilan après quelques semaines d&#39;utilisation&lt;/h2&gt;
+&lt;p&gt;Après deux semaines d&#39;utilisations, je suis plutôt content de Pi-hole. Aucun soucis à remonter au niveau du Raspberry Pi, pas de soucis au niveau des DNS, etc. Ça ne remplace cependant pas complètement un AdBlock : certaines publicités peuvent encore passer (notamment sur YouTube), si jamais ces publicités sont hébergés par un domaine valide (par exemple les publicités YT sont hébergées directement sur YT). Un des gros avantages de Pi-hole est qu&#39;il est indétectable par les sites que vous visitez. Ainsi, quand on me demande de désactiver mon AdBlock, je peux le faire sans soucis sachant que Pi-hole continue à tout bloquer. Enfin, ça fonctionne aussi pour mon téléphone lorsqu&#39;il est sur le WiFi de ma box. La prochaine étape est d&#39;avoir la fibre pour pouvoir router tout mon trafic à travers mon Pi-hole, où que je sois !&lt;/p&gt;
 </description>
     </item>
     
@@ -121,35 +85,20 @@
       <pubDate>Wed, 05 Sep 2018 08:20:30 +0200</pubDate>
       
       <guid>https://cnovel.github.io/post/fastmail/</guid>
-      <description>
-
-&lt;p&gt;Au début de l&amp;rsquo;année, j&amp;rsquo;ai décidé de quitter le giron de Google et de reprendre le contrôle de mes e-mails. Le but était de trouver un service pour remplacer GMail, Google Calendar et l&amp;rsquo;application Contacts de Google. Pour moi, ces trois services sont liés : les mails ont besoin d&amp;rsquo;un gestionnaire de contacts, et il faut pouvoir importer les événements reçus par e-mail facilement dans un calendrier. Et tant qu&amp;rsquo;à changer d&amp;rsquo;adresse e-mail, autant en prendre une avec un nom de domaine perso.&lt;/p&gt;
-
-&lt;p&gt;Après un tour des services possibles (&lt;a href=&#34;https://mailfence.com/fr/&#34;&gt;Mailfence&lt;/a&gt;, &lt;a href=&#34;https://www.gandi.net/fr/domain/email?currency=USD&#34;&gt;Gandi Email&lt;/a&gt;), je me suis tourné vers &lt;a href=&#34;https://www.fastmail.com/&#34;&gt;Fastmail&lt;/a&gt;. D&amp;rsquo;une part parce qu&amp;rsquo;il remplit les critères nécessaires (Mail, Contact, Calendrier, et possibilité d&amp;rsquo;utiliser son nom de domaine). D&amp;rsquo;autre part parce que Cafeine en chante les louanges, et qu&amp;rsquo;il y a donc de grandes chances que le service soit de qualité.&lt;/p&gt;
-
+      <description>&lt;p&gt;Au début de l&#39;année, j&#39;ai décidé de quitter le giron de Google et de reprendre le contrôle de mes e-mails. Le but était de trouver un service pour remplacer GMail, Google Calendar et l&#39;application Contacts de Google. Pour moi, ces trois services sont liés : les mails ont besoin d&#39;un gestionnaire de contacts, et il faut pouvoir importer les événements reçus par e-mail facilement dans un calendrier. Et tant qu&#39;à changer d&#39;adresse e-mail, autant en prendre une avec un nom de domaine perso.&lt;/p&gt;
+&lt;p&gt;Après un tour des services possibles (&lt;a href=&#34;https://mailfence.com/fr/&#34;&gt;Mailfence&lt;/a&gt;, &lt;a href=&#34;https://www.gandi.net/fr/domain/email?currency=USD&#34;&gt;Gandi Email&lt;/a&gt;), je me suis tourné vers &lt;a href=&#34;https://www.fastmail.com/&#34;&gt;Fastmail&lt;/a&gt;. D&#39;une part parce qu&#39;il remplit les critères nécessaires (Mail, Contact, Calendrier, et possibilité d&#39;utiliser son nom de domaine). D&#39;autre part parce que Cafeine en chante les louanges, et qu&#39;il y a donc de grandes chances que le service soit de qualité.&lt;/p&gt;
 &lt;h2 id=&#34;mise-en-place&#34;&gt;Mise en place&lt;/h2&gt;
-
-&lt;p&gt;J&amp;rsquo;ai opté pour l&amp;rsquo;offre à 50$ par an (~45€) qui donne droit à 25Go d&amp;rsquo;espace et la possibilité d&amp;rsquo;utiliser son propre nom de domaine.&lt;/p&gt;
-
-&lt;p&gt;Sachant que je ne comptais pas fermer mon compte Google (il reste utile pour quelques services, plus j&amp;rsquo;utilise encore Google Drive), je n&amp;rsquo;ai pas transférer mes mails de mon ancienne adresse. Le nom de domaine a été acheté avec Gandi, et la mise en place sur Fastmail a été simple et rapide grâce à leur documentation claire.&lt;/p&gt;
-
-&lt;p&gt;J&amp;rsquo;ai par contre transféré Contacts et Calendriers vers mon compte Fastmail. Pour cela, j&amp;rsquo;ai téléchargé les données via le service Google Takeout, puis je les ai réimportées via Fastmail. Attention, si vous avez un calendrier qui remonte à loin, l&amp;rsquo;import peut prendre pas mal de temps. À savoir aussi, Fastmail synchronise bien les photos de vos contacts mais ne les montre pas sur son interface web.&lt;/p&gt;
-
-&lt;p&gt;Enfin, il fallait aussi pouvoir accéder à tout ce beau monde sur mon téléphone Android. L&amp;rsquo;application Fastmail est en fait un wrapper web de leur site. Si ça suffit amplement pour lire ou écrire des mails, c&amp;rsquo;est un peu moins sympa pour accéder aux contacts ou au calendrier, et la synchronisation ne se fait pas avec le téléphone. Pas d&amp;rsquo;inquiétude cependant, Fastmail permet une synchronisation CardDav et CalDav facilement. Il suffit de générer un accès via l&amp;rsquo;onglet &amp;ldquo;Mot de passe et sécurité&amp;rdquo; dans les réglages. Pour synchroniser sur le téléphone, j&amp;rsquo;ai choisi l&amp;rsquo;application &lt;a href=&#34;https://f-droid.org/packages/at.bitfire.davdroid/&#34;&gt;DAVdroid&lt;/a&gt; qui est open-source et fonctionne très bien.&lt;/p&gt;
-
+&lt;p&gt;J&#39;ai opté pour l&#39;offre à 50$ par an (~45€) qui donne droit à 25Go d&#39;espace et la possibilité d&#39;utiliser son propre nom de domaine.&lt;/p&gt;
+&lt;p&gt;Sachant que je ne comptais pas fermer mon compte Google (il reste utile pour quelques services, plus j&#39;utilise encore Google Drive), je n&#39;ai pas transférer mes mails de mon ancienne adresse. Le nom de domaine a été acheté avec Gandi, et la mise en place sur Fastmail a été simple et rapide grâce à leur documentation claire.&lt;/p&gt;
+&lt;p&gt;J&#39;ai par contre transféré Contacts et Calendriers vers mon compte Fastmail. Pour cela, j&#39;ai téléchargé les données via le service Google Takeout, puis je les ai réimportées via Fastmail. Attention, si vous avez un calendrier qui remonte à loin, l&#39;import peut prendre pas mal de temps. À savoir aussi, Fastmail synchronise bien les photos de vos contacts mais ne les montre pas sur son interface web.&lt;/p&gt;
+&lt;p&gt;Enfin, il fallait aussi pouvoir accéder à tout ce beau monde sur mon téléphone Android. L&#39;application Fastmail est en fait un wrapper web de leur site. Si ça suffit amplement pour lire ou écrire des mails, c&#39;est un peu moins sympa pour accéder aux contacts ou au calendrier, et la synchronisation ne se fait pas avec le téléphone. Pas d&#39;inquiétude cependant, Fastmail permet une synchronisation CardDav et CalDav facilement. Il suffit de générer un accès via l&#39;onglet &amp;ldquo;Mot de passe et sécurité&amp;rdquo; dans les réglages. Pour synchroniser sur le téléphone, j&#39;ai choisi l&#39;application &lt;a href=&#34;https://f-droid.org/packages/at.bitfire.davdroid/&#34;&gt;DAVdroid&lt;/a&gt; qui est open-source et fonctionne très bien.&lt;/p&gt;
 &lt;h2 id=&#34;utilisation-depuis-7-mois&#34;&gt;Utilisation depuis 7 mois&lt;/h2&gt;
-
-&lt;p&gt;Depuis 7 mois, mon adresse gérée par Fastmail est mon adresse principale. L&amp;rsquo;avantage d&amp;rsquo;utiliser son propre nom de domaine est qu&amp;rsquo;il est possible d&amp;rsquo;avoir une multitude d&amp;rsquo;alias, ce que j&amp;rsquo;utilise allègrement à chaque fois que je m&amp;rsquo;inscris sur un service web. Quelques newsletters arrivent encore sur mon ancienne adrresse GMail, mais je ne la regarde qu&amp;rsquo;occasionnellement.&lt;/p&gt;
-
-&lt;p&gt;L&amp;rsquo;ergonomie de la partie e-mail est assez classique. J&amp;rsquo;apprécie l&amp;rsquo;affichage assez compact et sans fioriture de la page d&amp;rsquo;accueil. J&amp;rsquo;ai même l&amp;rsquo;impression que la navigation est plus rapide que sur GMail. La partie calendrier est très chouette, et m&amp;rsquo;a réconciliée avec l&amp;rsquo;affiche en vue Mois. Cela grâce à la bonne idée de mettre en accès rapide en bas de la page tous les mois de l&amp;rsquo;année en cours.&lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;&lt;img src=&#34;https://cnovel.github.io/img/post/fastmail/bottomCalendar.png&#34; alt=&#34;Accès rapide pour l&#39;année en cours&#34; /&gt;&lt;br /&gt;&lt;i&gt;Accès rapide pour l&amp;rsquo;année en cours&lt;/i&gt;&lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;La partie Contacts fonctionne bien, je suis un peu déçu que les photos des contacts ne soient pas affichées mais ce n&amp;rsquo;est pas dramatique.&lt;/p&gt;
-
-&lt;p&gt;À noter aussi que Fastmail propose un espace de notes et un espace de stockage des fichiers. Toutefois leurs fonctionnalités sont limitées (pas de synchro possible à ma connaissance), et me servent donc juste d&amp;rsquo;appoint.&lt;/p&gt;
-
-&lt;p&gt;Dans l&amp;rsquo;ensemble je suis ravi de Fastmail, et je pense bien continuer à l&amp;rsquo;utiliser autant que possible. Si jamais vous voulez tenter l&amp;rsquo;aventure et changer d&amp;rsquo;e-mail pour Fastmail, vous pouvez avoir 10% de réduction sur votre première facture en &lt;a href=&#34;https://www.fastmail.com/?STKI=18728360&#34;&gt;suivant ce lien&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Depuis 7 mois, mon adresse gérée par Fastmail est mon adresse principale. L&#39;avantage d&#39;utiliser son propre nom de domaine est qu&#39;il est possible d&#39;avoir une multitude d&#39;alias, ce que j&#39;utilise allègrement à chaque fois que je m&#39;inscris sur un service web. Quelques newsletters arrivent encore sur mon ancienne adrresse GMail, mais je ne la regarde qu&#39;occasionnellement.&lt;/p&gt;
+&lt;p&gt;L&#39;ergonomie de la partie e-mail est assez classique. J&#39;apprécie l&#39;affichage assez compact et sans fioriture de la page d&#39;accueil. J&#39;ai même l&#39;impression que la navigation est plus rapide que sur GMail. La partie calendrier est très chouette, et m&#39;a réconciliée avec l&#39;affiche en vue Mois. Cela grâce à la bonne idée de mettre en accès rapide en bas de la page tous les mois de l&#39;année en cours.&lt;/p&gt;
+&lt;center&gt;![Accès rapide pour l&#39;année en cours](/img/post/fastmail/bottomCalendar.png)&lt;br /&gt;&lt;i&gt;Accès rapide pour l&#39;année en cours&lt;/i&gt;&lt;/center&gt;
+&lt;p&gt;La partie Contacts fonctionne bien, je suis un peu déçu que les photos des contacts ne soient pas affichées mais ce n&#39;est pas dramatique.&lt;/p&gt;
+&lt;p&gt;À noter aussi que Fastmail propose un espace de notes et un espace de stockage des fichiers. Toutefois leurs fonctionnalités sont limitées (pas de synchro possible à ma connaissance), et me servent donc juste d&#39;appoint.&lt;/p&gt;
+&lt;p&gt;Dans l&#39;ensemble je suis ravi de Fastmail, et je pense bien continuer à l&#39;utiliser autant que possible. Si jamais vous voulez tenter l&#39;aventure et changer d&#39;e-mail pour Fastmail, vous pouvez avoir 10% de réduction sur votre première facture en &lt;a href=&#34;https://www.fastmail.com/?STKI=18728360&#34;&gt;suivant ce lien&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -159,36 +108,19 @@
       <pubDate>Wed, 25 Jul 2018 18:28:14 +0200</pubDate>
       
       <guid>https://cnovel.github.io/post/chocolatey/</guid>
-      <description>
-
-&lt;p&gt;Dans l&amp;rsquo;univers Linux, un aspect extrêmement pratique réside dans l&amp;rsquo;utilisation de gestionnaires de paquets (&lt;em&gt;package manager&lt;/em&gt; en anglais). Un gestionnaire de paquet est un utilitaire qui va s&amp;rsquo;occuper de l&amp;rsquo;installation et de la mise à jour de vos programmes, sans que vous ayez à vous souciez des détails (où installer, quelles options, etc.). Par exemple, l&amp;rsquo;AppStore sous iOS ou le Play Store sous Android peuvent être considérés comme des gestionnaires de paquets. Malheureusement sous Windows, ce système n&amp;rsquo;existe pas. Pour installer des programmes, il faut encore lancer des .exe ou des .msi à la main.&lt;/p&gt;
-
+      <description>&lt;p&gt;Dans l&#39;univers Linux, un aspect extrêmement pratique réside dans l&#39;utilisation de gestionnaires de paquets (&lt;em&gt;package manager&lt;/em&gt; en anglais). Un gestionnaire de paquet est un utilitaire qui va s&#39;occuper de l&#39;installation et de la mise à jour de vos programmes, sans que vous ayez à vous souciez des détails (où installer, quelles options, etc.). Par exemple, l&#39;AppStore sous iOS ou le Play Store sous Android peuvent être considérés comme des gestionnaires de paquets. Malheureusement sous Windows, ce système n&#39;existe pas. Pour installer des programmes, il faut encore lancer des .exe ou des .msi à la main.&lt;/p&gt;
 &lt;h2 id=&#34;chocolatey-votre-nouvel-ami&#34;&gt;Chocolatey, votre nouvel ami&lt;/h2&gt;
-
-&lt;p&gt;C&amp;rsquo;est là qu&amp;rsquo;intervient &lt;a href=&#34;https://chocolatey.org/&#34;&gt;Chocolatey&lt;/a&gt;. Ce dernier agit comme s&amp;rsquo;il était un gestionnaire de paquets. En une ligne de commande, il va aller récupérer le .exe qui correspond au programme que vous souhaitez installer, et l&amp;rsquo;installer de manière silencieuse sur votre machine. Par exemple, si je souhaite installer VLC, il suffit de rentrer la commande :&lt;/p&gt;
-
+&lt;p&gt;C&#39;est là qu&#39;intervient &lt;a href=&#34;https://chocolatey.org/&#34;&gt;Chocolatey&lt;/a&gt;. Ce dernier agit comme s&#39;il était un gestionnaire de paquets. En une ligne de commande, il va aller récupérer le .exe qui correspond au programme que vous souhaitez installer, et l&#39;installer de manière silencieuse sur votre machine. Par exemple, si je souhaite installer VLC, il suffit de rentrer la commande :&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;choco install vlc
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Et VLC va s&amp;rsquo;installer tout seul. Actuellement, Chocolatey gère plus de 5500 paquets. Les logiciels les plus communs sont pris en charge.&lt;/p&gt;
-
-&lt;p&gt;L&amp;rsquo;énorme avantage de Chocolatey est la mise à jour automatique des paquets installés. On oublie souvent de mettre à jour certains logiciels (comme Git, 7Zip) ou on ne souhaite pas le faire lorsque le programme nous le demande (Filezilla par exemple). Avec la simple commande&lt;/p&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Et VLC va s&#39;installer tout seul. Actuellement, Chocolatey gère plus de 5500 paquets. Les logiciels les plus communs sont pris en charge.&lt;/p&gt;
+&lt;p&gt;L&#39;énorme avantage de Chocolatey est la mise à jour automatique des paquets installés. On oublie souvent de mettre à jour certains logiciels (comme Git, 7Zip) ou on ne souhaite pas le faire lorsque le programme nous le demande (Filezilla par exemple). Avec la simple commande&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;choco upgrade all
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Chocolatey va mettre à jour tous les paquets installés sur votre ordinateur.&lt;/p&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Chocolatey va mettre à jour tous les paquets installés sur votre ordinateur.&lt;/p&gt;
 &lt;h2 id=&#34;comment-installer-chocolatey&#34;&gt;Comment installer Chocolatey&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://chocolatey.org/install&#34;&gt;C&amp;rsquo;est très simple&lt;/a&gt;, il suffit de lancer un terminal sous Windows et de rentrer la ligne suivante :&lt;/p&gt;
-
+&lt;p&gt;&lt;a href=&#34;https://chocolatey.org/install&#34;&gt;C&#39;est très simple&lt;/a&gt;, il suffit de lancer un terminal sous Windows et de rentrer la ligne suivante :&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;@&amp;quot;%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe&amp;quot; -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command &amp;quot;iex ((New-Object System.Net.WebClient).DownloadString(&#39;https://chocolatey.org/install.ps1&#39;))&amp;quot; &amp;amp;&amp;amp; SET &amp;quot;PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;et-si-je-suis-allergique-à-la-ligne-de-commande&#34;&gt;Et si je suis allergique à la ligne de commande ?&lt;/h2&gt;
-
-&lt;p&gt;Certains ont pensé à vous ! Il vous suffit d&amp;rsquo;installer le paquet &lt;a href=&#34;https://chocolatey.org/packages/ChocolateyGUI&#34;&gt;Chocolatey GUI&lt;/a&gt; pour installer et mettre à jour via une interface vos logiciels.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;et-si-je-suis-allergique--la-ligne-de-commande-&#34;&gt;Et si je suis allergique à la ligne de commande ?&lt;/h2&gt;
+&lt;p&gt;Certains ont pensé à vous ! Il vous suffit d&#39;installer le paquet &lt;a href=&#34;https://chocolatey.org/packages/ChocolateyGUI&#34;&gt;Chocolatey GUI&lt;/a&gt; pour installer et mettre à jour via une interface vos logiciels.&lt;/p&gt;
 </description>
     </item>
     
@@ -198,31 +130,20 @@
       <pubDate>Tue, 17 Apr 2018 20:25:22 +0200</pubDate>
       
       <guid>https://cnovel.github.io/post/tinify/</guid>
-      <description>
-
-&lt;p&gt;Même si on n&amp;rsquo;y fait plus très attention maintenant que l&amp;rsquo;on surfe avec la fibre et la 4G, la taille des pages web a son importance. En mode dégradé (Edge, 3G Free, etc.), c&amp;rsquo;est toujours agréable d&amp;rsquo;avoir une page qui se charge rapidement.&lt;/p&gt;
-
-&lt;h2 id=&#34;tinypng-réduire-ses-images-en-ligne&#34;&gt;TinyPNG, réduire ses images en ligne&lt;/h2&gt;
-
-&lt;p&gt;Une partie de la taille d&amp;rsquo;une page web est dûe aux différentes images présentes sur cette page. Différentes méthodes existent pour les alléger :&lt;/p&gt;
-
+      <description>&lt;p&gt;Même si on n&#39;y fait plus très attention maintenant que l&#39;on surfe avec la fibre et la 4G, la taille des pages web a son importance. En mode dégradé (Edge, 3G Free, etc.), c&#39;est toujours agréable d&#39;avoir une page qui se charge rapidement.&lt;/p&gt;
+&lt;h2 id=&#34;tinypng-rduire-ses-images-en-ligne&#34;&gt;TinyPNG, réduire ses images en ligne&lt;/h2&gt;
+&lt;p&gt;Une partie de la taille d&#39;une page web est dûe aux différentes images présentes sur cette page. Différentes méthodes existent pour les alléger :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Réduire leur taille&lt;/li&gt;
 &lt;li&gt;Augmenter le niveau de compression&lt;/li&gt;
 &lt;li&gt;Choisir le bon format (le BMP sera extrêmement lourd, alors que le PNG est parfait pour les dessins schématiques)&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;p&gt;Mais on peut encore aller plus loin. La fine équipe &lt;a href=&#34;https://tinypng.com/&#34;&gt;TinyPNG&lt;/a&gt; a créé un script qui permet de compresser une image sans perte de qualité. En détail, un algorithme de quantisation des couleurs est utilisé pour gagner de la place.&lt;/p&gt;
-
-&lt;p&gt;Certaines images peuvent perdre plus de 70% de leur poids une fois passées à la moulinette TinyPNG, sans qu&amp;rsquo;une différence ne soit visible.&lt;/p&gt;
-
+&lt;p&gt;Certaines images peuvent perdre plus de 70% de leur poids une fois passées à la moulinette TinyPNG, sans qu&#39;une différence ne soit visible.&lt;/p&gt;
 &lt;h2 id=&#34;tinify-in-folder-le-script-python-pour-traiter-en-batch&#34;&gt;Tinify In Folder, le script python pour traiter en batch&lt;/h2&gt;
-
-&lt;p&gt;J&amp;rsquo;ai donc voulu appliquer ce script à toutes les images de ce site. Problème, les images sont dans pas mal de dossiers différents, et l&amp;rsquo;interface web n&amp;rsquo;est pas la plus pratique pour compresser beaucoup de fichiers. Que cela ne tienne, TinyPNG propose un package Python qui permet d&amp;rsquo;interfacer avec leur service.&lt;/p&gt;
-
-&lt;p&gt;J&amp;rsquo;ai donc écrit un petit script, &lt;a href=&#34;https://github.com/cnovel/TinifyInFolder&#34;&gt;Tinify In Folder&lt;/a&gt;, qui permet de compresser toutes les images trouvées dans un dossier. Le script est adapté à mon usage, donc une limite de 500 compressions par mois est hardcodée. Et j&amp;rsquo;ai ajouté une petite option qui permet de ne compresser que les images qui ont été créées ou modifiées dans les n derniers jours, afin de ne pas dépasser ce quota trop rapidement.&lt;/p&gt;
-
-&lt;p&gt;Une fois le script appliqué à l&amp;rsquo;ensemble de ce site web, la taille totale des images est passée d&amp;rsquo;environ 1.6Mo à 800ko, donc une baisse de 50% environ, ce qui n&amp;rsquo;est pas négligeable !&lt;/p&gt;
+&lt;p&gt;J&#39;ai donc voulu appliquer ce script à toutes les images de ce site. Problème, les images sont dans pas mal de dossiers différents, et l&#39;interface web n&#39;est pas la plus pratique pour compresser beaucoup de fichiers. Que cela ne tienne, TinyPNG propose un package Python qui permet d&#39;interfacer avec leur service.&lt;/p&gt;
+&lt;p&gt;J&#39;ai donc écrit un petit script, &lt;a href=&#34;https://github.com/cnovel/TinifyInFolder&#34;&gt;Tinify In Folder&lt;/a&gt;, qui permet de compresser toutes les images trouvées dans un dossier. Le script est adapté à mon usage, donc une limite de 500 compressions par mois est hardcodée. Et j&#39;ai ajouté une petite option qui permet de ne compresser que les images qui ont été créées ou modifiées dans les n derniers jours, afin de ne pas dépasser ce quota trop rapidement.&lt;/p&gt;
+&lt;p&gt;Une fois le script appliqué à l&#39;ensemble de ce site web, la taille totale des images est passée d&#39;environ 1.6Mo à 800ko, donc une baisse de 50% environ, ce qui n&#39;est pas négligeable !&lt;/p&gt;
 </description>
     </item>
     
@@ -232,39 +153,23 @@
       <pubDate>Mon, 02 Apr 2018 22:52:52 +0200</pubDate>
       
       <guid>https://cnovel.github.io/post/majusculesaccentu%C3%A9es/</guid>
-      <description>&lt;p&gt;L&amp;rsquo;accentuation des majuscules est une pratique très peu répandue, mais pourtant fortement recommandée par l&amp;rsquo;&lt;a href=&#34;http://academie-francaise.fr/questions-de-langue#5_strong-em-accentuation-des-majuscules-em-strong&#34;&gt;Académie française&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;&lt;img src=&#34;https://cnovel.github.io/img/post/Majuscules/TitreLeMonde.png&#34; alt=&#34;Titre sur LeMonde.fr&#34; /&gt;&lt;br /&gt;&lt;i&gt;Les États-Unis en perdent leur accent sur LeMonde.fr !&lt;/i&gt;&lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;Une des raisons de ce manquement est la difficulté d&amp;rsquo;écrire ces majuscules avec nos claviers AZERTY classique. Si le &lt;em&gt;à&lt;/em&gt;, le &lt;em&gt;ù&lt;/em&gt; et d&amp;rsquo;autres sont facilement accessibles, ce n&amp;rsquo;est pas le cas pour les majuscules. La méthode à appliquer sous Windows est fastidieuse : il faut rentrer un code couplé à la touche &lt;code&gt;Alt&lt;/code&gt; pour faire apparaître la majuscule accentuée. Par exemple, &lt;code&gt;Alt + 144&lt;/code&gt; donne le caractère &lt;code&gt;É&lt;/code&gt;. Retenir ces codes pour chaque majuscule est évidemment fastidieux et peu pratique.&lt;/p&gt;
-
-&lt;p&gt;Il est possible d&amp;rsquo;installer un logiciel pour résoudre ce problème. &lt;a href=&#34;https://www.geekzone.fr/2016/10/14/wincompose-retrouver-acces-facile-aux-caracteres-speciaux-windows/&#34;&gt;GeekZone.fr&lt;/a&gt; propose &lt;a href=&#34;https://github.com/samhocevar/wincompose&#34;&gt;WinCompose&lt;/a&gt;, qui est très puissant et permet de configurer énormément de raccourcis clavier pour de nombreux caractères, ou même des séquences de caractères. Cependant, je trouve la solution trop lourde dans mon cas d&amp;rsquo;utilisation. Je souhaite simplement pouvoir écrire des majuscules accentuées !&lt;/p&gt;
-
-&lt;p&gt;La solution que je voulais adapter, c&amp;rsquo;est celle disponible sous Linux. Effectuer une majuscule accentuée est bien plus simple, puisqu&amp;rsquo;il suffit d&amp;rsquo;enclencher &lt;code&gt;Caps Lock&lt;/code&gt;  puis d&amp;rsquo;appuyer sur la touche &lt;code&gt;è&lt;/code&gt; par exemple, pour obtenir &lt;code&gt;È&lt;/code&gt;. Pas de raccourci compliqué, pas de gymnastique mentale. Pour obtenir ce résultat sous Windows, il faut passer par le &lt;a href=&#34;https://www.microsoft.com/en-us/download/details.aspx?id=22339&#34;&gt;Microsoft Keyboard Layout Creator&lt;/a&gt;. C&amp;rsquo;est un outil qui permet de créer sa propre disposition pour son clavier. Je donne la marche à suivre complète, mais vous pouvez directement sauter à &lt;a href=&#34;#installation&#34;&gt;la partie installation&lt;/a&gt; si vous ne souhaitez pas personnaliser la disposition que j&amp;rsquo;ai créée.&lt;/p&gt;
-
-&lt;p&gt;Une fois installé, lancez l&amp;rsquo;outil et chargez une disposition de clavier pré-existante via &lt;code&gt;File &amp;gt; Load Existing Keyboard...&lt;/code&gt;. J&amp;rsquo;ai choisi la disposition française classique pour ma part.&lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;&lt;img src=&#34;https://cnovel.github.io/img/post/Majuscules/Layout1.png&#34; alt=&#34;Écran une fois le clavier chargé&#34; /&gt;&lt;br /&gt;&lt;i&gt;Clavier français chargé&lt;/i&gt;&lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;Double-cliquez sur la lettre que vous souhaitez modifier, puis dans la fenêtre qui vient d&amp;rsquo;apparaître, cliquez sur &lt;code&gt;All...&lt;/code&gt;. Une nouvelle fenêtre s&amp;rsquo;ouvre, cochez en haut à gauche &lt;code&gt;Advanced View&lt;/code&gt;. Puis dans le champ &lt;code&gt;SGCAP+&amp;lt;Key&amp;gt;&lt;/code&gt;, rentrez la lettre majuscule accentuée.&lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;&lt;img src=&#34;https://cnovel.github.io/img/post/Majuscules/Modify.png&#34; alt=&#34;Écran une fois le clavier chargé&#34; /&gt;&lt;br /&gt;&lt;i&gt;Écran de modification de la lettre, une fois complètement rempli&lt;/i&gt;&lt;/center&gt;&lt;/p&gt;
-
+      <description>&lt;p&gt;L&#39;accentuation des majuscules est une pratique très peu répandue, mais pourtant fortement recommandée par l&amp;rsquo;&lt;a href=&#34;http://academie-francaise.fr/questions-de-langue#5_strong-em-accentuation-des-majuscules-em-strong&#34;&gt;Académie française&lt;/a&gt;.&lt;/p&gt;
+&lt;center&gt;![Titre sur LeMonde.fr](/img/post/Majuscules/TitreLeMonde.png)&lt;br /&gt;&lt;i&gt;Les États-Unis en perdent leur accent sur LeMonde.fr !&lt;/i&gt;&lt;/center&gt;
+&lt;p&gt;Une des raisons de ce manquement est la difficulté d&#39;écrire ces majuscules avec nos claviers AZERTY classique. Si le &lt;em&gt;à&lt;/em&gt;, le &lt;em&gt;ù&lt;/em&gt; et d&#39;autres sont facilement accessibles, ce n&#39;est pas le cas pour les majuscules. La méthode à appliquer sous Windows est fastidieuse : il faut rentrer un code couplé à la touche &lt;code&gt;Alt&lt;/code&gt; pour faire apparaître la majuscule accentuée. Par exemple, &lt;code&gt;Alt + 144&lt;/code&gt; donne le caractère &lt;code&gt;É&lt;/code&gt;. Retenir ces codes pour chaque majuscule est évidemment fastidieux et peu pratique.&lt;/p&gt;
+&lt;p&gt;Il est possible d&#39;installer un logiciel pour résoudre ce problème. &lt;a href=&#34;https://www.geekzone.fr/2016/10/14/wincompose-retrouver-acces-facile-aux-caracteres-speciaux-windows/&#34;&gt;GeekZone.fr&lt;/a&gt; propose &lt;a href=&#34;https://github.com/samhocevar/wincompose&#34;&gt;WinCompose&lt;/a&gt;, qui est très puissant et permet de configurer énormément de raccourcis clavier pour de nombreux caractères, ou même des séquences de caractères. Cependant, je trouve la solution trop lourde dans mon cas d&#39;utilisation. Je souhaite simplement pouvoir écrire des majuscules accentuées !&lt;/p&gt;
+&lt;p&gt;La solution que je voulais adapter, c&#39;est celle disponible sous Linux. Effectuer une majuscule accentuée est bien plus simple, puisqu&#39;il suffit d&#39;enclencher &lt;code&gt;Caps Lock&lt;/code&gt;  puis d&#39;appuyer sur la touche &lt;code&gt;è&lt;/code&gt; par exemple, pour obtenir &lt;code&gt;È&lt;/code&gt;. Pas de raccourci compliqué, pas de gymnastique mentale. Pour obtenir ce résultat sous Windows, il faut passer par le &lt;a href=&#34;https://www.microsoft.com/en-us/download/details.aspx?id=22339&#34;&gt;Microsoft Keyboard Layout Creator&lt;/a&gt;. C&#39;est un outil qui permet de créer sa propre disposition pour son clavier. Je donne la marche à suivre complète, mais vous pouvez directement sauter à &lt;a href=&#34;#installation&#34;&gt;la partie installation&lt;/a&gt; si vous ne souhaitez pas personnaliser la disposition que j&#39;ai créée.&lt;/p&gt;
+&lt;p&gt;Une fois installé, lancez l&#39;outil et chargez une disposition de clavier pré-existante via &lt;code&gt;File &amp;gt; Load Existing Keyboard...&lt;/code&gt;. J&#39;ai choisi la disposition française classique pour ma part.&lt;/p&gt;
+&lt;center&gt;![Écran une fois le clavier chargé](/img/post/Majuscules/Layout1.png)&lt;br /&gt;&lt;i&gt;Clavier français chargé&lt;/i&gt;&lt;/center&gt;
+&lt;p&gt;Double-cliquez sur la lettre que vous souhaitez modifier, puis dans la fenêtre qui vient d&#39;apparaître, cliquez sur &lt;code&gt;All...&lt;/code&gt;. Une nouvelle fenêtre s&#39;ouvre, cochez en haut à gauche &lt;code&gt;Advanced View&lt;/code&gt;. Puis dans le champ &lt;code&gt;SGCAP+&amp;lt;Key&amp;gt;&lt;/code&gt;, rentrez la lettre majuscule accentuée.&lt;/p&gt;
+&lt;center&gt;![Écran une fois le clavier chargé](/img/post/Majuscules/Modify.png)&lt;br /&gt;&lt;i&gt;Écran de modification de la lettre, une fois complètement rempli&lt;/i&gt;&lt;/center&gt;
 &lt;p&gt;Validez en appuyant pour OK, puis faîtes de même pour chaque lettre. Si vous ne voulez pas vous embêter, vous pouvez directement récupérer &lt;a href=&#34;https://cnovel.github.io/various/LayoutCapsAccent.klc&#34;&gt;ici&lt;/a&gt; la disposition modifiée.&lt;/p&gt;
-
 &lt;p&gt;Une fois votre disposition finalisée, testez-la via &lt;code&gt;Project &amp;gt; Test Keyboard Layout...&lt;/code&gt; puis sauvez-la via &lt;code&gt;File &amp;gt; Save Source File As...&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Enfin dernière étape, il faut créer l&amp;rsquo;installeur de votre disposition. Pour cela, allez dans &lt;code&gt;Project &amp;gt; Build DLL and Setup Package&lt;/code&gt;. Il vous est demandé de rentrer quelques précisions comme le nom de la disposition. Puis un installeur est créé dans &lt;code&gt;Documents&lt;/code&gt;. &lt;a id=&#34;installation&#34;&gt;&lt;/a&gt;Vous pouvez trouver l&amp;rsquo;installeur zippé &lt;a href=&#34;https://cnovel.github.io/various/InstallerLayoutCapsAccent.zip&#34;&gt;ici&lt;/a&gt;.&lt;/p&gt;
-
+&lt;p&gt;Enfin dernière étape, il faut créer l&#39;installeur de votre disposition. Pour cela, allez dans &lt;code&gt;Project &amp;gt; Build DLL and Setup Package&lt;/code&gt;. Il vous est demandé de rentrer quelques précisions comme le nom de la disposition. Puis un installeur est créé dans &lt;code&gt;Documents&lt;/code&gt;. &lt;a id=&#34;installation&#34;&gt;&lt;/a&gt;Vous pouvez trouver l&#39;installeur zippé &lt;a href=&#34;https://cnovel.github.io/various/InstallerLayoutCapsAccent.zip&#34;&gt;ici&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Exécutez &lt;code&gt;setup.exe&lt;/code&gt;, puis allez dans les paramètres Windows,  section Heure et langue. Sur le panneau de gauche, choisissez Région et langue.&lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;&lt;img src=&#34;https://cnovel.github.io/img/post/Majuscules/Params1.png&#34; alt=&#34;Écran des paramètres&#34; /&gt;&lt;br /&gt;&lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;Ensuite, cliquez sur Français, et descendez à la section Clavier. Si votre disposition n&amp;rsquo;apparaît pas encore, ajoutez-là via le bouton idoine.&lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;&lt;img src=&#34;https://cnovel.github.io/img/post/Majuscules/Params2.png&#34; alt=&#34;Écran des paramètres&#34; /&gt;&lt;br /&gt;&lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;C&amp;rsquo;est tout bon, à un redémarrage près du système. À vous les ÀÉÈÙÇ faciles !&lt;/p&gt;
+&lt;center&gt;![Écran des paramètres](/img/post/Majuscules/Params1.png)&lt;br /&gt;&lt;/center&gt;
+&lt;p&gt;Ensuite, cliquez sur Français, et descendez à la section Clavier. Si votre disposition n&#39;apparaît pas encore, ajoutez-là via le bouton idoine.&lt;/p&gt;
+&lt;center&gt;![Écran des paramètres](/img/post/Majuscules/Params2.png)&lt;br /&gt;&lt;/center&gt;
+&lt;p&gt;C&#39;est tout bon, à un redémarrage près du système. À vous les ÀÉÈÙÇ faciles !&lt;/p&gt;
 </description>
     </item>
     
@@ -274,47 +179,27 @@
       <pubDate>Sun, 25 Mar 2018 14:25:47 +0100</pubDate>
       
       <guid>https://cnovel.github.io/post/opensourcefacile/</guid>
-      <description>
-
-&lt;h1 id=&#34;l-open-source-késako&#34;&gt;L&amp;rsquo;open source, késako ?&lt;/h1&gt;
-
+      <description>&lt;h1 id=&#34;lopen-source-ksako-&#34;&gt;L&#39;open source, késako ?&lt;/h1&gt;
 &lt;p&gt;Wikipédia définit l&amp;rsquo;&lt;a href=&#34;https://fr.wikipedia.org/wiki/Open_source&#34;&gt;open source&lt;/a&gt; de la façon suivante :&lt;/p&gt;
-
 &lt;blockquote&gt;
-&lt;p&gt;La désignation &lt;strong&gt;open source&lt;/strong&gt;, ou « &lt;strong&gt;code source ouvert&lt;/strong&gt; », s&amp;rsquo;applique aux &lt;a href=&#34;https://fr.wikipedia.org/wiki/Logiciel&#34;&gt;logiciels&lt;/a&gt; (et s&amp;rsquo;étend maintenant aux &lt;a href=&#34;https://fr.wikipedia.org/wiki/%C5%92uvres_de_l%27esprit&#34;&gt;œuvres de l&amp;rsquo;esprit&lt;/a&gt;) dont la &lt;a href=&#34;https://fr.wikipedia.org/wiki/Licence_de_logiciel&#34;&gt;licence&lt;/a&gt; respecte des critères précisément établis par l&amp;rsquo;&lt;em&gt;Open Source Initiative&lt;/em&gt;, c&amp;rsquo;est-à-dire les possibilités de libre redistribution, d&amp;rsquo;accès au &lt;a href=&#34;https://fr.wikipedia.org/wiki/Code_source&#34;&gt;code source&lt;/a&gt; et de création de travaux dérivés. Mis à la disposition du grand public, ce code source est généralement le résultat d&amp;rsquo;une collaboration  entre programmeurs.&lt;/p&gt;
+&lt;p&gt;La désignation &lt;strong&gt;open source&lt;/strong&gt;, ou « &lt;strong&gt;code source ouvert&lt;/strong&gt; », s&#39;applique aux &lt;a href=&#34;https://fr.wikipedia.org/wiki/Logiciel&#34;&gt;logiciels&lt;/a&gt; (et s&#39;étend maintenant aux &lt;a href=&#34;https://fr.wikipedia.org/wiki/%C5%92uvres_de_l%27esprit&#34;&gt;œuvres de l&#39;esprit&lt;/a&gt;) dont la &lt;a href=&#34;https://fr.wikipedia.org/wiki/Licence_de_logiciel&#34;&gt;licence&lt;/a&gt; respecte des critères précisément établis par l&amp;rsquo;&lt;em&gt;Open Source Initiative&lt;/em&gt;, c&#39;est-à-dire les possibilités de libre redistribution, d&#39;accès au &lt;a href=&#34;https://fr.wikipedia.org/wiki/Code_source&#34;&gt;code source&lt;/a&gt; et de création de travaux dérivés. Mis à la disposition du grand public, ce code source est généralement le résultat d&#39;une collaboration  entre programmeurs.&lt;/p&gt;
 &lt;/blockquote&gt;
-
-&lt;p&gt;La force de l&amp;rsquo;open source est que chacun peut participer au développement du projet, puisque tout est en accès libre. À l&amp;rsquo;origine, c&amp;rsquo;est le code source des logiciels qui est considéré comme ouvert, librement consultable et modifiable par tout un chacun. Par exemple, le code source du navigateur Mozilla Firefox est disponible à &lt;a href=&#34;https://developer.mozilla.org/fr/docs/Mozilla/Developer_guide/Source_Code/T%C3%A9l%C3%A9chargement_du_code_source_de_Mozilla&#34;&gt;cette adresse&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;La plupart du temps, les projets disposent d&amp;rsquo;un dépôt Git (sur &lt;a href=&#34;https://github.com/&#34;&gt;GitHub par exemple&lt;/a&gt;) qu&amp;rsquo;il est possible de récupérer, de modifier et le cas échéant, de soumettre les modifications effectuées à la communauté pour validation.&lt;/p&gt;
-
-&lt;h1 id=&#34;je-ne-sais-pas-coder-que-faire&#34;&gt;Je ne sais pas coder, que faire ?&lt;/h1&gt;
-
+&lt;p&gt;La force de l&#39;open source est que chacun peut participer au développement du projet, puisque tout est en accès libre. À l&#39;origine, c&#39;est le code source des logiciels qui est considéré comme ouvert, librement consultable et modifiable par tout un chacun. Par exemple, le code source du navigateur Mozilla Firefox est disponible à &lt;a href=&#34;https://developer.mozilla.org/fr/docs/Mozilla/Developer_guide/Source_Code/T%C3%A9l%C3%A9chargement_du_code_source_de_Mozilla&#34;&gt;cette adresse&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;La plupart du temps, les projets disposent d&#39;un dépôt Git (sur &lt;a href=&#34;https://github.com/&#34;&gt;GitHub par exemple&lt;/a&gt;) qu&#39;il est possible de récupérer, de modifier et le cas échéant, de soumettre les modifications effectuées à la communauté pour validation.&lt;/p&gt;
+&lt;h1 id=&#34;je-ne-sais-pas-coder-que-faire-&#34;&gt;Je ne sais pas coder, que faire ?&lt;/h1&gt;
 &lt;p&gt;Pas besoin de savoir coder pour participer à un projet open source ! Voici une petite liste de projets où tout le monde peut participer facilement.&lt;/p&gt;
-
-&lt;h2 id=&#34;wikipédia-et-commons&#34;&gt;Wikipédia et Commons&lt;/h2&gt;
-
-&lt;p&gt;On ne présente plus &lt;a href=&#34;https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal&#34;&gt;Wikipédia&lt;/a&gt;, projet d&amp;rsquo;encyclopédie universelle créé en 2001. La version française compte à ce jour &lt;a href=&#34;https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Statistiques&#34;&gt;1 966 687&lt;/a&gt; articles. Chacun peut y contribuer, de manière anonyme ou en créant un compte.&lt;/p&gt;
-
-&lt;p&gt;Vous pouvez la mettre à jour avec vos connaissances, mais aussi traduire des articles provenant d&amp;rsquo;autres versions de Wikipédia. Il est aussi possible de faire de la relecture d&amp;rsquo;articles et de corriger les fautes d&amp;rsquo;orthographe et de syntaxe qui se glissent dans les pages du site. Enfin, beaucoup d&amp;rsquo;articles manquent d&amp;rsquo;illustrations, de photos. À une époque où tout le monde à un appareil photo à portée de main, c&amp;rsquo;est quand même dommage de voir tant de villes et villages sans illustrations.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://commons.wikimedia.org/wiki/Accueil&#34;&gt;Commons&lt;/a&gt; est un site du projet Wikimedia, qui centralise toutes les images, vidéos, sons, mises à disposition gratuitement et sous licence Creative Commons pour la plupart. C&amp;rsquo;est là qu&amp;rsquo;il faut téléverser toutes les images, vidéos que vous avez capturées. L&amp;rsquo;assistant d&amp;rsquo;importation est bien fait et vous accompagne dans le processus. Pensez-bien à catégoriser vos images et si possible à les géolocaliser.&lt;/p&gt;
-
+&lt;h2 id=&#34;wikipdia-et-commons&#34;&gt;Wikipédia et Commons&lt;/h2&gt;
+&lt;p&gt;On ne présente plus &lt;a href=&#34;https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal&#34;&gt;Wikipédia&lt;/a&gt;, projet d&#39;encyclopédie universelle créé en 2001. La version française compte à ce jour &lt;a href=&#34;https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Statistiques&#34;&gt;1 966 687&lt;/a&gt; articles. Chacun peut y contribuer, de manière anonyme ou en créant un compte.&lt;/p&gt;
+&lt;p&gt;Vous pouvez la mettre à jour avec vos connaissances, mais aussi traduire des articles provenant d&#39;autres versions de Wikipédia. Il est aussi possible de faire de la relecture d&#39;articles et de corriger les fautes d&#39;orthographe et de syntaxe qui se glissent dans les pages du site. Enfin, beaucoup d&#39;articles manquent d&#39;illustrations, de photos. À une époque où tout le monde à un appareil photo à portée de main, c&#39;est quand même dommage de voir tant de villes et villages sans illustrations.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://commons.wikimedia.org/wiki/Accueil&#34;&gt;Commons&lt;/a&gt; est un site du projet Wikimedia, qui centralise toutes les images, vidéos, sons, mises à disposition gratuitement et sous licence Creative Commons pour la plupart. C&#39;est là qu&#39;il faut téléverser toutes les images, vidéos que vous avez capturées. L&#39;assistant d&#39;importation est bien fait et vous accompagne dans le processus. Pensez-bien à catégoriser vos images et si possible à les géolocaliser.&lt;/p&gt;
 &lt;h2 id=&#34;openstreetmap&#34;&gt;OpenStreetMap&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.openstreetmap.org/&#34;&gt;OpenStreetMap&lt;/a&gt; est la version open source de Google Maps. Le service a débuté en 2004, et près de 5 millions d&amp;rsquo;utilisateurs ont effectué des modifications sur la carte.&lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;&lt;img src=&#34;https://cnovel.github.io/img/post/OpenSourceFacile/OSM-Paris.jpg&#34; alt=&#34;Carte de Paris avec OSM&#34; /&gt;&lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;Vous pouvez contribuer directement depuis le site web, avec une interface assez simple. OSM propose un tutoriel rapide lors de votre première contribution. En France, la base est assez complète pour les grandes villes, mais il faut la garder à jour ! En zone rurale, il manque parfois des chemins, des cours d&amp;rsquo;eau, etc. Enfin, beaucoup d&amp;rsquo;informations secondaires manquent (limite de vitesse, type de voie, revêtement).&lt;/p&gt;
-
-&lt;p&gt;L&amp;rsquo;application &lt;a href=&#34;https://play.google.com/store/apps/details?id=de.westnordost.streetcomplete&#34;&gt;StreetComplete&lt;/a&gt; (disponible sous Android) vous permet de contribuer facilement à OSM, en vous posant des questions sur vos alentours. Est-ce que cette rue est éclairée la nuit ? Est-ce que ce passage piéton est protégé par un feu ? Il est aussi possible de récupérer l&amp;rsquo;application via &lt;a href=&#34;https://f-droid.org/packages/de.westnordost.streetcomplete/&#34;&gt;F-Droid&lt;/a&gt;.&lt;/p&gt;
-
+&lt;p&gt;&lt;a href=&#34;https://www.openstreetmap.org/&#34;&gt;OpenStreetMap&lt;/a&gt; est la version open source de Google Maps. Le service a débuté en 2004, et près de 5 millions d&#39;utilisateurs ont effectué des modifications sur la carte.&lt;/p&gt;
+&lt;center&gt;![Carte de Paris avec OSM](/img/post/OpenSourceFacile/OSM-Paris.jpg)&lt;/center&gt;
+&lt;p&gt;Vous pouvez contribuer directement depuis le site web, avec une interface assez simple. OSM propose un tutoriel rapide lors de votre première contribution. En France, la base est assez complète pour les grandes villes, mais il faut la garder à jour ! En zone rurale, il manque parfois des chemins, des cours d&#39;eau, etc. Enfin, beaucoup d&#39;informations secondaires manquent (limite de vitesse, type de voie, revêtement).&lt;/p&gt;
+&lt;p&gt;L&#39;application &lt;a href=&#34;https://play.google.com/store/apps/details?id=de.westnordost.streetcomplete&#34;&gt;StreetComplete&lt;/a&gt; (disponible sous Android) vous permet de contribuer facilement à OSM, en vous posant des questions sur vos alentours. Est-ce que cette rue est éclairée la nuit ? Est-ce que ce passage piéton est protégé par un feu ? Il est aussi possible de récupérer l&#39;application via &lt;a href=&#34;https://f-droid.org/packages/de.westnordost.streetcomplete/&#34;&gt;F-Droid&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;traduction-rapports-de-bugs&#34;&gt;Traduction, rapports de bugs&lt;/h2&gt;
-
-&lt;p&gt;De nombreux projets sont au début uniquement disponible en anglais. Avec l&amp;rsquo;aide des utilisateurs, il est possible de les traduire en d&amp;rsquo;autres langues. C&amp;rsquo;est par exemple le cas de &lt;a href=&#34;https://github.com/TwidereProject/Twidere-Android&#34;&gt;Twidere&lt;/a&gt;, un client Twitter pour Android, où n&amp;rsquo;importe qui peut aider à la traduction sur &lt;a href=&#34;https://crowdin.com/project/twidere&#34;&gt;Crowdin&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Si vous utilisez des logiciels open source, vous pouvez aussi signaler les bugs que vous rencontrez à l&amp;rsquo;équipe de développement, ainsi que suggérer des améliorations selon votre utilisation.&lt;/p&gt;
+&lt;p&gt;De nombreux projets sont au début uniquement disponible en anglais. Avec l&#39;aide des utilisateurs, il est possible de les traduire en d&#39;autres langues. C&#39;est par exemple le cas de &lt;a href=&#34;https://github.com/TwidereProject/Twidere-Android&#34;&gt;Twidere&lt;/a&gt;, un client Twitter pour Android, où n&#39;importe qui peut aider à la traduction sur &lt;a href=&#34;https://crowdin.com/project/twidere&#34;&gt;Crowdin&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Si vous utilisez des logiciels open source, vous pouvez aussi signaler les bugs que vous rencontrez à l&#39;équipe de développement, ainsi que suggérer des améliorations selon votre utilisation.&lt;/p&gt;
 </description>
     </item>
     

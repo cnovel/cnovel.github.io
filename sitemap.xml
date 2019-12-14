@@ -1,6 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://cnovel.github.io/</loc>
+    <lastmod>2019-01-21T08:33:01+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cnovel.github.io/tags/cuisine/</loc>
+    <lastmod>2019-01-21T08:33:01+01:00</lastmod>
+  </url>
   
   <url>
     <loc>https://cnovel.github.io/post/madeleines/</loc>
@@ -8,8 +18,33 @@
   </url>
   
   <url>
+    <loc>https://cnovel.github.io/post/</loc>
+    <lastmod>2019-01-21T08:33:01+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cnovel.github.io/tags/</loc>
+    <lastmod>2019-01-21T08:33:01+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cnovel.github.io/projets/</loc>
+    <lastmod>2018-12-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cnovel.github.io/post/incredibuild/</loc>
     <lastmod>2018-12-08T17:32:52+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cnovel.github.io/tags/informatique/</loc>
+    <lastmod>2018-12-08T17:32:52+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cnovel.github.io/tags/blog/</loc>
+    <lastmod>2018-10-16T08:27:28+02:00</lastmod>
   </url>
   
   <url>
@@ -48,6 +83,11 @@
   </url>
   
   <url>
+    <loc>https://cnovel.github.io/projets/</loc>
+    <lastmod>2018-04-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cnovel.github.io/projets/secrethitler/</loc>
     <lastmod>2018-04-14T00:00:00+00:00</lastmod>
   </url>
@@ -73,60 +113,12 @@
   </url>
   
   <url>
-    <loc>https://cnovel.github.io/projets/</loc>
-    <lastmod>2018-03-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://cnovel.github.io/about/</loc>
     <lastmod>2018-03-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://cnovel.github.io/tags/blog/</loc>
-    <lastmod>2018-10-16T08:27:28+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cnovel.github.io/</loc>
-    <lastmod>2019-01-21T08:33:01+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cnovel.github.io/tags/cuisine/</loc>
-    <lastmod>2019-01-21T08:33:01+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cnovel.github.io/tags/informatique/</loc>
-    <lastmod>2018-12-08T17:32:52+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cnovel.github.io/post/</loc>
-    <lastmod>2019-01-21T08:33:01+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cnovel.github.io/projets/</loc>
-    <lastmod>2018-04-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cnovel.github.io/tags/</loc>
-    <lastmod>2018-10-16T08:27:28+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://cnovel.github.io/topics/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>
