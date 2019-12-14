@@ -37,7 +37,10 @@
 &lt;li&gt;Ajouter progressivement la farine, mélanger jusqu&#39;à ce que la pâte soit bien homogène.&lt;/li&gt;
 &lt;li&gt;Beurrer les moules à madeleines, les remplir aux 3/4 de pâte puis enfourner. Surveiller la cuisson.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;center&gt;![Madeleines](/img/post/madeleines/madeleines.jpg)&lt;br /&gt;&lt;i&gt;Régalez-vous !&lt;/i&gt;&lt;/center&gt;</description>
+&lt;center&gt;
+&lt;p&gt;&lt;img src=&#34;https://cnovel.github.io/img/post/madeleines/madeleines.jpg&#34; alt=&#34;Madeleines&#34;&gt;
+&lt;em&gt;Régalez-vous !&lt;/em&gt;&lt;/p&gt;
+&lt;/center&gt;</description>
     </item>
     
     <item>
@@ -78,7 +81,9 @@
       <description>&lt;h2 id=&#34;la-publicit-sur-internet&#34;&gt;La publicité sur Internet&lt;/h2&gt;
 &lt;p&gt;Je ne vais pas en écrire des pavés, mais il y a plein de raisons pour bloquer la publicité sur Internet. D&#39;une part parce que les sites n&#39;ont aucune idée de ce qui s&#39;affiche sur leurs pages et on dénombre &lt;a href=&#34;https://motherboard.vice.com/en_us/article/gv5xxx/malvertising-hits-the-daily-mail-one-of-the-biggest-news-sites-on-the-web&#34;&gt;pas&lt;/a&gt; &lt;a href=&#34;https://motherboard.vice.com/en_us/article/bmv8gw/an-anti-adblock-service-was-hacked-and-infected-some-users-with-malware&#34;&gt;mal&lt;/a&gt; de &lt;a href=&#34;https://en.wikipedia.org/wiki/Malvertising#History&#34;&gt;cas&lt;/a&gt; de &lt;a href=&#34;https://www.avg.com/en/signal/what-is-malvertising&#34;&gt;malvertising&lt;/a&gt;. D&#39;autre part, les publicités sont extrêmement lourdes et grignotent votre bande passante et votre forfait. Enfin, tout ce beau monde vous traque avec cookies et autres, alors qu&#39;on a rien demandé. Comment faire pour éviter tout ça ?&lt;/p&gt;
 &lt;h2 id=&#34;pihole-bloqueur-de-domaines&#34;&gt;Pi-hole, bloqueur de domaines&lt;/h2&gt;
-&lt;center&gt;![Logo Pihole](/img/post/Pihole/Logo_Pihole.png)&lt;/center&gt;
+&lt;center&gt;
+&lt;p&gt;&lt;img src=&#34;https://cnovel.github.io/img/post/Pihole/Logo_Pihole.png&#34; alt=&#34;Logo Pihole&#34;&gt;&lt;/p&gt;
+&lt;/center&gt;
 &lt;p&gt;C&#39;est là qu&#39;intervient Pi-hole. Pi-hole est un résolveur DNS qui va bloquer certains domaines. De manière général, un résolveur DNS fonctionne de la manière suivante : quand on demande à accéder à &lt;a href=&#34;www.duckduckgo.com&#34;&gt;&lt;a href=&#34;http://www.duckduckgo.com&#34;&gt;www.duckduckgo.com&lt;/a&gt;&lt;/a&gt;, le résolveur va faire correspondre cette entrée texte à une adresse IP (176.34.155.23 en l’occurrence). Pi-hole va faire la même chose, sauf qu&#39;il va bloquer tous les domaines publicitaires. Ainsi, lorsque l&#39;on cherche à accéder à api.vungle.com (service de publicités vidéos), et bien Pi-hole répond que le site web est introuvable.&lt;/p&gt;
 &lt;p&gt;De nombreuses extensions existent pour bloquer la pub sur votre navigateur (&lt;a href=&#34;https://addons.mozilla.org/en-US/firefox/addon/adguard-adblocker/&#34;&gt;AdGuard&lt;/a&gt; par exemple). Cependant cela ne bloque la pub que sur le navigateur, et le bloqueur peut être détecté. D&#39;autre part, l&#39;add-on doit avoir accès à l&#39;intégralité de la page, ce qui n&#39;est jamais totalement rassurant. Pi-hole a l&#39;avantage de pouvoir bloquer la publicité sur toutes les applications et sur le réseau complet, et d&#39;être open-source.&lt;/p&gt;
 &lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
@@ -89,10 +94,16 @@
 &lt;h3 id=&#34;tape-2--installation-de-pihole&#34;&gt;Étape 2 : Installation de Pi-hole&lt;/h3&gt;
 &lt;p&gt;Une fois Raspbian prêt, il est temps d&#39;installer Pi-hole. Ouvrez un terminal, puis tapez la commande &lt;code&gt;curl -sSL https://install.pi-hole.net | bash&lt;/code&gt;. L&#39;installation de Pi-hole va se lancer.&lt;/p&gt;
 &lt;p&gt;Normalement, la seule partie où vous avez besoin de changer quelque chose est la partie &lt;em&gt;Choix DNS&lt;/em&gt; :&lt;/p&gt;
-&lt;center&gt;![Écran de choix des DNS](/img/post/Pihole/choix_dns.png)&lt;br /&gt;&lt;i&gt;Écran de choix du DNS&lt;/i&gt;&lt;/center&gt;
+&lt;center&gt;
+&lt;p&gt;&lt;img src=&#34;https://cnovel.github.io/img/post/Pihole/choix_dns.png&#34; alt=&#34;Écran de choix des DNS&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Écran de choix du DNS&lt;/em&gt;&lt;/p&gt;
+&lt;/center&gt;
 &lt;p&gt;Personnellement j&#39;utilise Quad9 qui fonctionne bien.&lt;/p&gt;
 &lt;p&gt;À la fin de l&#39;installation, n&#39;oubliez pas de noter l&#39;adresse IP de votre Raspberry Pi, ainsi que le mot de passe pour l&#39;interface web.&lt;/p&gt;
-&lt;center&gt;![Écran de fin](/img/post/Pihole/fin_install.png)&lt;br /&gt;&lt;i&gt;Écran de fin de l&#39;installation&lt;/i&gt;&lt;/center&gt;
+&lt;center&gt;
+&lt;p&gt;&lt;img src=&#34;https://cnovel.github.io/img/post/Pihole/fin_install.png&#34; alt=&#34;Écran de fin&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Écran de fin de l&#39;installation&lt;/em&gt;&lt;/p&gt;
+&lt;/center&gt;
 &lt;h3 id=&#34;tape-3--mise--jour-de-la-freebox&#34;&gt;Étape 3 : Mise à jour de la Freebox&lt;/h3&gt;
 &lt;p&gt;Désormais, il faut mettre à jour quelques options sur la Freebox. La première étape est de spécifier que le Raspberry Pi doit toujours avoir la même adresse IP. Si jamais votre Freebox redémarre, il faut être sûr que l&#39;adresse du Pi ne change pas. Pour cela, allez dans votre espace Freebox OS, puis Paramètres de la Freebox &amp;gt; DHCP. Dans l&#39;onglet Baux actifs, trouvez votre Pi puis clic-droit &amp;gt; Ajouter un bail statique. Désormais, votre Pi aura toujours la même adresse IP.&lt;/p&gt;
 &lt;p&gt;Enfin, toujours dans cette fenêtre, dans l&#39;onglet Serveur DHCP, rentrez comme adresse Serveur DNS 1 l&#39;adresse IP de votre Pi, et ne mettez rien dans les autres (important, sinon Pi-hole ne fonctionne pas !).&lt;/p&gt;
@@ -100,7 +111,10 @@
 &lt;p&gt;Pour être sur que les changements s&#39;appliquent, redémarrez la box, le Raspberry Pi et vos appareils.&lt;/p&gt;
 &lt;h4 id=&#34;bonus--vrifier-sous-windows-que-le-dns-est-celui-de-pihole&#34;&gt;Bonus : Vérifier sous Windows que le DNS est celui de Pi-hole&lt;/h4&gt;
 &lt;p&gt;Si vous utilisez Windows, vous pouvez vérifier que le DNS utilisé est bien celui de Pi-hole en entrant la commande suivante : &lt;code&gt;ipconfig /all&lt;/code&gt; et en vérifiant l&#39;adresse du DNS :&lt;/p&gt;
-&lt;center&gt;![Vérification DNS](/img/post/Pihole/dns_check.png)&lt;br /&gt;&lt;i&gt;Vérification DNS&lt;/i&gt;&lt;/center&gt;
+&lt;center&gt;
+&lt;p&gt;&lt;img src=&#34;https://cnovel.github.io/img/post/Pihole/dns_check.png&#34; alt=&#34;Vérification DNS&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Vérification DNS&lt;/em&gt;&lt;/p&gt;
+&lt;/center&gt;
 &lt;h3 id=&#34;tape-5--naviguez-sans-publicit&#34;&gt;Étape 5 : Naviguez sans publicité&lt;/h3&gt;
 &lt;p&gt;Si tout s&#39;est bien passé, vous pouvez désormais naviguez sans publicité dès que vous êtes connecté à votre réseau local.&lt;/p&gt;
 &lt;h2 id=&#34;bilan-aprs-quelques-semaines-dutilisation&#34;&gt;Bilan après quelques semaines d&#39;utilisation&lt;/h2&gt;
@@ -124,8 +138,11 @@
 &lt;h2 id=&#34;utilisation-depuis-7-mois&#34;&gt;Utilisation depuis 7 mois&lt;/h2&gt;
 &lt;p&gt;Depuis 7 mois, mon adresse gérée par Fastmail est mon adresse principale. L&#39;avantage d&#39;utiliser son propre nom de domaine est qu&#39;il est possible d&#39;avoir une multitude d&#39;alias, ce que j&#39;utilise allègrement à chaque fois que je m&#39;inscris sur un service web. Quelques newsletters arrivent encore sur mon ancienne adrresse GMail, mais je ne la regarde qu&#39;occasionnellement.&lt;/p&gt;
 &lt;p&gt;L&#39;ergonomie de la partie e-mail est assez classique. J&#39;apprécie l&#39;affichage assez compact et sans fioriture de la page d&#39;accueil. J&#39;ai même l&#39;impression que la navigation est plus rapide que sur GMail. La partie calendrier est très chouette, et m&#39;a réconciliée avec l&#39;affiche en vue Mois. Cela grâce à la bonne idée de mettre en accès rapide en bas de la page tous les mois de l&#39;année en cours.&lt;/p&gt;
-&lt;center&gt;![Accès rapide pour l&#39;année en cours](/img/post/fastmail/bottomCalendar.png)&lt;br /&gt;&lt;i&gt;Accès rapide pour l&#39;année en cours&lt;/i&gt;&lt;/center&gt;
-&lt;p&gt;La partie Contacts fonctionne bien, je suis un peu déçu que les photos des contacts ne soient pas affichées mais ce n&#39;est pas dramatique.&lt;/p&gt;
+&lt;center&gt;
+&lt;p&gt;&lt;img src=&#34;https://cnovel.github.io/img/post/fastmail/bottomCalendar.png&#34; alt=&#34;Accès rapide pour l&#39;année en cours&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Accès rapide pour l&#39;année en cours&lt;/em&gt;&lt;/p&gt;
+&lt;/center&gt;
+La partie Contacts fonctionne bien, je suis un peu déçu que les photos des contacts ne soient pas affichées mais ce n&#39;est pas dramatique.
 &lt;p&gt;À noter aussi que Fastmail propose un espace de notes et un espace de stockage des fichiers. Toutefois leurs fonctionnalités sont limitées (pas de synchro possible à ma connaissance), et me servent donc juste d&#39;appoint.&lt;/p&gt;
 &lt;p&gt;Dans l&#39;ensemble je suis ravi de Fastmail, et je pense bien continuer à l&#39;utiliser autant que possible. Si jamais vous voulez tenter l&#39;aventure et changer d&#39;e-mail pour Fastmail, vous pouvez avoir 10% de réduction sur votre première facture en &lt;a href=&#34;https://www.fastmail.com/?STKI=18728360&#34;&gt;suivant ce lien&lt;/a&gt;.&lt;/p&gt;
 </description>
@@ -141,7 +158,10 @@
 &lt;h2 id=&#34;jai-pris-un-vlo-rouge-a-va-plus-vite&#34;&gt;J&#39;ai pris un vélo rouge, ça va plus vite&lt;/h2&gt;
 &lt;p&gt;Pour autant, je n&#39;avais pas envie d&#39;abandonner le vélo. Mon trajet maison/travail est plus agréable à vélo qu&#39;à métro (la ligne 5  est  souvent bondée), et ça permet de faire un peu de sport (6 km par jour).&lt;/p&gt;
 &lt;p&gt;Si mon travail dispose bien d&#39;un local à vélo, ce n&#39;est pas le cas de mon immeuble. Je me suis donc tourné vers un modèle pliant, pour pouvoir le ranger chez moi. Et ne sachant pas vraiment quoi prendre, je suis aller au plus simple et j&#39;ai pris une référence chez Décathlon.&lt;/p&gt;
-&lt;center&gt;![Tilt 120 rouge](/img/post/ABicyclette/tilt120.jpg)&lt;br /&gt;&lt;i&gt;Tilt 120 rouge&lt;/i&gt;&lt;/center&gt;
+&lt;center&gt;
+&lt;p&gt;&lt;img src=&#34;https://cnovel.github.io/img/post/ABicyclette/tilt120.jpg&#34; alt=&#34;Tilt 120 rouge&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Tilt 120 rouge&lt;/em&gt;&lt;/p&gt;
+&lt;/center&gt;
 &lt;p&gt;Le Tilt 120 est abordable (le modèle rouge est encore en &lt;a href=&#34;https://www.decathlon.fr/velo-pliant-tilt-120-rouge-id_8378488.html&#34;&gt;promo à 200€&lt;/a&gt;) et possède un plateau de vitesse. J&#39;ai pris en accessoire un casque de vélo et &lt;a href=&#34;https://www.decathlon.fr/antivol-pliant-bordo-abus-id_8130253.html&#34;&gt;un antivol type pliable&lt;/a&gt; qui a l&#39;avantage de pouvoir se ranger sur le vélo facilement lorsqu&#39;on roule.&lt;/p&gt;
 &lt;p&gt;Après un mois à vélo, je suis satisfait. Je n&#39;ai plus à vérifier si des Vélibs sont disponibles en bas de chez moi, du coup mon trajet est plus court et plus serein. J&#39;ai de la chance de bénéficier d&#39;une piste cyclable protégée sur la majorité de mon parcours. Le seul bémol est de devoir remonter chaque soir mon vélo, mais on va dire que ça fait les bras en plus des jambes. Niveau pliage, pas de soucis après un mois, si ce n&#39;est que la peinture rouge s&#39;abîme à certains endroits très localisés. Et les autocollants ont souffert un peu aussi, mais là encore c&#39;est un détail. Il faut voir sur la longueur, il y aura sûrement des frais d&#39;entretien au cours de l&#39;année.&lt;/p&gt;
 &lt;h2 id=&#34;pensez--likv-&#34;&gt;Pensez à l&#39;IKV !&lt;/h2&gt;
@@ -220,21 +240,34 @@
       
       <guid>https://cnovel.github.io/post/majusculesaccentu%C3%A9es/</guid>
       <description>&lt;p&gt;L&#39;accentuation des majuscules est une pratique très peu répandue, mais pourtant fortement recommandée par l&amp;rsquo;&lt;a href=&#34;http://academie-francaise.fr/questions-de-langue#5_strong-em-accentuation-des-majuscules-em-strong&#34;&gt;Académie française&lt;/a&gt;.&lt;/p&gt;
-&lt;center&gt;![Titre sur LeMonde.fr](/img/post/Majuscules/TitreLeMonde.png)&lt;br /&gt;&lt;i&gt;Les États-Unis en perdent leur accent sur LeMonde.fr !&lt;/i&gt;&lt;/center&gt;
+&lt;center&gt;
+&lt;p&gt;&lt;img src=&#34;https://cnovel.github.io/img/post/Majuscules/TitreLeMonde.png&#34; alt=&#34;Titre sur LeMonde.fr&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Les États-Unis en perdent leur accent sur LeMonde.fr !&lt;/em&gt;&lt;/p&gt;
+&lt;/center&gt;
 &lt;p&gt;Une des raisons de ce manquement est la difficulté d&#39;écrire ces majuscules avec nos claviers AZERTY classique. Si le &lt;em&gt;à&lt;/em&gt;, le &lt;em&gt;ù&lt;/em&gt; et d&#39;autres sont facilement accessibles, ce n&#39;est pas le cas pour les majuscules. La méthode à appliquer sous Windows est fastidieuse : il faut rentrer un code couplé à la touche &lt;code&gt;Alt&lt;/code&gt; pour faire apparaître la majuscule accentuée. Par exemple, &lt;code&gt;Alt + 144&lt;/code&gt; donne le caractère &lt;code&gt;É&lt;/code&gt;. Retenir ces codes pour chaque majuscule est évidemment fastidieux et peu pratique.&lt;/p&gt;
 &lt;p&gt;Il est possible d&#39;installer un logiciel pour résoudre ce problème. &lt;a href=&#34;https://www.geekzone.fr/2016/10/14/wincompose-retrouver-acces-facile-aux-caracteres-speciaux-windows/&#34;&gt;GeekZone.fr&lt;/a&gt; propose &lt;a href=&#34;https://github.com/samhocevar/wincompose&#34;&gt;WinCompose&lt;/a&gt;, qui est très puissant et permet de configurer énormément de raccourcis clavier pour de nombreux caractères, ou même des séquences de caractères. Cependant, je trouve la solution trop lourde dans mon cas d&#39;utilisation. Je souhaite simplement pouvoir écrire des majuscules accentuées !&lt;/p&gt;
 &lt;p&gt;La solution que je voulais adapter, c&#39;est celle disponible sous Linux. Effectuer une majuscule accentuée est bien plus simple, puisqu&#39;il suffit d&#39;enclencher &lt;code&gt;Caps Lock&lt;/code&gt;  puis d&#39;appuyer sur la touche &lt;code&gt;è&lt;/code&gt; par exemple, pour obtenir &lt;code&gt;È&lt;/code&gt;. Pas de raccourci compliqué, pas de gymnastique mentale. Pour obtenir ce résultat sous Windows, il faut passer par le &lt;a href=&#34;https://www.microsoft.com/en-us/download/details.aspx?id=22339&#34;&gt;Microsoft Keyboard Layout Creator&lt;/a&gt;. C&#39;est un outil qui permet de créer sa propre disposition pour son clavier. Je donne la marche à suivre complète, mais vous pouvez directement sauter à &lt;a href=&#34;#installation&#34;&gt;la partie installation&lt;/a&gt; si vous ne souhaitez pas personnaliser la disposition que j&#39;ai créée.&lt;/p&gt;
 &lt;p&gt;Une fois installé, lancez l&#39;outil et chargez une disposition de clavier pré-existante via &lt;code&gt;File &amp;gt; Load Existing Keyboard...&lt;/code&gt;. J&#39;ai choisi la disposition française classique pour ma part.&lt;/p&gt;
-&lt;center&gt;![Écran une fois le clavier chargé](/img/post/Majuscules/Layout1.png)&lt;br /&gt;&lt;i&gt;Clavier français chargé&lt;/i&gt;&lt;/center&gt;
+&lt;center&gt;
+&lt;p&gt;&lt;img src=&#34;https://cnovel.github.io/img/post/Majuscules/Layout1.png&#34; alt=&#34;Écran une fois le clavier chargé&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Clavier français chargé&lt;/em&gt;&lt;/p&gt;
+&lt;/center&gt;
 &lt;p&gt;Double-cliquez sur la lettre que vous souhaitez modifier, puis dans la fenêtre qui vient d&#39;apparaître, cliquez sur &lt;code&gt;All...&lt;/code&gt;. Une nouvelle fenêtre s&#39;ouvre, cochez en haut à gauche &lt;code&gt;Advanced View&lt;/code&gt;. Puis dans le champ &lt;code&gt;SGCAP+&amp;lt;Key&amp;gt;&lt;/code&gt;, rentrez la lettre majuscule accentuée.&lt;/p&gt;
-&lt;center&gt;![Écran une fois le clavier chargé](/img/post/Majuscules/Modify.png)&lt;br /&gt;&lt;i&gt;Écran de modification de la lettre, une fois complètement rempli&lt;/i&gt;&lt;/center&gt;
+&lt;center&gt;
+&lt;p&gt;&lt;img src=&#34;https://cnovel.github.io/img/post/Majuscules/Modify.png&#34; alt=&#34;Écran une fois le clavier chargé&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Écran de modification de la lettre, une fois complètement rempli&lt;/em&gt;&lt;/p&gt;
+&lt;/center&gt;
 &lt;p&gt;Validez en appuyant pour OK, puis faîtes de même pour chaque lettre. Si vous ne voulez pas vous embêter, vous pouvez directement récupérer &lt;a href=&#34;https://cnovel.github.io/various/LayoutCapsAccent.klc&#34;&gt;ici&lt;/a&gt; la disposition modifiée.&lt;/p&gt;
 &lt;p&gt;Une fois votre disposition finalisée, testez-la via &lt;code&gt;Project &amp;gt; Test Keyboard Layout...&lt;/code&gt; puis sauvez-la via &lt;code&gt;File &amp;gt; Save Source File As...&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Enfin dernière étape, il faut créer l&#39;installeur de votre disposition. Pour cela, allez dans &lt;code&gt;Project &amp;gt; Build DLL and Setup Package&lt;/code&gt;. Il vous est demandé de rentrer quelques précisions comme le nom de la disposition. Puis un installeur est créé dans &lt;code&gt;Documents&lt;/code&gt;. &lt;a id=&#34;installation&#34;&gt;&lt;/a&gt;Vous pouvez trouver l&#39;installeur zippé &lt;a href=&#34;https://cnovel.github.io/various/InstallerLayoutCapsAccent.zip&#34;&gt;ici&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Exécutez &lt;code&gt;setup.exe&lt;/code&gt;, puis allez dans les paramètres Windows,  section Heure et langue. Sur le panneau de gauche, choisissez Région et langue.&lt;/p&gt;
-&lt;center&gt;![Écran des paramètres](/img/post/Majuscules/Params1.png)&lt;br /&gt;&lt;/center&gt;
+&lt;center&gt;
+&lt;p&gt;&lt;img src=&#34;https://cnovel.github.io/img/post/Majuscules/Params1.png&#34; alt=&#34;Écran des paramètres&#34;&gt;&lt;/p&gt;
+&lt;/center&gt;
 &lt;p&gt;Ensuite, cliquez sur Français, et descendez à la section Clavier. Si votre disposition n&#39;apparaît pas encore, ajoutez-là via le bouton idoine.&lt;/p&gt;
-&lt;center&gt;![Écran des paramètres](/img/post/Majuscules/Params2.png)&lt;br /&gt;&lt;/center&gt;
+&lt;center&gt;
+&lt;p&gt;&lt;img src=&#34;https://cnovel.github.io/img/post/Majuscules/Params2.png&#34; alt=&#34;Écran des paramètres&#34;&gt;&lt;/p&gt;
+&lt;/center&gt;
 &lt;p&gt;C&#39;est tout bon, à un redémarrage près du système. À vous les ÀÉÈÙÇ faciles !&lt;/p&gt;
 </description>
     </item>
@@ -246,7 +279,9 @@
       
       <guid>https://cnovel.github.io/post/biscuitscocottes/</guid>
       <description>&lt;p&gt;Les biscuits Cocottes, ce sont de délicieux biscuits avec des graines et des pépites de chocolat, fabriqués par la biscuiterie &lt;em&gt;Saint Michel&lt;/em&gt;.&lt;/p&gt;
-&lt;center&gt;![Biscuits cocottes Saint Michel](/img/post/BiscuitsCocottes/CocottesStMichel.png)&lt;/center&gt;
+&lt;center&gt;
+&lt;p&gt;&lt;img src=&#34;https://cnovel.github.io/img/post/BiscuitsCocottes/CocottesStMichel.png&#34; alt=&#34;Biscuits cocottes Saint Michel&#34;&gt;&lt;/p&gt;
+&lt;/center&gt;
 &lt;p&gt;Ces biscuits ne sont pas très compliqués à réaliser soi-même, en voici la recette.&lt;/p&gt;
 &lt;h1 id=&#34;ingrdients&#34;&gt;Ingrédients&lt;/h1&gt;
 &lt;p&gt;Pour une trentaine de biscuits :&lt;/p&gt;
@@ -272,7 +307,10 @@
 &lt;li&gt;Faire cuire pendant une dizaine de minutes.&lt;/li&gt;
 &lt;li&gt;Sortir, découper au besoin, puis laisser refroidir.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;center&gt;![Biscuits cocottes](/img/post/BiscuitsCocottes/biscuits.jpg)&lt;br /&gt;&lt;i&gt;Régalez-vous !&lt;/i&gt;&lt;/center&gt;</description>
+&lt;center&gt;
+&lt;p&gt;&lt;img src=&#34;https://cnovel.github.io/img/post/BiscuitsCocottes/biscuits.jpg&#34; alt=&#34;Biscuits cocottes&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Régalez-vous !&lt;/em&gt;&lt;/p&gt;
+&lt;/center&gt;</description>
     </item>
     
     <item>
@@ -296,7 +334,9 @@
 &lt;p&gt;&lt;a href=&#34;https://commons.wikimedia.org/wiki/Accueil&#34;&gt;Commons&lt;/a&gt; est un site du projet Wikimedia, qui centralise toutes les images, vidéos, sons, mises à disposition gratuitement et sous licence Creative Commons pour la plupart. C&#39;est là qu&#39;il faut téléverser toutes les images, vidéos que vous avez capturées. L&#39;assistant d&#39;importation est bien fait et vous accompagne dans le processus. Pensez-bien à catégoriser vos images et si possible à les géolocaliser.&lt;/p&gt;
 &lt;h2 id=&#34;openstreetmap&#34;&gt;OpenStreetMap&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.openstreetmap.org/&#34;&gt;OpenStreetMap&lt;/a&gt; est la version open source de Google Maps. Le service a débuté en 2004, et près de 5 millions d&#39;utilisateurs ont effectué des modifications sur la carte.&lt;/p&gt;
-&lt;center&gt;![Carte de Paris avec OSM](/img/post/OpenSourceFacile/OSM-Paris.jpg)&lt;/center&gt;
+&lt;center&gt;
+&lt;p&gt;&lt;img src=&#34;https://cnovel.github.io/img/post/OpenSourceFacile/OSM-Paris.jpg&#34; alt=&#34;Carte de Paris avec OSM&#34;&gt;&lt;/p&gt;
+&lt;/center&gt;
 &lt;p&gt;Vous pouvez contribuer directement depuis le site web, avec une interface assez simple. OSM propose un tutoriel rapide lors de votre première contribution. En France, la base est assez complète pour les grandes villes, mais il faut la garder à jour ! En zone rurale, il manque parfois des chemins, des cours d&#39;eau, etc. Enfin, beaucoup d&#39;informations secondaires manquent (limite de vitesse, type de voie, revêtement).&lt;/p&gt;
 &lt;p&gt;L&#39;application &lt;a href=&#34;https://play.google.com/store/apps/details?id=de.westnordost.streetcomplete&#34;&gt;StreetComplete&lt;/a&gt; (disponible sous Android) vous permet de contribuer facilement à OSM, en vous posant des questions sur vos alentours. Est-ce que cette rue est éclairée la nuit ? Est-ce que ce passage piéton est protégé par un feu ? Il est aussi possible de récupérer l&#39;application via &lt;a href=&#34;https://f-droid.org/packages/de.westnordost.streetcomplete/&#34;&gt;F-Droid&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;traduction-rapports-de-bugs&#34;&gt;Traduction, rapports de bugs&lt;/h2&gt;
@@ -312,7 +352,7 @@
       
       <guid>https://cnovel.github.io/post/premierbillet/</guid>
       <description>&lt;h1 id=&#34;hello-world&#34;&gt;Hello world!&lt;/h1&gt;
-&lt;p&gt;Depuis que CozyCloud v2 n&#39;est plus, j&#39;ai perdu mon blog sous Ghost. Il n&#39;a jamais vraiment été alimenté car l&#39;interface de Ghosht était un peu confuse, couplé à ll&#39;interface de Cozy il y avait de temps en temps des bugs. Bref tout cela fait que l&#39;ancien blog n&#39;existe plus.&lt;/p&gt;
+&lt;p&gt;Depuis que CozyCloud v2 n&#39;est plus, j&#39;ai perdu mon blog sous Ghost. Il n&#39;a jamais vraiment été alimenté car l&#39;interface de Ghost était un peu confuse, couplé à l&#39;interface de Cozy il y avait de temps en temps des bugs. Bref tout cela fait que l&#39;ancien blog n&#39;existe plus.&lt;/p&gt;
 &lt;h1 id=&#34;habemus-blogam&#34;&gt;Habemus blogam&lt;/h1&gt;
 &lt;p&gt;Je me suis repenché sur la question d&#39;un blog, et en premier lieu comment l&#39;héberger. J&#39;ai toujours mon espace Free, mais je n&#39;ai pas envie de toucher au site principal qui est en ligne depuis avril 2005 (13 ans, cela ne nous rajeunit pas). Je me suis donc tourner vers le service &lt;a href=&#34;https://pages.github.com/&#34;&gt;Pages de GitHub&lt;/a&gt;, qui permet un hébergement simple pour des sites statiques avec peu de traffic. Parfait, c&#39;est exactement ce que je veux faire.&lt;/p&gt;
 &lt;p&gt;Pour propulser le blog, j&#39;ai opté pour &lt;a href=&#34;https://www.gohugo.io&#34;&gt;Hugo&lt;/a&gt;, qui est un générateur de sites statiques. La mise en place est peut-être un peu compliqué pour installer les thèmes, mais une fois qu&#39;on a compris le fonctionnement, tout devient plutôt simple. Les billets sont écrits en &lt;em&gt;Markdown&lt;/em&gt;, ce qui de mon point de vue est assez sympa.&lt;/p&gt;

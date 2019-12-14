@@ -255,7 +255,9 @@
   <h2 id="la-publicit-sur-internet">La publicité sur Internet</h2>
 <p>Je ne vais pas en écrire des pavés, mais il y a plein de raisons pour bloquer la publicité sur Internet. D'une part parce que les sites n'ont aucune idée de ce qui s'affiche sur leurs pages et on dénombre <a href="https://motherboard.vice.com/en_us/article/gv5xxx/malvertising-hits-the-daily-mail-one-of-the-biggest-news-sites-on-the-web">pas</a> <a href="https://motherboard.vice.com/en_us/article/bmv8gw/an-anti-adblock-service-was-hacked-and-infected-some-users-with-malware">mal</a> de <a href="https://en.wikipedia.org/wiki/Malvertising#History">cas</a> de <a href="https://www.avg.com/en/signal/what-is-malvertising">malvertising</a>. D'autre part, les publicités sont extrêmement lourdes et grignotent votre bande passante et votre forfait. Enfin, tout ce beau monde vous traque avec cookies et autres, alors qu'on a rien demandé. Comment faire pour éviter tout ça ?</p>
 <h2 id="pihole-bloqueur-de-domaines">Pi-hole, bloqueur de domaines</h2>
-<center>![Logo Pihole](/img/post/Pihole/Logo_Pihole.png)</center>
+<center>
+<p><img src="https://cnovel.github.io/img/post/Pihole/Logo_Pihole.png" alt="Logo Pihole"></p>
+</center>
 <p>C'est là qu'intervient Pi-hole. Pi-hole est un résolveur DNS qui va bloquer certains domaines. De manière général, un résolveur DNS fonctionne de la manière suivante : quand on demande à accéder à <a href="www.duckduckgo.com"><a href="http://www.duckduckgo.com">www.duckduckgo.com</a></a>, le résolveur va faire correspondre cette entrée texte à une adresse IP (176.34.155.23 en l’occurrence). Pi-hole va faire la même chose, sauf qu'il va bloquer tous les domaines publicitaires. Ainsi, lorsque l'on cherche à accéder à api.vungle.com (service de publicités vidéos), et bien Pi-hole répond que le site web est introuvable.</p>
 <p>De nombreuses extensions existent pour bloquer la pub sur votre navigateur (<a href="https://addons.mozilla.org/en-US/firefox/addon/adguard-adblocker/">AdGuard</a> par exemple). Cependant cela ne bloque la pub que sur le navigateur, et le bloqueur peut être détecté. D'autre part, l'add-on doit avoir accès à l'intégralité de la page, ce qui n'est jamais totalement rassurant. Pi-hole a l'avantage de pouvoir bloquer la publicité sur toutes les applications et sur le réseau complet, et d'être open-source.</p>
 <h2 id="installation">Installation</h2>
@@ -266,10 +268,16 @@
 <h3 id="tape-2--installation-de-pihole">Étape 2 : Installation de Pi-hole</h3>
 <p>Une fois Raspbian prêt, il est temps d'installer Pi-hole. Ouvrez un terminal, puis tapez la commande <code>curl -sSL https://install.pi-hole.net | bash</code>. L'installation de Pi-hole va se lancer.</p>
 <p>Normalement, la seule partie où vous avez besoin de changer quelque chose est la partie <em>Choix DNS</em> :</p>
-<center>![Écran de choix des DNS](/img/post/Pihole/choix_dns.png)<br /><i>Écran de choix du DNS</i></center>
+<center>
+<p><img src="https://cnovel.github.io/img/post/Pihole/choix_dns.png" alt="Écran de choix des DNS"></p>
+<p><em>Écran de choix du DNS</em></p>
+</center>
 <p>Personnellement j'utilise Quad9 qui fonctionne bien.</p>
 <p>À la fin de l'installation, n'oubliez pas de noter l'adresse IP de votre Raspberry Pi, ainsi que le mot de passe pour l'interface web.</p>
-<center>![Écran de fin](/img/post/Pihole/fin_install.png)<br /><i>Écran de fin de l'installation</i></center>
+<center>
+<p><img src="https://cnovel.github.io/img/post/Pihole/fin_install.png" alt="Écran de fin"></p>
+<p><em>Écran de fin de l'installation</em></p>
+</center>
 <h3 id="tape-3--mise--jour-de-la-freebox">Étape 3 : Mise à jour de la Freebox</h3>
 <p>Désormais, il faut mettre à jour quelques options sur la Freebox. La première étape est de spécifier que le Raspberry Pi doit toujours avoir la même adresse IP. Si jamais votre Freebox redémarre, il faut être sûr que l'adresse du Pi ne change pas. Pour cela, allez dans votre espace Freebox OS, puis Paramètres de la Freebox &gt; DHCP. Dans l'onglet Baux actifs, trouvez votre Pi puis clic-droit &gt; Ajouter un bail statique. Désormais, votre Pi aura toujours la même adresse IP.</p>
 <p>Enfin, toujours dans cette fenêtre, dans l'onglet Serveur DHCP, rentrez comme adresse Serveur DNS 1 l'adresse IP de votre Pi, et ne mettez rien dans les autres (important, sinon Pi-hole ne fonctionne pas !).</p>
@@ -277,7 +285,10 @@
 <p>Pour être sur que les changements s'appliquent, redémarrez la box, le Raspberry Pi et vos appareils.</p>
 <h4 id="bonus--vrifier-sous-windows-que-le-dns-est-celui-de-pihole">Bonus : Vérifier sous Windows que le DNS est celui de Pi-hole</h4>
 <p>Si vous utilisez Windows, vous pouvez vérifier que le DNS utilisé est bien celui de Pi-hole en entrant la commande suivante : <code>ipconfig /all</code> et en vérifiant l'adresse du DNS :</p>
-<center>![Vérification DNS](/img/post/Pihole/dns_check.png)<br /><i>Vérification DNS</i></center>
+<center>
+<p><img src="https://cnovel.github.io/img/post/Pihole/dns_check.png" alt="Vérification DNS"></p>
+<p><em>Vérification DNS</em></p>
+</center>
 <h3 id="tape-5--naviguez-sans-publicit">Étape 5 : Naviguez sans publicité</h3>
 <p>Si tout s'est bien passé, vous pouvez désormais naviguez sans publicité dès que vous êtes connecté à votre réseau local.</p>
 <h2 id="bilan-aprs-quelques-semaines-dutilisation">Bilan après quelques semaines d'utilisation</h2>
