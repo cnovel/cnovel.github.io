@@ -26,15 +26,22 @@
       <pubDate>Thu, 13 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://cnovel.github.io/projets/</guid>
-      <description>&lt;center&gt;![Mignature](/img/projets/3d-round.png)&lt;/center&gt;
-## [Modèles 3D](http://xerto.free.fr/Acute3D &#34;Lien vers les modèles 3D&#34;)
-Ce mini-site regroupe les modèles 3D que j&#39;ai réalisé avec *ContextCapture*. *ContextCapture* est un logiciel de photogrammétrie, c&#39;est à dire qu&#39;il est capable de retrouver la forme 3D des objets directement à partir de photos.
-&lt;center&gt;![Mignature](/img/projets/sh-round.png)&lt;/center&gt;
-## [Secret Hitler en français](/projets/secrethitler/ &#34;Lien vers le site Secret Hitler&#34;)
-*Secret Hitler* est un jeu de société américain. Le jeu est disponible sous licence CC BY-SA-NC, c&#39;est à dire qu&#39;il est possible de le modifier tant que les auteurs originaux sont mentionnés et qu&#39;aucune utilisation commerciale n&#39;est effectuée. En me basant sur les fichiers originaux, j&#39;ai entièrement redessiné les cartes à jouer et traduit entièrement le jeu.
-&lt;center&gt;![Mignature](/img/projets/pbd-round.png)&lt;/center&gt;
-## [Podcast Bulk Downloader](https://github.com/cnovel/PodcastBulkDownloader &#34;Lien vers le dépôt Github du projet&#34;)
-*Podcast Bulk Downloader* est un utilitaire Windows qui permet de télécharger tous les épidosdes d&#39;un flux podcast en quelques clics. Il existe une version ligne de commande et une version avec interface graphique. Le programme est codé en Python.</description>
+      <description>&lt;center&gt;
+&lt;p&gt;&lt;img src=&#34;https://cnovel.github.io/img/projets/3d-round.png&#34; alt=&#34;Mignature&#34;&gt;&lt;/p&gt;
+&lt;/center&gt;
+&lt;h2 id=&#34;modles-3dhttpxertofreefracute3d-lien-vers-les-modles-3d&#34;&gt;&lt;a href=&#34;http://xerto.free.fr/Acute3D&#34; title=&#34;Lien vers les modèles 3D&#34;&gt;Modèles 3D&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Ce mini-site regroupe les modèles 3D que j&#39;ai réalisé avec &lt;em&gt;ContextCapture&lt;/em&gt;. &lt;em&gt;ContextCapture&lt;/em&gt; est un logiciel de photogrammétrie, c&#39;est à dire qu&#39;il est capable de retrouver la forme 3D des objets directement à partir de photos.&lt;/p&gt;
+&lt;center&gt;
+&lt;p&gt;&lt;img src=&#34;https://cnovel.github.io/img/projets/sh-round.png&#34; alt=&#34;Mignature&#34;&gt;&lt;/p&gt;
+&lt;/center&gt;
+&lt;h2 id=&#34;secret-hitler-en-franaisprojetssecrethitler-lien-vers-le-site-secret-hitler&#34;&gt;&lt;a href=&#34;https://cnovel.github.io/projets/secrethitler/&#34; title=&#34;Lien vers le site Secret Hitler&#34;&gt;Secret Hitler en français&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Secret Hitler&lt;/em&gt; est un jeu de société américain. Le jeu est disponible sous licence CC BY-SA-NC, c&#39;est à dire qu&#39;il est possible de le modifier tant que les auteurs originaux sont mentionnés et qu&#39;aucune utilisation commerciale n&#39;est effectuée. En me basant sur les fichiers originaux, j&#39;ai entièrement redessiné les cartes à jouer et traduit entièrement le jeu.&lt;/p&gt;
+&lt;center&gt;
+&lt;p&gt;&lt;img src=&#34;https://cnovel.github.io/img/projets/pbd-round.png&#34; alt=&#34;Mignature&#34;&gt;&lt;/p&gt;
+&lt;/center&gt;
+&lt;h2 id=&#34;podcast-bulk-downloaderhttpsgithubcomcnovelpodcastbulkdownloader-lien-vers-le-dpt-github-du-projet&#34;&gt;&lt;a href=&#34;https://github.com/cnovel/PodcastBulkDownloader&#34; title=&#34;Lien vers le dépôt Github du projet&#34;&gt;Podcast Bulk Downloader&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Podcast Bulk Downloader&lt;/em&gt; est un utilitaire Windows qui permet de télécharger tous les épidosdes d&#39;un flux podcast en quelques clics. Il existe une version ligne de commande et une version avec interface graphique. Le programme est codé en Python.&lt;/p&gt;
+</description>
     </item>
     
     <item>
