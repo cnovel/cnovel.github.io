@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Un gestionnaire de paquets pour Windows qui facilite la vie">
-  <meta name="generator" content="Hugo 0.60.1" />
+  <meta name="generator" content="Hugo 0.68.2" />
 
   <title>Chocolatey &middot; Chez Cyril</title>
 
@@ -252,19 +252,19 @@
 
 </div>
 
-  <p>Dans l'univers Linux, un aspect extrêmement pratique réside dans l'utilisation de gestionnaires de paquets (<em>package manager</em> en anglais). Un gestionnaire de paquet est un utilitaire qui va s'occuper de l'installation et de la mise à jour de vos programmes, sans que vous ayez à vous souciez des détails (où installer, quelles options, etc.). Par exemple, l'AppStore sous iOS ou le Play Store sous Android peuvent être considérés comme des gestionnaires de paquets. Malheureusement sous Windows, ce système n'existe pas. Pour installer des programmes, il faut encore lancer des .exe ou des .msi à la main.</p>
+  <p>Dans l&rsquo;univers Linux, un aspect extrêmement pratique réside dans l&rsquo;utilisation de gestionnaires de paquets (<em>package manager</em> en anglais). Un gestionnaire de paquet est un utilitaire qui va s&rsquo;occuper de l&rsquo;installation et de la mise à jour de vos programmes, sans que vous ayez à vous souciez des détails (où installer, quelles options, etc.). Par exemple, l&rsquo;AppStore sous iOS ou le Play Store sous Android peuvent être considérés comme des gestionnaires de paquets. Malheureusement sous Windows, ce système n&rsquo;existe pas. Pour installer des programmes, il faut encore lancer des .exe ou des .msi à la main.</p>
 <h2 id="chocolatey-votre-nouvel-ami">Chocolatey, votre nouvel ami</h2>
-<p>C'est là qu'intervient <a href="https://chocolatey.org/">Chocolatey</a>. Ce dernier agit comme s'il était un gestionnaire de paquets. En une ligne de commande, il va aller récupérer le .exe qui correspond au programme que vous souhaitez installer, et l'installer de manière silencieuse sur votre machine. Par exemple, si je souhaite installer VLC, il suffit de rentrer la commande :</p>
+<p>C&rsquo;est là qu&rsquo;intervient <a href="https://chocolatey.org/">Chocolatey</a>. Ce dernier agit comme s&rsquo;il était un gestionnaire de paquets. En une ligne de commande, il va aller récupérer le .exe qui correspond au programme que vous souhaitez installer, et l&rsquo;installer de manière silencieuse sur votre machine. Par exemple, si je souhaite installer VLC, il suffit de rentrer la commande :</p>
 <pre><code>choco install vlc
-</code></pre><p>Et VLC va s'installer tout seul. Actuellement, Chocolatey gère plus de 5500 paquets. Les logiciels les plus communs sont pris en charge.</p>
+</code></pre><p>Et VLC va s&rsquo;installer tout seul. Actuellement, Chocolatey gère plus de 5500 paquets. Les logiciels les plus communs sont pris en charge.</p>
 <p>L'énorme avantage de Chocolatey est la mise à jour automatique des paquets installés. On oublie souvent de mettre à jour certains logiciels (comme Git, 7Zip) ou on ne souhaite pas le faire lorsque le programme nous le demande (Filezilla par exemple). Avec la simple commande</p>
 <pre><code>choco upgrade all
 </code></pre><p>Chocolatey va mettre à jour tous les paquets installés sur votre ordinateur.</p>
 <h2 id="comment-installer-chocolatey">Comment installer Chocolatey</h2>
-<p><a href="https://chocolatey.org/install">C'est très simple</a>, il suffit de lancer un terminal sous Windows et de rentrer la ligne suivante :</p>
+<p><a href="https://chocolatey.org/install">C&rsquo;est très simple</a>, il suffit de lancer un terminal sous Windows et de rentrer la ligne suivante :</p>
 <pre><code>@&quot;%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe&quot; -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command &quot;iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))&quot; &amp;&amp; SET &quot;PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin&quot;
-</code></pre><h2 id="et-si-je-suis-allergique--la-ligne-de-commande-">Et si je suis allergique à la ligne de commande ?</h2>
-<p>Certains ont pensé à vous ! Il vous suffit d'installer le paquet <a href="https://chocolatey.org/packages/ChocolateyGUI">Chocolatey GUI</a> pour installer et mettre à jour via une interface vos logiciels.</p>
+</code></pre><h2 id="et-si-je-suis-allergique-à-la-ligne-de-commande-">Et si je suis allergique à la ligne de commande ?</h2>
+<p>Certains ont pensé à vous ! Il vous suffit d&rsquo;installer le paquet <a href="https://chocolatey.org/packages/ChocolateyGUI">Chocolatey GUI</a> pour installer et mettre à jour via une interface vos logiciels.</p>
 
 
   

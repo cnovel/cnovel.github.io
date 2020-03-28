@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Avec un petit script python qui va bien">
-  <meta name="generator" content="Hugo 0.60.1" />
+  <meta name="generator" content="Hugo 0.68.2" />
 
   <title>Réduire le poids des images &middot; Chez Cyril</title>
 
@@ -252,20 +252,20 @@
 
 </div>
 
-  <p>Même si on n'y fait plus très attention maintenant que l'on surfe avec la fibre et la 4G, la taille des pages web a son importance. En mode dégradé (Edge, 3G Free, etc.), c'est toujours agréable d'avoir une page qui se charge rapidement.</p>
-<h2 id="tinypng-rduire-ses-images-en-ligne">TinyPNG, réduire ses images en ligne</h2>
-<p>Une partie de la taille d'une page web est dûe aux différentes images présentes sur cette page. Différentes méthodes existent pour les alléger :</p>
+  <p>Même si on n&rsquo;y fait plus très attention maintenant que l&rsquo;on surfe avec la fibre et la 4G, la taille des pages web a son importance. En mode dégradé (Edge, 3G Free, etc.), c&rsquo;est toujours agréable d&rsquo;avoir une page qui se charge rapidement.</p>
+<h2 id="tinypng-réduire-ses-images-en-ligne">TinyPNG, réduire ses images en ligne</h2>
+<p>Une partie de la taille d&rsquo;une page web est dûe aux différentes images présentes sur cette page. Différentes méthodes existent pour les alléger :</p>
 <ul>
 <li>Réduire leur taille</li>
 <li>Augmenter le niveau de compression</li>
 <li>Choisir le bon format (le BMP sera extrêmement lourd, alors que le PNG est parfait pour les dessins schématiques)</li>
 </ul>
 <p>Mais on peut encore aller plus loin. La fine équipe <a href="https://tinypng.com/">TinyPNG</a> a créé un script qui permet de compresser une image sans perte de qualité. En détail, un algorithme de quantisation des couleurs est utilisé pour gagner de la place.</p>
-<p>Certaines images peuvent perdre plus de 70% de leur poids une fois passées à la moulinette TinyPNG, sans qu'une différence ne soit visible.</p>
+<p>Certaines images peuvent perdre plus de 70% de leur poids une fois passées à la moulinette TinyPNG, sans qu&rsquo;une différence ne soit visible.</p>
 <h2 id="tinify-in-folder-le-script-python-pour-traiter-en-batch">Tinify In Folder, le script python pour traiter en batch</h2>
-<p>J'ai donc voulu appliquer ce script à toutes les images de ce site. Problème, les images sont dans pas mal de dossiers différents, et l'interface web n'est pas la plus pratique pour compresser beaucoup de fichiers. Que cela ne tienne, TinyPNG propose un package Python qui permet d'interfacer avec leur service.</p>
-<p>J'ai donc écrit un petit script, <a href="https://github.com/cnovel/TinifyInFolder">Tinify In Folder</a>, qui permet de compresser toutes les images trouvées dans un dossier. Le script est adapté à mon usage, donc une limite de 500 compressions par mois est hardcodée. Et j'ai ajouté une petite option qui permet de ne compresser que les images qui ont été créées ou modifiées dans les n derniers jours, afin de ne pas dépasser ce quota trop rapidement.</p>
-<p>Une fois le script appliqué à l'ensemble de ce site web, la taille totale des images est passée d'environ 1.6Mo à 800ko, donc une baisse de 50% environ, ce qui n'est pas négligeable !</p>
+<p>J&rsquo;ai donc voulu appliquer ce script à toutes les images de ce site. Problème, les images sont dans pas mal de dossiers différents, et l&rsquo;interface web n&rsquo;est pas la plus pratique pour compresser beaucoup de fichiers. Que cela ne tienne, TinyPNG propose un package Python qui permet d&rsquo;interfacer avec leur service.</p>
+<p>J&rsquo;ai donc écrit un petit script, <a href="https://github.com/cnovel/TinifyInFolder">Tinify In Folder</a>, qui permet de compresser toutes les images trouvées dans un dossier. Le script est adapté à mon usage, donc une limite de 500 compressions par mois est hardcodée. Et j&rsquo;ai ajouté une petite option qui permet de ne compresser que les images qui ont été créées ou modifiées dans les n derniers jours, afin de ne pas dépasser ce quota trop rapidement.</p>
+<p>Une fois le script appliqué à l&rsquo;ensemble de ce site web, la taille totale des images est passée d&rsquo;environ 1.6Mo à 800ko, donc une baisse de 50% environ, ce qui n&rsquo;est pas négligeable !</p>
 
 
   
