@@ -28,7 +28,7 @@
 &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(prenoms&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;get_nom_complet())
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;notes&#34;&gt;Notes&lt;/h2&gt;
 &lt;p&gt;La publication sur PyPI est un poil laborieuse quand on se lance dedans : entre les URLs qui évoluent, les tutos obsolètes, l&amp;rsquo;endpoint actuel qui s&amp;rsquo;appelle &lt;em&gt;legacy&lt;/em&gt;, de prime abord ce n&amp;rsquo;est pas hyper clair&amp;hellip; Ça demande un peu de duckduck-fu et de consultation de StackOverflow pour comprendre comment ça marche exactement.&lt;/p&gt;
-&lt;p&gt;J&amp;rsquo;ai découvert le format RST, un peu l&amp;rsquo;ancètre du MarkDown. Ça fait vraiment dépassé comparé au MD, heureusement que PyPI supporte désormais le MD sinon ça donne des choses bien moins joli.&lt;/p&gt;
+&lt;p&gt;J&amp;rsquo;ai découvert le format RST, un peu l&amp;rsquo;ancètre du MarkDown. Ça fait vraiment dépassé comparé au MD, heureusement que PyPI supporte désormais le MD sinon ça donne des choses bien moins jolies.&lt;/p&gt;
 &lt;p&gt;Au niveau de l&amp;rsquo;intégration continue, j&amp;rsquo;utilise Travis (comme pour Podcast Bulk Downloader), là encore ils sont pas clair : impossible de faire marcher quelque chose sur le site pour l&amp;rsquo;opensource&amp;hellip;&lt;/p&gt;
 &lt;p&gt;Enfin, ça permet de mieux maitriser le Python, ça faisait un petit bout de temps que je voulais faire un package, ce fût l&amp;rsquo;occasion !&lt;/p&gt;
 </description>
