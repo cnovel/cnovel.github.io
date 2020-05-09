@@ -17,7 +17,7 @@
       <pubDate>Tue, 16 Oct 2018 08:27:28 +0200</pubDate>
       
       <guid>https://cnovel.github.io/post/pasdetiers/</guid>
-      <description>&lt;p&gt;J&amp;rsquo;ai fini par modifier le thème que j&amp;rsquo;utilise (&lt;a href=&#34;https://github.com/yoshiharuyamashita/blackburn&#34;&gt;Blackburn&lt;/a&gt;) pour que ce dernier n&amp;rsquo;utilise plus de domaines tiers. Jusqu&#39;à présent, des requêtes étaient lancées pour obtenir une police chez Google, du CSS chez Cloudflare, et différents scripts sur des CDN.&lt;/p&gt;
+      <description>&lt;p&gt;J&amp;rsquo;ai fini par modifier le thème que j&amp;rsquo;utilise (&lt;a href=&#34;https://github.com/yoshiharuyamashita/blackburn&#34;&gt;Blackburn&lt;/a&gt;) pour que ce dernier n&amp;rsquo;utilise plus de domaines tiers. Jusqu&amp;rsquo;à présent, des requêtes étaient lancées pour obtenir une police chez Google, du CSS chez Cloudflare, et différents scripts sur des CDN.&lt;/p&gt;
 &lt;p&gt;Désormais, je suis passé à une police système (Helvetica ou Arial), et j&amp;rsquo;ai rapatrié dans le thème tout ce qui était scripts et css. Le temps de chargement n&amp;rsquo;en souffre pas et ça a l&amp;rsquo;avantage de ne déposer aucun cookie pour les visiteurs.&lt;/p&gt;
 &lt;p&gt;Il reste encore quelques modifications à apporter au thème, mais on s&amp;rsquo;approche doucement de ce que je voulais !&lt;/p&gt;
 </description>

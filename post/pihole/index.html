@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Marche sur tous types d&#39;appareils !">
-  <meta name="generator" content="Hugo 0.68.2" />
+  <meta name="generator" content="Hugo 0.69.2" />
 
   <title>Pi-hole, le bloqueur de pubs via DNS &middot; Chez Cyril</title>
 
@@ -259,7 +259,7 @@
 <p><img src="https://cnovel.github.io/img/post/Pihole/Logo_Pihole.png" alt="Logo Pihole"></p>
 </center>
 <p>C&rsquo;est là qu&rsquo;intervient Pi-hole. Pi-hole est un résolveur DNS qui va bloquer certains domaines. De manière général, un résolveur DNS fonctionne de la manière suivante : quand on demande à accéder à <a href="www.duckduckgo.com">www.duckduckgo.com</a>, le résolveur va faire correspondre cette entrée texte à une adresse IP (176.34.155.23 en l’occurrence). Pi-hole va faire la même chose, sauf qu&rsquo;il va bloquer tous les domaines publicitaires. Ainsi, lorsque l&rsquo;on cherche à accéder à api.vungle.com (service de publicités vidéos), et bien Pi-hole répond que le site web est introuvable.</p>
-<p>De nombreuses extensions existent pour bloquer la pub sur votre navigateur (<a href="https://addons.mozilla.org/en-US/firefox/addon/adguard-adblocker/">AdGuard</a> par exemple). Cependant cela ne bloque la pub que sur le navigateur, et le bloqueur peut être détecté. D&rsquo;autre part, l&rsquo;add-on doit avoir accès à l&rsquo;intégralité de la page, ce qui n&rsquo;est jamais totalement rassurant. Pi-hole a l&rsquo;avantage de pouvoir bloquer la publicité sur toutes les applications et sur le réseau complet, et d'être open-source.</p>
+<p>De nombreuses extensions existent pour bloquer la pub sur votre navigateur (<a href="https://addons.mozilla.org/en-US/firefox/addon/adguard-adblocker/">AdGuard</a> par exemple). Cependant cela ne bloque la pub que sur le navigateur, et le bloqueur peut être détecté. D&rsquo;autre part, l&rsquo;add-on doit avoir accès à l&rsquo;intégralité de la page, ce qui n&rsquo;est jamais totalement rassurant. Pi-hole a l&rsquo;avantage de pouvoir bloquer la publicité sur toutes les applications et sur le réseau complet, et d&rsquo;être open-source.</p>
 <h2 id="installation">Installation</h2>
 <p>Pour utiliser Pi-hole chez vous, il vous faut un petit ordinateur - de préférence un Raspberry Pi, avec une carte SD d&rsquo;au moins 8Go - pour faire tourner le service Pi-hole. J&rsquo;ai utilisé mon Raspberry Pi B de première génération, qui prenait un peu la poussière. Ci-après, une installation pas-à-pas est décrite avec un Raspberry Pi et une Freebox.</p>
 <h3 id="étape-1--installation-de-raspbian">Étape 1 : Installation de Raspbian</h3>
