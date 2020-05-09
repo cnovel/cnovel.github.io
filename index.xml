@@ -14,7 +14,7 @@
     <item>
       <title>Posts</title>
       <link>https://cnovel.github.io/post/</link>
-      <pubDate>Sat, 28 Mar 2020 19:35:42 +0100</pubDate>
+      <pubDate>Sat, 09 May 2020 18:51:52 +0200</pubDate>
       
       <guid>https://cnovel.github.io/post/</guid>
       <description></description>
@@ -41,6 +41,11 @@
 &lt;/center&gt;
 &lt;h2 id=&#34;podcast-bulk-downloaderhttpsgithubcomcnovelpodcastbulkdownloader-lien-vers-le-dépôt-github-du-projet&#34;&gt;&lt;a href=&#34;https://github.com/cnovel/PodcastBulkDownloader&#34; title=&#34;Lien vers le dépôt Github du projet&#34;&gt;Podcast Bulk Downloader&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;Podcast Bulk Downloader&lt;/em&gt; est un utilitaire Windows qui permet de télécharger tous les épidosdes d&amp;rsquo;un flux podcast en quelques clics. Il existe une version ligne de commande et une version avec interface graphique. Le programme est codé en Python.&lt;/p&gt;
+&lt;center&gt;
+&lt;p&gt;&lt;img src=&#34;https://cnovel.github.io/img/projets/prenoms-round.png&#34; alt=&#34;Mignature&#34;&gt;&lt;/p&gt;
+&lt;/center&gt;
+&lt;h2 id=&#34;prenomshttpspypiorgprojectprenoms-lien-vers-le-package-sur-pypi&#34;&gt;&lt;a href=&#34;https://pypi.org/project/prenoms/&#34; title=&#34;Lien vers le package sur PyPI&#34;&gt;prenoms&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;prenoms&lt;/code&gt; est un package Python qui génère des prénoms et de noms aléatoirement depuis une liste ordonnée par fréquence. Le code sous licence MIT est disponible sur &lt;a href=&#34;https://github.com/cnovel/prenoms&#34; title=&#34;Lien du projet sur Github&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     

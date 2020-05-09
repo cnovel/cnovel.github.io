@@ -3,22 +3,32 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://cnovel.github.io/tags/informatique/</loc>
+    <lastmod>2020-05-09T18:51:52+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cnovel.github.io/post/</loc>
+    <lastmod>2020-05-09T18:51:52+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cnovel.github.io/post/prenoms/</loc>
+    <lastmod>2020-05-09T18:51:52+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cnovel.github.io/tags/</loc>
+    <lastmod>2020-05-09T18:51:52+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cnovel.github.io/post/cake_banane/</loc>
     <lastmod>2020-03-28T19:35:42+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://cnovel.github.io/tags/cuisine/</loc>
-    <lastmod>2020-03-28T19:35:42+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cnovel.github.io/post/</loc>
-    <lastmod>2020-03-28T19:35:42+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cnovel.github.io/tags/</loc>
     <lastmod>2020-03-28T19:35:42+01:00</lastmod>
   </url>
   
@@ -44,11 +54,6 @@
   
   <url>
     <loc>https://cnovel.github.io/post/incredibuild/</loc>
-    <lastmod>2018-12-08T17:32:52+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cnovel.github.io/tags/informatique/</loc>
     <lastmod>2018-12-08T17:32:52+01:00</lastmod>
   </url>
   

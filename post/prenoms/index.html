@@ -4,10 +4,10 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
+  <meta name="description" content="Petit package Python">
   <meta name="generator" content="Hugo 0.69.2" />
 
-  <title>Chez Cyril</title>
+  <title>prenoms &middot; Chez Cyril</title>
 
     
 
@@ -39,9 +39,6 @@
   <script src="https://cnovel.github.io/js/MathJax.js"></script>
 
  
-  
-  <link rel="alternate" type="application/rss+xml" title="Chez Cyril"
-    href='https://cnovel.github.io/index.xml' />
   
 
   
@@ -106,10 +103,6 @@
   <div class="pure-menu social">
   <ul class="pure-menu-list">
 
-    
-    <li class="pure-menu-item">
-      <a class="pure-menu-link" href='https://cnovel.github.io/index.xml' title="Flux RSS"><img src="https://cnovel.github.io/img/rss.png" style="max-width: 15px;" /></a>
-    </li>
     
 
     
@@ -229,52 +222,16 @@
 
 
 <div class="header">
-  <h1>Chez Cyril</h1>
-  <h2>Informatique, mais pas que</h2>
+  <h1>prenoms</h1>
+  <h2>Petit package Python</h2>
 </div>
-
 <div class="content">
-  
-    <article>
-  <header>
-    <h2><a href="https://cnovel.github.io/post/velib/">Vélib&#39;2 : Après 5 mois, premier bilan</a></h2>
-	<div class="post-meta">
+
+  <div class="post-meta">
 
   <div>
     <img src="https://cnovel.github.io/img/calendar.png" style="max-width: 1em;" />
-    <time>3 June 2018 @ 08:55</time>
-  </div>
-
-  
-
-  
-
-  
-
-</div>
-  </header>
-
-  <p>
-  Alerte divulgâchage : c&#39;est une catastrophe
-  </p>
-  
-
-  
-  <footer>
-    <a href="https://cnovel.github.io/post/velib/">Lire la suite<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
-
-  
-    <article>
-  <header>
-    <h2><a href="https://cnovel.github.io/post/tinify/">Réduire le poids des images</a></h2>
-	<div class="post-meta">
-
-  <div>
-    <img src="https://cnovel.github.io/img/calendar.png" style="max-width: 1em;" />
-    <time>17 April 2018 @ 20:25</time>
+    <time>9 May 2020 @ 18:51</time>
   </div>
 
   
@@ -294,204 +251,51 @@
   
 
 </div>
-  </header>
 
-  <p>
-  Avec un petit script python qui va bien
-  </p>
-  
+  <h2 id="prenoms">prenoms</h2>
+<p>Petit projet de confinement, <code>prenoms</code> est un package python qui permet de générer aléatoirement des prénoms et des noms à partir d&rsquo;une base de données française.</p>
+<p>Le code, fortement inspiré par le package <code>names</code>, est disponible sur <a href="https://github.com/cnovel/prenoms">GitHub</a>. Le package est quant à lui dispo sur <a href="https://pypi.org/project/prenoms/">PyPI</a>.</p>
+<h2 id="utilisation">Utilisation</h2>
+<p>Rien de bien compliqué au niveau de l&rsquo;utilisation :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> prenoms
+<span style="color:#66d9ef">print</span>(prenoms<span style="color:#f92672">.</span>get_prenom())
+<span style="color:#66d9ef">print</span>(prenoms<span style="color:#f92672">.</span>get_nom())
+<span style="color:#66d9ef">print</span>(prenoms<span style="color:#f92672">.</span>get_nom_complet())
+</code></pre></div><h2 id="notes">Notes</h2>
+<p>La publication sur PyPI est un poil laborieuse quand on se lance dedans : entre les URLs qui évoluent, les tutos obsolètes, l&rsquo;endpoint actuel qui s&rsquo;appelle <em>legacy</em>, de prime abord ce n&rsquo;est pas hyper clair&hellip; Ça demande un peu de duckduck-fu et de consultation de StackOverflow pour comprendre comment ça marche exactement.</p>
+<p>J&rsquo;ai découvert le format RST, un peu l&rsquo;ancètre du MarkDown. Ça fait vraiment dépassé comparé au MD, heureusement que PyPI supporte désormais le MD sinon ça donne des choses bien moins joli.</p>
+<p>Au niveau de l&rsquo;intégration continue, j&rsquo;utilise Travis (comme pour Podcast Bulk Downloader), là encore ils sont pas clair : impossible de faire marcher quelque chose sur le site pour l&rsquo;opensource&hellip;</p>
+<p>Enfin, ça permet de mieux maitriser le Python, ça faisait un petit bout de temps que je voulais faire un package, ce fût l&rsquo;occasion !</p>
 
-  
-  <footer>
-    <a href="https://cnovel.github.io/post/tinify/">Lire la suite<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
-
-  
-    <article>
-  <header>
-    <h2><a href="https://cnovel.github.io/post/majusculesaccentu%C3%A9es/">Les majuscules accentuées sous Windows</a></h2>
-	<div class="post-meta">
-
-  <div>
-    <img src="https://cnovel.github.io/img/calendar.png" style="max-width: 1em;" />
-    <time>2 April 2018 @ 22:52</time>
-  </div>
 
   
-
-  
-
-  
-  
-  
-  <div>
-    <img src="https://cnovel.github.io/img/tags.png" style="max-width: 1em;" />
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
     
-      <a class="post-taxonomy-tag" href="https://cnovel.github.io/tags/informatique">Informatique</a>
+    <a href="https://cnovel.github.io/post/cake_banane/"><img src="https://cnovel.github.io/img/left.png" style="max-width: 1em; margin-right: 0.5em; position: relative; top: 0.1em;" /></a>
     
   </div>
-  
-  
-
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://cnovel.github.io/post/cake_banane/">Cake à la banane</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
 </div>
-  </header>
-
-  <p>
-  Comment écrire É ou Ç facilement sous Windows
-  </p>
-  
-
-  
-  <footer>
-    <a href="https://cnovel.github.io/post/majusculesaccentu%C3%A9es/">Lire la suite<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
-
-  
-    <article>
-  <header>
-    <h2><a href="https://cnovel.github.io/post/biscuitscocottes/">Biscuits Cocottes</a></h2>
-	<div class="post-meta">
-
-  <div>
-    <img src="https://cnovel.github.io/img/calendar.png" style="max-width: 1em;" />
-    <time>30 March 2018 @ 08:41</time>
-  </div>
-
-  
-
-  
-
-  
-  
-  
-  <div>
-    <img src="https://cnovel.github.io/img/tags.png" style="max-width: 1em;" />
-    
-      <a class="post-taxonomy-tag" href="https://cnovel.github.io/tags/cuisine">Cuisine</a>
-    
-  </div>
-  
-  
-
-</div>
-  </header>
-
-  <p>
-  Recette pour réaliser de délicieux biscuits aux pépites de chocolat et graines
-  </p>
-  
-
-  
-  <footer>
-    <a href="https://cnovel.github.io/post/biscuitscocottes/">Lire la suite<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
-
-  
-    <article>
-  <header>
-    <h2><a href="https://cnovel.github.io/post/opensourcefacile/">L&#39;Open source facile</a></h2>
-	<div class="post-meta">
-
-  <div>
-    <img src="https://cnovel.github.io/img/calendar.png" style="max-width: 1em;" />
-    <time>25 March 2018 @ 14:25</time>
-  </div>
-
-  
-
-  
-
-  
-  
-  
-  <div>
-    <img src="https://cnovel.github.io/img/tags.png" style="max-width: 1em;" />
-    
-      <a class="post-taxonomy-tag" href="https://cnovel.github.io/tags/informatique">Informatique</a>
-    
-  </div>
-  
-  
-
-</div>
-  </header>
-
-  <p>
-  Petit guide pour participer à certains projets open source
-  </p>
-  
-
-  
-  <footer>
-    <a href="https://cnovel.github.io/post/opensourcefacile/">Lire la suite<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
-
-  
-    <article>
-  <header>
-    <h2><a href="https://cnovel.github.io/post/premierbillet/">Premier billet</a></h2>
-	<div class="post-meta">
-
-  <div>
-    <img src="https://cnovel.github.io/img/calendar.png" style="max-width: 1em;" />
-    <time>18 March 2018 @ 15:41</time>
-  </div>
-
-  
-
-  
-
-  
-  
-  
-  <div>
-    <img src="https://cnovel.github.io/img/tags.png" style="max-width: 1em;" />
-    
-      <a class="post-taxonomy-tag" href="https://cnovel.github.io/tags/blog">Blog</a>
-    
-  </div>
-  
-  
-
-</div>
-  </header>
-
-  <p>
-  Premier billet pour ce tout nouveau blog
-  </p>
-  
-
-  
-  <footer>
-    <a href="https://cnovel.github.io/post/premierbillet/">Lire la suite<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
-
-  
-
-  
 
 
-<nav class="pagination" role="pagination">
-  
-  <a href="https://cnovel.github.io/"><img src="https://cnovel.github.io/img/left.png" style="max-width: 1em; margin-right: 0.5em; position: relative; top: 0.1em;" /></a>
-  
-  <span>&nbsp;2 / 2&nbsp;</span>
-  
-  <i class="fa fa-chevron-right"></i>
-  
-</nav>
 
-
+  
 
 </div>
 
