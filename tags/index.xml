@@ -6,10 +6,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
     <copyright>CC BY-SA 4.0</copyright>
-    <lastBuildDate>Sat, 09 May 2020 18:51:52 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 04 Oct 2020 16:46:13 +0200</lastBuildDate>
     
         <atom:link href="https://cnovel.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Vélo</title>
+      <link>https://cnovel.github.io/tags/v%C3%A9lo/</link>
+      <pubDate>Sun, 04 Oct 2020 16:46:13 +0200</pubDate>
+      
+      <guid>https://cnovel.github.io/tags/v%C3%A9lo/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Informatique</title>
