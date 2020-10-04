@@ -4,10 +4,10 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Avec un petit script python qui va bien">
+  <meta name="description" content="">
   <meta name="generator" content="Hugo 0.75.1" />
 
-  <title>Réduire le poids des images &middot; Chez Cyril</title>
+  <title>Vélo &middot; Chez Cyril</title>
 
     
 
@@ -39,6 +39,9 @@
   <script src="https://cnovel.github.io/js/MathJax.js"></script>
 
  
+  
+  <link rel="alternate" type="application/rss+xml" title="Chez Cyril"
+    href='https://cnovel.github.io/tags/v%C3%A9lo/index.xml' />
   
 
   
@@ -103,6 +106,10 @@
   <div class="pure-menu social">
   <ul class="pure-menu-list">
 
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href='https://cnovel.github.io/tags/v%C3%A9lo/index.xml' title="Flux RSS"><img src="https://cnovel.github.io/img/rss.png" style="max-width: 15px;" /></a>
+    </li>
     
 
     
@@ -222,16 +229,19 @@
 
 
 <div class="header">
-  <h1>Réduire le poids des images</h1>
-  <h2>Avec un petit script python qui va bien</h2>
+  <h1>Vélo</h1>
 </div>
-<div class="content">
 
-  <div class="post-meta">
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="https://cnovel.github.io/post/velo_komoot/">Reprise du vélo avec Komoot</a></h2>
+	<div class="post-meta">
 
   <div>
     <img src="https://cnovel.github.io/img/calendar.png" style="max-width: 1em;" />
-    <time>17 April 2018 @ 20:25</time>
+    <time>4 October 2020 @ 16:46</time>
   </div>
 
   
@@ -244,65 +254,154 @@
   <div>
     <img src="https://cnovel.github.io/img/tags.png" style="max-width: 1em;" />
     
-      <a class="post-taxonomy-tag" href="https://cnovel.github.io/tags/informatique">Informatique</a>
+      <a class="post-taxonomy-tag" href="https://cnovel.github.io/tags/v%C3%A9lo">Vélo</a>
     
   </div>
   
   
 
 </div>
+  </header>
 
-  <p>Même si on n&rsquo;y fait plus très attention maintenant que l&rsquo;on surfe avec la fibre et la 4G, la taille des pages web a son importance. En mode dégradé (Edge, 3G Free, etc.), c&rsquo;est toujours agréable d&rsquo;avoir une page qui se charge rapidement.</p>
-<h2 id="tinypng-réduire-ses-images-en-ligne">TinyPNG, réduire ses images en ligne</h2>
-<p>Une partie de la taille d&rsquo;une page web est dûe aux différentes images présentes sur cette page. Différentes méthodes existent pour les alléger :</p>
-<ul>
-<li>Réduire leur taille</li>
-<li>Augmenter le niveau de compression</li>
-<li>Choisir le bon format (le BMP sera extrêmement lourd, alors que le PNG est parfait pour les dessins schématiques)</li>
-</ul>
-<p>Mais on peut encore aller plus loin. La fine équipe <a href="https://tinypng.com/">TinyPNG</a> a créé un script qui permet de compresser une image sans perte de qualité. En détail, un algorithme de quantisation des couleurs est utilisé pour gagner de la place.</p>
-<p>Certaines images peuvent perdre plus de 70% de leur poids une fois passées à la moulinette TinyPNG, sans qu&rsquo;une différence ne soit visible.</p>
-<h2 id="tinify-in-folder-le-script-python-pour-traiter-en-batch">Tinify In Folder, le script python pour traiter en batch</h2>
-<p>J&rsquo;ai donc voulu appliquer ce script à toutes les images de ce site. Problème, les images sont dans pas mal de dossiers différents, et l&rsquo;interface web n&rsquo;est pas la plus pratique pour compresser beaucoup de fichiers. Que cela ne tienne, TinyPNG propose un package Python qui permet d&rsquo;interfacer avec leur service.</p>
-<p>J&rsquo;ai donc écrit un petit script, <a href="https://github.com/cnovel/TinifyInFolder">Tinify In Folder</a>, qui permet de compresser toutes les images trouvées dans un dossier. Le script est adapté à mon usage, donc une limite de 500 compressions par mois est hardcodée. Et j&rsquo;ai ajouté une petite option qui permet de ne compresser que les images qui ont été créées ou modifiées dans les n derniers jours, afin de ne pas dépasser ce quota trop rapidement.</p>
-<p>Une fois le script appliqué à l&rsquo;ensemble de ce site web, la taille totale des images est passée d&rsquo;environ 1.6Mo à 800ko, donc une baisse de 50% environ, ce qui n&rsquo;est pas négligeable !</p>
-
+  <p>
+  Une appli qu&#39;elle est bien pour planifier ses sorties
+  </p>
+  
 
   
-<div class="prev-next-post pure-g">
-  <div class="pure-u-1-24" style="text-align: left;">
+  <footer>
+    <a href="https://cnovel.github.io/post/velo_komoot/">Lire la suite<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="https://cnovel.github.io/post/velotaf_bilan_1an/">Vélotaf, bilan après plus d&#39;un an</a></h2>
+	<div class="post-meta">
+
+  <div>
+    <img src="https://cnovel.github.io/img/calendar.png" style="max-width: 1em;" />
+    <time>14 December 2019 @ 11:10</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <img src="https://cnovel.github.io/img/tags.png" style="max-width: 1em;" />
     
-    <a href="https://cnovel.github.io/post/majusculesaccentu%C3%A9es/"><img src="https://cnovel.github.io/img/left.png" style="max-width: 1em; margin-right: 0.5em; position: relative; top: 0.1em;" /></a>
+      <a class="post-taxonomy-tag" href="https://cnovel.github.io/tags/v%C3%A9lo">Vélo</a>
     
   </div>
-  <div class="pure-u-10-24">
-    
-    <nav class="prev">
-      <a href="https://cnovel.github.io/post/majusculesaccentu%C3%A9es/">Les majuscules accentuées sous Windows</a>
-    </nav>
-    
-  </div>
-  <div class="pure-u-2-24">
-    &nbsp;
-  </div>
-  <div class="pure-u-10-24">
-    
-    <nav class="next">
-      <a href="https://cnovel.github.io/post/velib/">Vélib&#39;2 : Après 5 mois, premier bilan</a>
-    </nav>
-    
-  </div>
-  <div class="pure-u-1-24" style="text-align: right;">
-    
-    <a href="https://cnovel.github.io/post/velib/"><img src="https://cnovel.github.io/img/right.png" style="max-width: 1em; margin-right: 0.5em; position: relative; top: 0.1em;" /></a>
-    
-  </div>
+  
+  
+
 </div>
+  </header>
 
+  <p>
+  Beaucoup de kilomètres, quelques crevaisons.
+  </p>
+  
 
+  
+  <footer>
+    <a href="https://cnovel.github.io/post/velotaf_bilan_1an/">Lire la suite<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="https://cnovel.github.io/post/abicyclette/">Adieu vélib&#39;, bonjour vélo !</a></h2>
+	<div class="post-meta">
+
+  <div>
+    <img src="https://cnovel.github.io/img/calendar.png" style="max-width: 1em;" />
+    <time>31 July 2018 @ 18:33</time>
+  </div>
 
   
 
+  
+
+  
+  
+  
+  <div>
+    <img src="https://cnovel.github.io/img/tags.png" style="max-width: 1em;" />
+    
+      <a class="post-taxonomy-tag" href="https://cnovel.github.io/tags/v%C3%A9lo">Vélo</a>
+    
+  </div>
+  
+  
+
+</div>
+  </header>
+
+  <p>
+  (Et vu comme c&#39;est parti, adieu mes minutes bonus aussi !)
+  </p>
+  
+
+  
+  <footer>
+    <a href="https://cnovel.github.io/post/abicyclette/">Lire la suite<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="https://cnovel.github.io/post/velib/">Vélib&#39;2 : Après 5 mois, premier bilan</a></h2>
+	<div class="post-meta">
+
+  <div>
+    <img src="https://cnovel.github.io/img/calendar.png" style="max-width: 1em;" />
+    <time>3 June 2018 @ 08:55</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <img src="https://cnovel.github.io/img/tags.png" style="max-width: 1em;" />
+    
+      <a class="post-taxonomy-tag" href="https://cnovel.github.io/tags/v%C3%A9lo">Vélo</a>
+    
+  </div>
+  
+  
+
+</div>
+  </header>
+
+  <p>
+  Alerte divulgâchage : c&#39;est une catastrophe
+  </p>
+  
+
+  
+  <footer>
+    <a href="https://cnovel.github.io/post/velib/">Lire la suite<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
 </div>
 
 </div>
@@ -319,4 +418,3 @@
 
 </body>
 </html>
-
