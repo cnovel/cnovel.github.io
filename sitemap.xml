@@ -1,154 +1,97 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://cnovel.github.io/</loc>
-    <lastmod>2020-10-04T16:46:13+02:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-06-01T21:47:08+02:00</lastmod>
+  </url><url>
+    <loc>https://cnovel.github.io/post/portecarte/</loc>
+    <lastmod>2021-06-01T21:47:08+02:00</lastmod>
+  </url><url>
     <loc>https://cnovel.github.io/post/</loc>
-    <lastmod>2020-10-04T16:46:13+02:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-06-01T21:47:08+02:00</lastmod>
+  </url><url>
     <loc>https://cnovel.github.io/post/velo_komoot/</loc>
     <lastmod>2020-10-04T16:46:13+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://cnovel.github.io/tags/</loc>
     <lastmod>2020-10-04T16:46:13+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://cnovel.github.io/tags/v%C3%A9lo/</loc>
     <lastmod>2020-10-04T16:46:13+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://cnovel.github.io/post/coloriages_bnf/</loc>
     <lastmod>2020-06-23T21:55:28+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://cnovel.github.io/tags/informatique/</loc>
     <lastmod>2020-05-09T18:51:52+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://cnovel.github.io/post/prenoms/</loc>
     <lastmod>2020-05-09T18:51:52+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://cnovel.github.io/post/cake_banane/</loc>
     <lastmod>2020-03-28T19:35:42+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://cnovel.github.io/tags/cuisine/</loc>
     <lastmod>2020-03-28T19:35:42+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://cnovel.github.io/post/velotaf_bilan_1an/</loc>
     <lastmod>2019-12-14T11:10:03+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://cnovel.github.io/post/madeleines/</loc>
     <lastmod>2019-01-21T08:33:01+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://cnovel.github.io/projets/</loc>
     <lastmod>2018-12-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://cnovel.github.io/post/incredibuild/</loc>
     <lastmod>2018-12-08T17:32:52+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://cnovel.github.io/tags/blog/</loc>
     <lastmod>2018-10-16T08:27:28+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://cnovel.github.io/post/pasdetiers/</loc>
     <lastmod>2018-10-16T08:27:28+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://cnovel.github.io/post/pihole/</loc>
     <lastmod>2018-10-12T08:23:32+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://cnovel.github.io/post/fastmail/</loc>
     <lastmod>2018-09-05T08:20:30+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://cnovel.github.io/post/abicyclette/</loc>
     <lastmod>2018-07-31T18:33:45+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://cnovel.github.io/post/chocolatey/</loc>
     <lastmod>2018-07-25T18:28:14+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://cnovel.github.io/post/velib/</loc>
     <lastmod>2018-06-03T08:55:31+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://cnovel.github.io/post/tinify/</loc>
     <lastmod>2018-04-17T20:25:22+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://cnovel.github.io/projets/</loc>
     <lastmod>2018-04-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://cnovel.github.io/projets/secrethitler/</loc>
     <lastmod>2018-04-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://cnovel.github.io/post/majusculesaccentu%C3%A9es/</loc>
     <lastmod>2018-04-02T22:52:52+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://cnovel.github.io/post/biscuitscocottes/</loc>
     <lastmod>2018-03-30T08:41:31+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://cnovel.github.io/post/opensourcefacile/</loc>
     <lastmod>2018-03-25T14:25:47+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://cnovel.github.io/post/premierbillet/</loc>
     <lastmod>2018-03-18T15:41:05+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://cnovel.github.io/about/</loc>
     <lastmod>2018-03-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://cnovel.github.io/topics/</loc>
   </url>
-  
 </urlset>
